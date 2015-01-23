@@ -6,6 +6,24 @@
 <link href="assets/screen.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 
+a {
+	color: #09C;
+	text-decoration: none;
+	padding: 0.5em;
+	border-radius: 3px;
+}
+
+a:visited {
+	color: #09c;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #999;
+	text-decoration: none;
+	background-color: #E4F7F8;
+}
+
 section {
 	margin: 0;
 	padding: 1em 0;
@@ -14,12 +32,15 @@ section {
 address, phone, time, website {
 	display: block;
 	margin: 0;
-	padding: .5em 0;
-	width: 100%;
+	padding: 0.5em;
 	font-style: normal;
 	font-size: 80%;
 	border: 0;
 	border-bottom: 1px solid #CCC;
+}
+
+phone, website {
+	padding: 0.5em 0;
 }
 
 ul, li {
@@ -36,6 +57,7 @@ h3 {
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: .2em;
+	line-height: 110%;
 }
 
 .kind {
@@ -48,6 +70,14 @@ h3 {
 	border: 0;
 	border-bottom: 1px solid #CCC;
 	color: #999;
+}
+
+.specs {
+	margin: 0.8em 0;
+}
+
+.specs li {
+	padding: 0.2em 0;
 }
 
 .map iframe {
@@ -72,12 +102,15 @@ h3 {
 <address>Набережная реки Карповки, д. 5, лит П</address>
 <phone><a href="tel://+79119608689">+7 (911) 960-86-89</a></phone>
 <time>пн–вс 12:00–01:00</time>
-<ul>
+<ul class="specs">
 		<li>Наличный расчет</li>
 		<li>Заказ столиков</li>
 		<li>Wi-Fi</li>
-		<li>Средний чек 600</li>
+		<li>Средний чек 600 ₽</li>
 </ul>
+<div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.8180255235957!2d30.317380999999997!3d59.96834200000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0x74d4f0cbfe1fd995!2snab.+Reki+Karpovki%2C+5%D0%BA%D0%9F%2C+Sankt-Peterburg%2C+197022!5e0!3m2!1sen!2sru!4v1422046948681" width="100%" height="250" frameborder="0" style="border:0"></iframe>
+</div>
 </section>
 <section>
 <h3>BGL&nbsp;Café &amp;&nbsp;Market</h3>
@@ -86,17 +119,17 @@ h3 {
 <phone><a href="tel://+79522063356">+7 (952) 206-33-56</a></phone>
 <website><a href="http://vk.com/bglcafe">vk.com/bglcafe</a></website>
 <time>пн–вс 11:00–23:00</time>
-<ul>
+<ul class="specs">
 		<li>Бизнес-ланч 12:00–16:00</li>
 		<li>Наличный расчет / Visa / MasterCard / Diners Club / Maestro Card / Union Card</li>
 		<li>Заказ столиков</li>
 		<li>Wi-Fi</li>
 		<li>Живая музыка</li>
 		<li>Еда с собой</li>
-		<li>Средний чек 300</li>
+		<li>Средний чек 300 ₽</li>
 </ul>
 <div class="map">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.8956970141282!2d30.326245700000005!3d59.9338729!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963105e2040b3d%3A0xfc9c8b37dfafe5e!2sneberezhnaya+kanala+Griboyedova%2C+22%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1422045601241" width="100%" height="250" frameborder="0" style="border:0"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1999.5082981317828!2d30.326003100000005!3d59.92370739999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631aaa10ac127%3A0x7c2eaeb8e8c61e0d!2snab.+Reki+Fontanki%2C+96%2C+Sankt-Peterburg%2C+191180!5e0!3m2!1sen!2sru!4v1422047091009" width="100%" height="250" frameborder="0" style="border:0"></iframe>
 </div>
 </section>
 <section>
@@ -106,13 +139,16 @@ h3 {
 <phone><a href="tel://+78122724990">(812) 272-49-90</a></phone>
 <website><a href="http://vk.com/knigikofe">vk.com/knigikofe</a></website>
 <time>пн–вс 10:00–22:00</time>
-<ul>
+<ul class="specs">
 		<li>Бизнес-ланч 12:00–16:00</li>
 		<li>Наличный расчет / Visa / MasterCard / Diners Club / Maestro Card / Union Card / American Express</li>
 		<li>Заказ столиков</li>
 		<li>Wi-Fi</li>
 		<li>Еда с собой</li>
 </ul>
+<div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.2469660725649!2d30.343135400000005!3d59.94463679999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963174bbc2cd27%3A0x22ad4e90fce07a30!2sGagarinskaya+ul.%2C+20%2C+Sankt-Peterburg%2C+191028!5e0!3m2!1sen!2sru!4v1422047689007" width="100%" height="250" frameborder="0" style="border:0"></iframe>
+</div>
 </section>
 <section>
 <h3>Свитер с оленями</h3>
@@ -121,14 +157,17 @@ h3 {
 <phone><a href="tel://+78123145800">(812) 314-58-00</a></phone>
 <website><a href="http://www.buffet.ru">buffet.ru</a></website>
 <time>пн–вс 11:00–02:00</time>
-<ul>
+<ul class="specs">
 		<li>Наличный расчет / Visa / MasterCard</li>
 		<li>Заказ столиков</li>
 		<li>Wi-Fi</li>
 		<li>Живая музыка</li>
 		<li>Еда с собой</li>
-		<li>Средний чек 500</li>
+		<li>Средний чек 500 ₽</li>
 </ul>
+<div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.8956970141282!2d30.326245700000005!3d59.9338729!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963105e2040b3d%3A0xfc9c8b37dfafe5e!2sneberezhnaya+kanala+Griboyedova%2C+22%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1422045601241" width="100%" height="250" frameborder="0" style="border:0"></iframe>
+</div>
 </section>
 <section>
 <h3>Картофель с грибами</h3>
@@ -137,15 +176,18 @@ h3 {
 <phone><a href="tel://+78129940983">(812) 994-09-83</a></phone>
 <time>пн–пт 10:00–23:00<br>
 сб–вс 10:00–02:00</time>
-<ul>
+<ul class="specs">
 		<li>Бизнес-ланч 12:00–16:00</li>
 		<li>Наличный расчет / Visa / MasterCard</li>
 		<li>Заказ столиков</li>
 		<li>Wi-Fi</li>
 		<li>Живая музыка</li>
 		<li>Еда с собой</li>
-		<li>Средний чек 400</li>
+		<li>Средний чек 400 ₽</li>
 </ul>
+<div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.8545232376798!2d30.313292099999998!3d59.934556099999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696311b2f1b1bd3%3A0x2bfcc4cc62623f6f!2sGorokhovaya+ul.%2C+12%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1422047760328" width="100%" height="250" frameborder="0" style="border:0"></iframe>
+</div>
 </section>
 </div>
 </body>
