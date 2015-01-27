@@ -25,6 +25,7 @@ body {
 	max-width: 1200px;
 	min-width: 300px;
 	margin: 0 auto;
+	padding: 0;
 }
 
 #navigation .pagewidth ul {
@@ -67,6 +68,149 @@ body {
 	width: 100%;
 }
 
+a {
+	color: #09C;
+	text-decoration: none;
+	padding: 0.5em;
+	border-radius: 3px;
+}
+
+a:visited {
+	color: #09c;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #999;
+	text-decoration: none;
+	background-color: #E4F7F8;
+}
+
+a:active {
+	color: #999;
+	text-decoration: none;
+	background-color: #E4F7F8;
+}
+
+section {
+	margin: 0;
+	padding: 1em 0;
+	float: left;
+	width: 45%;
+	margin-right: 5%;
+}
+
+address, phone, time, website {
+	display: block;
+	margin: 0;
+	padding: 0.5em;
+	font-style: normal;
+	font-size: 80%;
+	border: 0;
+	border-bottom: 1px solid #CCC;
+}
+
+phone, website {
+	padding: 0.5em 0;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 0.1em;
+	font-size: 150%;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	line-height: 110%;
+}
+
+.kind {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 1em;
+	font-size: 65%;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	border: 0;
+	border-bottom: 1px solid #CCC;
+	color: #999;
+}
+
+.specs {
+	margin: 0.8em 0;
+}
+
+.specs li {
+	padding: 0.2em 0;
+}
+
+.map iframe {
+	width: 100%;
+	max-width: 100%;
+	height: 250px;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.backtotop {
+	font-size: 70%;
+	clear: both;
+}
+
+/* Webcomic Books */
+
+#webcomicslist {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#webcomicslist li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#webcomicslist li a {
+	display: block;
+	width: 170px;
+	height: 170px;
+	margin: 0.5em;
+	padding: 0;
+	overflow: hidden;
+	border-radius: 0;
+	text-align: center;
+}
+
+#webcomicslist li a:visited {
+	display: block;
+	width: 170px;
+	height: 170px;
+	margin: 0.5em;
+	padding: 0;
+	overflow: hidden;
+	border-radius: 0;
+}
+
+#webcomicslist li a:hover {
+	display: block;
+	width: 170px;
+	height: 170px;
+	margin: 0.5em;
+	padding: 0;
+	opacity: 0.4;
+	border-radius: 0;
+}
+
 
 /* Mobile Styles */
  @media screen and (max-width: 768px) {
@@ -86,6 +230,12 @@ body {
 	line-height: 250%;
 }
 
+section {
+	margin: 0;
+	padding: 1em 0;
+	float: none;
+	width: 100%;
+}
 
 
  }
