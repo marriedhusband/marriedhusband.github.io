@@ -135,6 +135,24 @@ nav ul li {
 	font-size: 80%;
 }
 
+.status-msg-wrap, .status-msg-body, .status-msg-border, .status-msg-bg, .status-msg-hidden {
+	width: auto;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	border: 0;
+	text-align: inherit;
+}
+
+.status-msg-wrap {
+	font-size: 80%;
+	padding: 0.6em 0.8em 0.5em;
+	border-radius: 3px;
+	background: #f0f0f0;
+	margin-bottom: 1em;
+	color: #666666;
+}
+
 footer {
 	margin: 1em 0 2em;
 	padding: 0;
