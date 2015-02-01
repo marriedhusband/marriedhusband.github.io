@@ -5,3 +5,28 @@
 	height: auto;
 	font-size: 80%;
 }
+
+@font-face {
+	font-family: NYTimes;
+	font-style: normal;
+	font-weight: normal;
+	src: url("http://marriedhusband.github.io/blogger/fonts/nytimes.woff");
+}
+@font-face {
+	font-family: NYTimes;
+	font-style: italic;
+	font-weight: normal;
+	src: url("http://marriedhusband.github.io/blogger/fonts/nytimes-i.woff");
+}
+@font-face {
+	font-family: NYTimes;
+	font-style: italic;
+	font-weight: bold;
+	src: url("http://marriedhusband.github.io/blogger/fonts/nytimes-bi.woff");
+}
+@font-face {
+	font-family: NYTimes;
+	font-style: normal;
+	font-weight: bold;
+	src: url("http://marriedhusband.github.io/blogger/fonts/nytimes-b.woff");
+}
