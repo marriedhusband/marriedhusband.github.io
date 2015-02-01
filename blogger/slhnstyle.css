@@ -233,18 +233,14 @@ iframe *, .drive-viewer-embed .drive-viewer-shadow, .drive-viewer-embed, .drive-
 @media screen and (max-width: 768px) {
 .page-wrap {
 	width: 90%;
-	/*background-color: #f03;*/
 }
 
 body * {
-	/* border: 1px solid #000; */
-	/*margin: 0;
-	padding: 0;*/
-	/*max-width: 100%;*/
+
 }
 
 .mainpage {
-	/*background-color: #f40;*/
+
 }
 
 .post-share-buttons, .goog-inline-block {
