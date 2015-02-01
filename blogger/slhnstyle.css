@@ -151,7 +151,7 @@ footer {
 }
 
 #Attribution1:before {
-	content: 'Some Life Here and Now. ';
+	content: '&copy;&nbsp;Some Life Here and Now.';
 	display: block;
 	height: 2em;
 }
