@@ -140,7 +140,7 @@ footer {
 	padding: 0;
 }
 
-.footer-inner {
+.region-inner.footer-inner, .region-inner, .footer-inner {
 	padding: 0;
 	margin: 0;
 }
