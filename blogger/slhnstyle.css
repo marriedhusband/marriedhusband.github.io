@@ -141,7 +141,7 @@ footer {
 }
 
 #footer-1, #footer-3 {
-	margin: 2em 0;
+	margin: 1em 0;
 	padding:0;
 }
 
@@ -154,6 +154,7 @@ footer {
 	content: "© Some Life Here & Now.";
 	display: block;
 	height: 2em;
+	font-size: 80%;
 }
 
 .blog-feeds {
