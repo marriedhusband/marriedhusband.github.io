@@ -25,8 +25,8 @@
 	src: url("http://marriedhusband.github.io/blogger/fonts/nytimes-bi.woff");
 }
 @font-face {
-	font-family: NYTimes;
+	font-family: 'NYTimes Bold Italic';
 	font-style: normal;
-	font-weight: bold;
-	src: url("http://marriedhusband.github.io/blogger/fonts/nytimes-b.woff");
+	font-weight: normal;
+	src: url("http://marriedhusband.github.io/blogger/fonts/NYCheltenhamBoldItalic.woff");
 }
