@@ -5,7 +5,7 @@ body {
 	font-size: 120%;
 	color: #000;
 	background-color: #FFF;
-	line-height: 140%;
+	line-height: 180%;
 	text-align: center;
 }
 #pagewrapper {
@@ -13,6 +13,7 @@ body {
 	text-align: left;
 	margin: 0 auto;
 	padding: 2em 0;
+}
 p {
 	margin: 0 0 1.6em;
 	padding: 0;
