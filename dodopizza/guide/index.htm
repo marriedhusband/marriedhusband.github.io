@@ -167,8 +167,13 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size: 170%;
 }
+
 h2 {
 	font-size: 150%;
+}
+
+h3 {
+	font-size: 120%;
 }
 
 img {
@@ -184,6 +189,10 @@ img {
 	width: 75%;
 }
 
+.clear {
+	clear: both;
+}
+
 .page {
 	page-break-after: always;
 }
@@ -194,11 +203,21 @@ img {
 	line-height: 100%;
 }
 
+.sansserifs80 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 80%;
+}
+
+.sansserifs70 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 70%;
+}
+
 .tips {
 	display: block;
 	padding: 0.8em 1.1em;
-	background-color: #DDFCFF;
-	width: 20%;
+	background-color: #EDFDFF;
+	width: 100%;
 }
 
 .where {
@@ -208,7 +227,7 @@ img {
 	width: 20%;
 }
 
-.where h2, .where p, .tips h2, .tips p {
+.where h3, .where p, .tips h3, .tips p {
 	margin: 0;
 	padding: 0;
 }
@@ -299,7 +318,7 @@ img {
 <p>&nbsp;</p>
 
 <div class="where">
-<h2>Где найти?</h2>
+<h3>Где найти?</h3>
 <p>http://bit.ly/dodologoskit</p>
 </div>
 
@@ -341,23 +360,15 @@ img {
 <p>Аа Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл
 Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш Щщ Ъъ Ыы Ьь Ээ Юю Яя</p>
 
-<p>&nbsp;</p>
-
-<h2>Подсказка</h2>
-
-<p>–&nbsp;При
-верстке используйте опцию оптического кернинга (Optical kerning).</p>
-
-<p>– Установите
-значение 10–20 для расстояния между буквами (Tracking) при наборе текста регистром
-«как в предложении».</p>
-
-<p>– Когда
-текст набирается заглавными буквами, установите значение 50 для расстояния
-между буквами (Tracking).</p>
-
+<div class="tips">
+<h3>Подсказка</h3>
+<p>–&nbsp;При верстке используйте опцию оптического кернинга (Optical kerning).</p>
+<p>– Установите значение 10–20 для расстояния между буквами (Tracking) при наборе текста регистром «как в предложении».</p>
+<p>– Когда текст набирается заглавными буквами, установите значение 50 для расстояния между буквами (Tracking).</p>
+</div>
+<br class="clear">
 <div class="where">
-<h2>Где найти?</h2>
+<h3>Где найти?</h3>
 <p>http://bit.ly/dodofonts</p>
 </div>
 
@@ -372,7 +383,7 @@ VAG Rounded существует еще одно начертание — лег
 Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш Щщ Ъъ Ыы Ьь Ээ Юю Яя</p>
 
 <div class="tips">
-<h2>Подсказка</h2>
+<h3>Подсказка</h3>
 <p>Когда текста очень-очень много (например, вы верстаете статью) или хотите указать условия акции и прочую техническую информацию, текст нужно набирать легкой версией шрифта.</p>
 </div>
 
@@ -389,55 +400,55 @@ VAG Rounded существует еще одно начертание — лег
 
 <h2>Наши основные цвета</h2>
 
-<p>Оранжевый</p>
+<div class="colors">
 
-<p>CMYK 0 50 100 0</p>
+<div style="float: left; width: 48%; margin-right: 4%;">
+<h3>Оранжевый</h3>
+<div style="display: block; width: 200px; height: 200px; background-color: #F49020; border-radius: 100px; margin-top: 1em;"></div>
+<p class="sansserifs70">– CMYK 0 50 100 0<br>
+– RGB 244 144 32<br>
+– PANTONE 1375 C</p>
+</div>
 
-<p>RGB </p>
+<div style="float: left; width: auto;">
+<h3>Коричневый</h3>
+<div style="display: block; width: 200px; height: 200px; background-color: #7D4D1F; border-radius: 100px; margin-top: 1em;"></div>
+<p class="sansserifs70">– CMYK 0 50 100 60<br>
+– RGB 125 77 31<br>
+– PANTONE 175 C</p>
+</div>
+<br class="clear">
+</div>
 
-<p>PANTONE 1375 C</p>
-
-<p>Коричневый</p>
-
-<p>CMYK 0 50 100 60</p>
-
-<p>RGB </p>
-
-<p>PANTONE
-175 C</p>
-
-<p>&nbsp;</p>
-<br
-clear="all">
 <h2>Еще немного красок</h2>
 
-<p>Желтенький</p>
+<div class="colors">
 
-<p>CMYK 0 20 100 0</p>
+<div style="float: left; width: 30%; margin-right: 3%;">
+<h3>Желтенький</h3>
+<div style="display: block; width: 100px; height: 100px; background-color: #FFCB05; border-radius: 50px; margin-top: 1em;"></div>
+<p class="sansserifs70">– CMYK 0 20 100 0<br>
+– RGB 255 203 5<br>
+– PANTONE 115 C</p>
+</div>
 
-<p>RGB</p>
+<div style="float: left; width: 30%; margin-right: 3%;">
+<h3>Морской</h3>
+<div style="display: block; width: 100px; height: 100px; background-color: #54C3BB; border-radius: 50px; margin-top: 1em;"></div>
+<p class="sansserifs70">– CMYK 62 0 32 0<br>
+– RGB 84 195 187<br>
+– PANTONE 3262 C</p>
+</div>
 
-<p>PANTONE
-115 C</p>
-
-<p>Морской</p>
-
-<p>CMYK 62 0 32 0</p>
-
-<p>RGB </p>
-
-<p>PANTONE
-3262 C</p>
-
-<p>Зелененький</p>
-
-<p>CMYK 50 0 100 0</p>
-
-<p>RGB </p>
-
-<p>PANTONE
-367 C</p>
-
+<div style="float: left; width: auto;">
+<h3>Зелененький</h3>
+<div style="display: block; width: 100px; height: 100px; background-color: #8DC63F; border-radius: 50px; margin-top: 1em;"></div>
+<p class="sansserifs70">– CMYK 50 0 100 0<br>
+– RGB 141 198 63<br>
+– PANTONE 367 C</p>
+</div>
+<br class="clear">
+</div>
 </section>
 
 <section class="page">
