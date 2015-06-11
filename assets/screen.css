@@ -211,6 +211,12 @@ h3 {
 	border-radius: 0;
 }
 
+.gif {
+	width: 70%;
+	height: auto;
+	max-width: 70%;
+}
+
 
 /* Mobile Styles */
  @media screen and (max-width: 768px) {
@@ -235,6 +241,12 @@ section {
 	padding: 1em 0;
 	float: none;
 	width: 100%;
+}
+
+.gif {
+	width: 100%;
+	height: auto;
+	max-width: 100%;
 }
 
 
