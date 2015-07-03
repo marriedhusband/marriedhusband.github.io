@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 1.1em;
+	text-align: justify;
+}
+h2 {
+	page-break-before: always;
+}
+h1, h2, h3, h4 {
+	text-align: left;
+}
+table {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 1em;
+	page-break-inside: avoid;/*margin-left: 1em;*/
+}
+table, td, th {
+	border: 1px solid black;
+	font-size: 85%;
+	vertical-align: top;
+}
+td, th {
+	padding: 0.5em;
+	text-align: left;
+}
+td p, th p {
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+}
+/*ul li:before {
+	content: "–";
+	position: relative;
+	left: -10px;
+}
+ul li {
+	text-indent: -10px;
+	list-style: none;
+}*/
+section {
+	page-break-after: always;
+}
