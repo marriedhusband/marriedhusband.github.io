@@ -1,0 +1,168 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 130%;
+	font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 1em 0 0;
+	padding: 0;
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1 {
+	font-size: 170%;
+	margin-top: 3em;
+}
+
+h2 {
+	font-size: 150%;
+}
+
+h3 {
+	font-size: 120%;
+}
+
+#pagewrapper {
+	text-align: left;
+	margin: 2em auto;
+	padding: 0;
+	width: 60%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+abbr {
+	border-bottom: 1px dotted #000;
+	cursor: help;
+}
+
+.clear {
+	clear: both;
+}
+
+.hidden {
+	display: none;
+}
+
+.columns {
+	clear: both;
+}
+
+.twocols {
+	float: left;
+	width: 48%;
+	margin-right: 2%;
+	padding: 0;
+}
+
+.threecols {
+	float: left;
+	width: 30%;
+	margin-right: 3%;
+	padding: 0;
+}
+
+.threecols h3 {
+	font-size: 100%;
+}
+
+.page {
+	page-break-after: always;
+}
+
+#guidetitle {
+	font-size: 300%;
+	font-weight: normal;
+	line-height: 100%;
+}
+
+.sansserifs80 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 80%;
+}
+
+.sansserifs70 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 70%;
+}
+
+.sansserifs60 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 60%;
+	letter-spacing: -0.03em;
+}
+
+.tips {
+	display: block;
+	padding: 0.8em 1.1em;
+	background-color: #EDFDFF;
+	width: auto;
+}
+
+.warning {
+	display: block;
+	padding: 0.8em 1.1em;
+	background-color: #FFEDED;
+	width: auto;
+}
+
+.where {
+	display: block;
+	padding: 0.8em 1.1em;
+	background-color: #FFFEDB;
+	width: 30%;
+}
+
+.where h3, .where p, .tips h3, .tips p, .warning h3, .warning p {
+	margin: 0;
+	padding: 0;
+}
+
+.imagepaddings {
+	text-align: center;
+}
+
+.imagepaddings img {
+	width: 30%;
+	height: auto;
+}
+
+.linkoverflow {
+	overflow: hidden;
+}
+
+/* Mobile Views */
+ @media screen and (max-width: 768px) {
+#pagewrapper {
+	width: 86%;
+}
+
+#guidetitle {
+	font-size: 180%;
+}
+
+.where, .tips {
+	width: auto;
+}
+
+.imagepaddings img {
+	width: 70%;
+	height: auto;
+}
+
+img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+ }
+
