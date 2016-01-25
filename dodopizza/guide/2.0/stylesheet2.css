@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+body {
+	text-align: center;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 1em;
+	line-height: 140%;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0 0 0.5em;
+	padding: 0;
+	text-indent: 0;
+}
+
+a:link, a:visited {
+	color: #2ea3f2;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(46, 163, 242, 0.3)
+}
+
+a:hover, a:active {
+	color: #e97901;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(233, 121, 1, 0.3);
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+#page {
+	width: 80%;
+	margin: 0 auto;
+	padding: 2em 0;
+	text-align: left;
+}
+
+/* Rows */
+.row {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+.row:after, .row:before {
+	clear: both;
+}
+
+.colmain {
+	
+	width: 68%;
+	float: left;
+	padding-right: 2%;
+}
+
+.colnotes {
+	width: 30%;
+	float: left;
+	position: relative;
+	display: block;
+	top: 4em;
+	font-size: 90%;
+}
+
+/* Columns */
+.twocolscontainer {
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+
+.twocols {
+	width: 48%;
+	margin: 0 2% 0 0;
+	padding: 0;
+	float: left;
+}
+
+.clear {
+	clear: both;
+	line-height: 0;
+	font-size: 1px;
+	margin: 0;
+	padding: 0;
+}
+
+/* Warnings, Download Links, Note & etc. */
+.warning {
+	padding: 0.5em 0.8em;
+	background-color: #FFC6C7;
+	margin: 0.5em 0;
+}
+
+.downloadlinks {
+	padding: 0.5em 0.8em;
+	background-color: #ffe7b3;
+	margin: 0.5em 0;
+}
+
+/* Mobile Views */
+ @media screen and (max-width: 768px) {
+#page {
+	width: 86%;
+}
+
+
+img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Rows */
+.row {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+.row:after, .row:before {
+	clear: both;
+}
+
+.colmain {
+	min-width: 100%;
+	width: 100%;
+	float: none;
+	padding-right: 0;
+	margin: 0;
+}
+
+.colnotes {
+	width: 100%;
+	float: none;
+	position: relative;
+	display: block;
+	top: 0;
+	font-size: 90%;
+	margin: 0 0 1em;
+}
+
+/* Columns */
+.twocolscontainer {
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+
+.twocols {
+	width: 100%;
+	margin: 0 0 0 0;
+	padding: 0;
+	float: none;
+}
+
+.clear {
+	clear: both;
+	line-height: 0;
+	font-size: 1px;
+	margin: 0;
+	padding: 0;
+}
+
+ }
+

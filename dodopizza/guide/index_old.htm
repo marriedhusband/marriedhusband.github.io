@@ -6,153 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <style>
-<!--
-/* @font-face
-	{font-family:Arial;
-	panose-1:2 11 6 4 2 2 2 2 2 4;}
-@font-face
-	{font-family:"Courier New";
-	panose-1:2 7 3 9 2 2 5 2 4 4;}
-@font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:宋体;
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:宋体;
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Lucida Grande";
-	panose-1:2 11 6 0 4 5 2 2 2 4;}
-@font-face
-	{font-family:"PT Serif";
-	panose-1:2 10 6 3 4 5 5 2 2 4;}
-@font-face
-	{font-family:"VAG Rounded LT CYR Light";
-	panose-1:2 15 5 2 2 2 4 2 2 4;}
-@font-face
-	{font-family:"VAG Rounded LT CYR Black";
-	panose-1:2 15 9 2 2 2 4 2 2 4;}
-
-p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	line-height:115%;
-	font-size:14.0pt;
-	font-family:"PT Serif";}
-h1
-	{margin-top:24.0pt;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	line-height:115%;
-	font-size:24.0pt;
-	font-family:"VAG Rounded LT CYR Light";
-	font-weight:normal;}
-h2
-	{margin-top:10.0pt;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	line-height:115%;
-	font-size:16.0pt;
-	font-family:"VAG Rounded LT CYR Light";
-	font-weight:normal;}
-p.MsoHeader, li.MsoHeader, div.MsoHeader
-	{margin:0cm;
-	margin-bottom:.0001pt;
-	font-size:14.0pt;
-	font-family:"PT Serif";}
-p.MsoFooter, li.MsoFooter, div.MsoFooter
-	{margin:0cm;
-	margin-bottom:.0001pt;
-	font-size:14.0pt;
-	font-family:"PT Serif";}
-p.MsoTitle, li.MsoTitle, div.MsoTitle
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:15.0pt;
-	margin-left:0cm;
-	border:none;
-	padding:0cm;
-	font-size:36.0pt;
-	font-family:"VAG Rounded LT CYR Light";
-	letter-spacing:.25pt;}
-a:link, span.MsoHyperlink
-	{color:blue;
-	text-decoration:underline;}
-a:visited, span.MsoHyperlinkFollowed
-	{color:purple;
-	text-decoration:underline;}
-p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
-	{margin:0cm;
-	margin-bottom:.0001pt;
-	font-size:12.0pt;
-	font-family:"Lucida Grande";}
-p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
-	{margin:0cm;
-	margin-bottom:.0001pt;
-	font-size:9.0pt;
-	font-family:"Lucida Grande";}
-p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
-	{margin:0cm;
-	margin-bottom:.0001pt;
-	font-size:14.0pt;
-	font-family:"PT Serif";}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:36.0pt;
-	line-height:115%;
-	font-size:14.0pt;
-	font-family:"PT Serif";}
-span.a
-	{font-family:"VAG Rounded LT CYR Light";
-	letter-spacing:.25pt;}
-span.1
-	{font-family:"VAG Rounded LT CYR Light";}
-span.a0
-	{font-family:"Lucida Grande";}
-span.a1
-	{font-family:"PT Serif";}
-span.a2
-	{font-family:"PT Serif";}
-span.2
-	{font-family:"VAG Rounded LT CYR Light";}
-span.a3
-	{font-family:"Lucida Grande";}
-.MsoChpDefault
-	{font-size:11.0pt;
-	font-family:Calibri;}
-.MsoPapDefault
-	{margin-bottom:10.0pt;
-	line-height:115%;}
-
-@page WordSection1
-	{size:421.0pt 595.0pt;
-	margin:2.0cm 2.0cm 4.0cm 2.0cm;}
-div.WordSection1
-	{page:WordSection1;}
-
-ol
-	{margin-bottom:0cm;}
-ul
-	{margin-bottom:0cm;}  */
--->
-
-/* New Style */
-
 body {
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	/* font-family: Times, "Times New Roman", serif; */
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 130%;
 	font-size: 1em;
@@ -286,6 +143,10 @@ abbr {
 	height: auto;
 }
 
+.linkoverflow {
+	overflow: hidden;
+}
+
 /* Mobile Views */
  @media screen and (max-width: 768px) {
 #pagewrapper {
@@ -332,41 +193,52 @@ img {
 
 <section class="page">
 <ul style="margin: 0; padding: 0; list-style: none;">
-	<li><a href="#intro">Введение</a></li>
 	<li><a href="#beforeyoustart">Прежде чем вы начнете!</a>
+	<li><a href="#intro">Введение</a></li>
 	<li><a href="#logotype">Логотип</a>
-<ul style="margin: 0; padding: 0; list-style: none; text-indent: 1.5em;">
-		<li>– <a href="#dosanddonts">Можно и Нельзя</a></li>
-</ul>
+		<ul style="margin: 0; padding: 0; list-style: none; text-indent: 1.5em;">
+			<li>– <a href="#allofthelogotypes">Типы логотипов</a></li>
+			<li>– <a href="#dosanddonts">Можно и Нельзя</a></li>
+		</ul>
 	</li>
 	<li><a href="#itypeyou">I Type You</a></li>
 	<li><a href="#colors">Цвета</a></li>
-	<li><a href="#layouts">Макеты</a>
-<ul style="margin: 0; padding: 0; list-style: none; text-indent: 1.5em;">
-		<li>– <a href="#layoutswearandgo">Редактирование макетов prêt-à-porter</a>
-<ul style="margin: 0; padding: 0; list-style: none; text-indent: 3em;">
-		<li>– <a href="#layoutswagtv">ТВ-борды</a></li>
-					<li>– <a href="#layoutswagsocial">Соцсети</a></li>
-					<li>– <a href="#layoutswagprint">Печатные макеты</a></li>
+	<li><a href="#layouts">Макеты</a></li>
+	<li><a href="#layoutswearandgo">Редактирование макетов prêt-à-porter</a>
+		<ul style="margin: 0; padding: 0; list-style: none; text-indent: 1.5em;">
+			<li>– <a href="#layoutswagtv">ТВ-борды</a></li>
+			<li>– <a href="#layoutswagsocial">Соцсети</a></li>
+			<li>– <a href="#layoutswagprint">Печатные макеты</a></li>
 		</ul>
 			</li>
-			<li>– <a href="#layoutsnew">Создание макетов с нуля</a>
-<ul style="margin: 0; padding: 0; list-style: none; text-indent: 2em;">
-		<li>– Кто вы, Вовы? или об основных возрастных категориях</li>
-					<li>– Сообщения</li>
-					<li>– Еще несколько полезных правил о сообщениях</li>
-					<li>– Базовые хедеры и футеры с логотипом</li>
-					<li>– «Закажите пиццу прямо сейчас»</li>
-					<li>– Соцсети</li>
-					<li>– Листовки</li>
-					<li>– Билборды</li>
+	<li><a href="#layoutsnew">Создание макетов с нуля</a>
+		<ul style="margin: 0; padding: 0; list-style: none; text-indent: 1.5em;">
+			<li>– <a href="#ages">Кто вы, Вовы? или об основных возрастных категориях</a></li>
+			<li>– <a href="#messages">Сообщения</a></li>
+			<li>– <a href="#breathe">Дышим</a></li>
+			<li>– <a href="#identity">Айдентика в&nbsp;рекламных материалах</a>
+				<ul style="margin: 0; padding: 0; list-style: none; text-indent: 3em;">
+					<li>– <a href="#basicfootersheaders">Базовые хедеры и&nbsp;футеры с&nbsp;логотипом</a></li>
+					<li>– <a href="#bfhsocial">Соцсети</a></li>
+					<li>– <a href="#bfhpizzeria">Пиццерия</a></li>
+					<li>– <a href="#bfhdelivery">Доставка</a></li>
+					<li>– <a href="#bfhbillboards">Билборды</a></li>
+					<li>– <a href="#bfhtv">ТВ-борды</a></li>
+				</ul>
+			</li>
 		</ul>
-				</li>
-</ul>
 	</li>
-	<li>Типичные ошибки</li>
-	<li>Final words</li>
-	<li>Thanks &amp; all that blah-blah-blah bullshit</li>
+	<li><a href="#tipsandtricks">Суперполезные советики</a>
+		<ul style="margin: 0; padding: 0; list-style: none; text-indent: 1.5em;">
+			<li>– <a href="#textingmenu">Верстка текстового меню</a></li>
+			<li>– <a href="#therightaddress">Как мы&nbsp;пишем адреса</a></li>
+			<!-- li>– <a href="#postergonewild">Как из&nbsp;промопостера сделать листовку</a></li -->
+		</ul>
+	</li>
+	<li><a href="#plyushkas">Бесплатные плюшки</a></li>
+	<li><a href="#errors">Типичные ошибки</a></li>
+	<li><a href="#finalwords">Final words</a></li>
+	<li><a href="#thanks">Thanks</a></li>
 </ul>
 
 </section>
@@ -377,8 +249,8 @@ img {
 <a id="beforeyoustart"></a><h1>Прежде чем вы начнете!</h1>
 <p>Если вы&nbsp;не&nbsp;знаете ничего о&nbsp;дизайне, то&nbsp;стоит прочитать хотя&nbsp;бы эти&nbsp;полторы книги:</p>
 
-<p>– «Веб.Дизайн» Кирсанова (глава об&nbsp;основах дизайна) (<a href="assets/Books/web.design_by_kirsanov.pdf" target="_blank">PDF&nbsp;22,9&nbsp;МБ</a>);<br>
-– «Ководство» Лебедева (<a href="http://www.artlebedev.ru/kovodstvo/sections/" title="Ководство, че" target="_blank">в&nbsp;свободном доступе</a> на&nbsp;сайте или&nbsp;же&nbsp;суперпиратская версия (<a href="assets/Books/Kovodstvo-3.epub" target="_blank">EPUB&nbsp;18,3&nbsp;МБ</a>)).</p>
+<p>– «Веб.Дизайн» Кирсанова (глава об&nbsp;основах дизайна)<!-- span style="display: none" --> (<a href="assets/Books/web.design_by_kirsanov.pdf" target="_blank">PDF&nbsp;22,9&nbsp;МБ</a>)<!-- /span -->;<br>
+– «Ководство» Лебедева (<a href="http://www.artlebedev.ru/kovodstvo/sections/" title="Ководство, че" target="_blank">в&nbsp;свободном доступе</a> на&nbsp;сайте<span style="display: none"> или&nbsp;же&nbsp;суперпиратская версия&nbsp;— <a href="assets/Books/Kovodstvo-3.epub" target="_blank">EPUB&nbsp;18,3&nbsp;МБ</a></span>).</p>
 <p><img src="assets/Emotions/file (4).gif" alt="" width="533"/></p>
 
 <p><a href="#top">Наверх &uarr;</a></p>
@@ -402,7 +274,7 @@ img {
 <p>Логотип&nbsp;— главный и&nbsp;самый видимый элемент фирстиля, объединяющий всю&nbsp;визуальную коммуникацию Додо&nbsp;Пиццы.</p>
 
 
-<h2>Основной логотип</h2>
+<a id="allofthelogotypes"></a><h2>Основной логотип</h2>
 <p><img src="assets/Logotypes_RU Main.png" alt="" width="300" style="padding: 1.2em 0;"/></p>
 
 <h2>Логотип на&nbsp;цветном фоне</h2>
@@ -430,11 +302,11 @@ img {
 <p><img src="assets/Logotypes_App Icon.png" alt="" width="100" style="padding: 1.2em 0;"/></p>
 
 <h2>Минимальный размер логотипа</h2>
-<p>Когда место для&nbsp;размещения логотипа безумно сильно ограничено или&nbsp;площадь его&nbsp;размещения приближается к&nbsp;10&nbsp;мм, то&nbsp;лучше использовать логотип в&nbsp;одну строку или&nbsp;app&nbsp;icon, в&nbsp;зависимости от&nbsp;того, что&nbsp;важней в&nbsp;макете&nbsp;— надпись «Додо&nbsp;Пицца» или&nbsp;изображение птицы.</p>
+<p>Когда место для&nbsp;размещения логотипа безумно сильно ограничено или&nbsp;доступная площадь приближается к&nbsp;10&nbsp;мм, то&nbsp;лучше использовать логотип в&nbsp;одну строку или&nbsp;app&nbsp;icon, в&nbsp;зависимости от&nbsp;того, что&nbsp;важней в&nbsp;макете&nbsp;— надпись «Додо&nbsp;Пицца» или&nbsp;изображение птицы.</p>
 
 <div class="where">
 <h3>Где найти?</h3>
-<p><a href="https://goo.gl/rBKzt9" title="Набор логотипов" target="_blank">https://goo.gl/rBKzt9</a></p>
+<p><a href="https://goo.gl/lTtkiE" target="_blank">https://goo.gl/lTtkiE</a></p>
 </div>
 <p><a href="#top">Наверх &uarr;</a></p>
 
@@ -464,7 +336,7 @@ img {
 <p><img src="assets/Logotypes_Donts_Transform.jpg" alt="" height="533"/></p>
 <p><img src="assets/Emotions/June.gif" alt="" width="533"/></p>
 <h2>05&nbsp;А-та-та!</h2>
-<p>Не&nbsp;применяйте к&nbsp;логотипу эффекты, типа теней, обводок, псевдо-объема, градиентов, отражений и&nbsp;т.п.</p>
+<p>Не&nbsp;применяйте к&nbsp;логотипу эффекты типа теней, обводок, псевдо-объема, градиентов, отражений и&nbsp;т.п.</p>
 <p><img src="assets/Logotypes_Donts_Effects.jpg" alt="" height="533"/></p>
 <p><img src="assets/Emotions/tumblr_limqtbUXzL1qbxwoy.gif" alt="" width="533"/></p>
 
@@ -506,9 +378,9 @@ img {
 <p>Когда текста очень-очень много (например, вы&nbsp;верстаете статью) или&nbsp;хотите указать условия акции и&nbsp;прочую техническую информацию, текст нужно набирать легкой версией шрифта.</p>
 </div>
 
-<h2>Шрифты для&nbsp;Казахстана</h2>
+<h2>Шрифты для&nbsp;Казахстана и&nbsp;Киргизии</h2>
 
-<p>В&nbsp;казахском языке используются символы с&nbsp;диакритикой, которые товарищи из&nbsp;Linotype наглым образом проигнорировали.</p>
+<p>В&nbsp;казахском и&nbsp;киргизском языках используются символы с&nbsp;диакритикой, которые товарищи из&nbsp;Linotype наглым образом проигнорировали.</p>
 
 <p>Но&nbsp;выход есть&nbsp;всегда. Как&nbsp;альтернативу, используйте шрифты <strong>ALS&nbsp;Schlange Regular</strong> вместо VAG&nbsp;Rounded Light, а&nbsp;<strong>ALS&nbsp;Schlange Black</strong> вместо VAG&nbsp;Rounded Black.</p>
 
@@ -533,7 +405,7 @@ img {
 
 <section style="page">
 <a id="colors"></a><h1>Цвета</h1>
-<p>Они&nbsp;добавляют&nbsp;нам индивидуальности.</p>
+<p>Они&nbsp;добавляют&nbsp;нам индивидуальность.</p>
 <p><img src="assets/Emotions/1833.gif" alt="" width="533"/></p>
 
 <h2>Наши&nbsp;основные цвета</h2>
@@ -695,7 +567,7 @@ img {
 <p>Основные правила сохранения макетов для&nbsp;печати:</p>
 
 <p>–&nbsp;цветовая схема&nbsp;— CMYK;<br>
-–&nbsp;разрешение растровых изображений должно быть не&nbsp;менее 244&nbsp;dpi (допустимо 150&nbsp;dpi для&nbsp;макетов больше формата&nbsp;А3 и&nbsp;50–60&nbsp;dpi для&nbsp;билбордов 6&nbsp;×&nbsp;3&nbsp;метра);<br>
+–&nbsp;разрешение растровых изображений должно быть не&nbsp;менее 244&nbsp;dpi (допустимо 150&nbsp;dpi для&nbsp;макетов, формат которых больше А3, и&nbsp;50–60&nbsp;dpi для&nbsp;билбордов 6&nbsp;×&nbsp;3&nbsp;метра);<br>
 –&nbsp;шрифты нужно конвертировать в&nbsp;кривые.</p>
 
 <div class="tips">
@@ -706,9 +578,9 @@ img {
 <p>1.&nbsp;Выберите меню File&nbsp;&gt; Export.</p>
 <p><img src="assets/Layoutswag_Exp-01.jpg" alt="" width="533"/></p>
 
-<p>2.&nbsp;Откроется диалогое окно сохранение документа. В&nbsp;выпадающим списке выберите формат&nbsp;TIFF.</p>
+<p>2.&nbsp;Откроется диалоговое окно сохранения документа. В&nbsp;выпадающим списке выберите формат&nbsp;TIFF.</p>
 <p><img src="assets/Layoutswag_Exp-02.jpg" alt="" width="533"/></p>
-<p>3.&nbsp;Обязательно поставке галочку Use&nbsp;Artboards. Если&nbsp;в&nbsp;документе несколько артбордов, выберите нужные.</p>
+<p>3.&nbsp;Обязательно поставьте галочку Use&nbsp;Artboards. Если&nbsp;в&nbsp;документе несколько артбордов, выберите нужные.</p>
 
 <p>4.&nbsp;В&nbsp;открывшемся диалоговом окне опций укажите:<br>
 –&nbsp;Color Mode: CMYK<br>
@@ -737,19 +609,19 @@ Profile.</p>
 </section>
 
 <section class="page">
-<h1>Кто&nbsp;вы, Вовы? или&nbsp;об&nbsp;основных возрастных категориях</h1>
+<a id="ages"></a><h1>Кто&nbsp;вы, Вовы? или&nbsp;об&nbsp;основных возрастных категориях</h1>
 
 <p>Додо&nbsp;Пицца привлекает разные возрастные группы. Создавая макет, лучше заранее определить, кто&nbsp;потенциальный клиент:</p>
 
 <p>–&nbsp;дети и&nbsp;молодые родители;<br>
 –&nbsp;подростки и&nbsp;студенты;<br>
-–&nbsp;офисный планктон;<br>
+–&nbsp;<!-- s>офисный планктон</s> -->офисные сотрудники;<br>
 –&nbsp;ваши&nbsp;родители;<br>
 –&nbsp;бабушки и&nbsp;дедушки.</p>
 <p><img src="assets/Emotions/FlzJS.gif" alt="" width="533"/></p>
 
 <p>Добавьте больше фана для&nbsp;подростков и&nbsp;студентов. Покажите родителям, что&nbsp;детей можно не&nbsp;только вкусно накормить в&nbsp;Додо&nbsp;Пицце, но&nbsp;и&nbsp;дать&nbsp;им вдоволь повеселиться. Помогите
-офисным сотрудникам <s>набрать лишние килограммы</s> найти вкусный обед по&nbsp;карману. А&nbsp;взрослому поколению вкусить радость заморской пищи <s>богов</s>.</p>
+студентам и&nbsp;офисным сотрудникам <s>набрать лишние килограммы</s> найти вкусный обед за&nbsp;отпимальную цену. А&nbsp;взрослому поколению вкусить радость заморской пищи <s>богов</s>.</p>
 
 <p>Помните, что в&nbsp;пиццериях превалирующим большинством являются подростки и&nbsp;студенты.</p>
 
@@ -758,7 +630,7 @@ Profile.</p>
 </section>
 
 <section class="page">
-<h1>Сообщения</h1>
+<a id="messages"></a><h1>Сообщения</h1>
 
 <h2>Не&nbsp;усложняйте.</h2>
 
@@ -778,7 +650,7 @@ Profile.</p>
 
 <h2>Мотивируйте</h2>
 
-<p>Покажите клиентам, какие плюшки они&nbsp;получать. Если это&nbsp;скидка, укажите цену до&nbsp;и&nbsp;после.</p>
+<p>Покажите клиентам, какие плюшки они&nbsp;получат. Если это&nbsp;скидка, укажите цену до&nbsp;и&nbsp;после.</p>
 
 <p><a href="#top">Наверх &uarr;</a></p>
 
@@ -786,9 +658,9 @@ Profile.</p>
 
 <section class="page">
 
-<h1>Дышим</h1>
+<a id="breathe"></a><h1>Дышим</h1>
 <p>Мы&nbsp;дышим, вы&nbsp;дышите, деревья дышат, киски и&nbsp;рыбки тоже&nbsp;дышат. Макеты тоже&nbsp;должны дышать. Иначе они&nbsp;задыхаются и&nbsp;умирают.</p>
-<p>В&nbsp;основных шаблонах мы&nbsp;нарисовали направляющие, пространство внутри которых вы&nbsp;можете смело заполнять дизайном. Выглядят&nbsp;они так (голубенкие линий на&nbsp;картинках&nbsp;— направляющие):</p>
+<p>В&nbsp;основных шаблонах мы&nbsp;нарисовали направляющие, пространство внутри которых вы&nbsp;можете смело заполнять дизайном. Выглядят&nbsp;они так (голубенькие линии на&nbsp;картинках&nbsp;— направляющие):</p>
 
 <div class="columns">
 <div class="twocols">
@@ -812,7 +684,7 @@ Profile.</p>
 <p><img src="assets/Bad/UCVoayHvPv0.jpg" alt="" style="border: 1px solid #999;"/></p>
 <p>Плохо:</p>
 <p>–&nbsp;чрезмерно много текста;<br>
-–&nbsp;перебор с&nbsp;количеством акцентов<br>
+–&nbsp;перебор с&nbsp;количеством акцентов;<br>
 –&nbsp;текст прижимается к&nbsp;краям макета и&nbsp;другим элементам на&nbsp;странице.</p>
 </div>
 <br class="clear"/>
@@ -826,20 +698,36 @@ Profile.</p>
 
 <section class="page">
 
-<h1>Айдентика в&nbsp;рекламных макетах</h1>
+<a id="identity"></a><h1>Айдентика в&nbsp;рекламных макетах</h1>
+<br>
+<div class="warning">
+<h3>Warning!</h3>
+<p>Это суперсерьезная часть, поэтому никаких гифок не будет :-(.</p>
+<p><img src="assets/Emotions/file (5) copy.gif" alt="" width="533" style="padding: 0.5em 0 0;"/></p>
+</div>
 <p>Если вы&nbsp;не&nbsp;говорите, не&nbsp;показывайте гордо всему&nbsp;миру, кто вы&nbsp;есть, кто вы&nbsp;такие, никто вас не&nbsp;узнает (ну, почти никто, за&nbsp;редким-редким исключением).</p>
-<p>Логотип желательно располагать на&nbsp;каждом макете. Опять-таки мы&nbsp;вас&nbsp;опередили и&nbsp;все (честно говоря, почти&nbsp;все) придумали за&nbsp;вас. Вам&nbsp;остается лишь выбрать нужный футер или&nbsp;хедэр, исходя из&nbsp;того, макет чего именно вы&nbsp;хотите нарисовать).</p>
-<h2>Базовые хедэры и&nbsp;футеры с&nbsp;логотипом</h2>
+<p>Логотип желательно располагать на&nbsp;каждом макете. Опять-таки мы&nbsp;вас&nbsp;опередили и&nbsp;все (честно говоря, почти&nbsp;все) придумали за&nbsp;вас. Вам&nbsp;остается лишь выбрать нужный футер или&nbsp;хедер, исходя из&nbsp;того, макет чего именно вы&nbsp;хотите нарисовать).</p>
 
+
+<a id="basicfootersheaders"></a><h2>Базовые хедеры и&nbsp;футеры с&nbsp;логотипом</h2>
 <p>Их&nbsp;море! Черт голову сломит! Сами не&nbsp;знаем, когда успели их&nbsp;столько наплодить? Но&nbsp;— спокойствие — мы&nbsp;все тихо и&nbsp;спокойно сейчас разберем.</p>
-<p>Всего существует четыре типа макетов, каждый из&nbsp;которых делится еще на&nbsp;несколько типов:</p>
+
+<div class="tips">
+<h3>Пояснялочка</h3>
+<p>Хедер&nbsp;— обязательная информация, размещаемая в&nbsp;верхней части макета.</p>
+<p>Футер&nbsp;— обязательная информация, которую помещают в&nbsp;нижней части макета.</p>
+</div>
+<p>Всего существуют пять типов макетов, каждый из&nbsp;которых делится еще на&nbsp;несколько типов:</p>
 <p>–&nbsp;соцсети;<br>
 –&nbsp;пиццерия;<br>
 –&nbsp;доставка;<br>
+–&nbsp;билборды;<br>
 –&nbsp;тв-борды.</p>
 <p>Подробней о&nbsp;них ниже (вот&nbsp;сразу после&nbsp;этого предложения).</p>
 
-<h2>Соцсети</h2>
+<p><a href="#top">Наверх &uarr;</a></p>
+
+<a id="bfhsocial"></a><h2>Соцсети</h2>
 
 <h3>Кратко о&nbsp;главном (технические особенности)</h3>
 <p>–&nbsp;Формат: джейпег<br>
@@ -849,7 +737,7 @@ Profile.</p>
 
 <h3>Что важно в&nbsp;макетах</h3>
 
-<p>–&nbsp;Краткое сообщение, раскрывающие суть акции, продукта, или что вы&nbsp;там задумали нарисовать. Дайте людям зрелища и&nbsp;фана! Они&nbsp;должны захотеть сделать репост, ретвит или&nbsp;реграм.</p>
+<p>–&nbsp;Краткое сообщение, раскрывающее суть акции, продукта, или что вы&nbsp;там задумали нарисовать. Дайте людям зрелища и&nbsp;фана! Они&nbsp;должны захотеть сделать репост, ретвит или&nbsp;реграм.</p>
 <p>–&nbsp;Техническое описание акций и&nbsp;продуктов не&nbsp;нужно размещать на&nbsp;макете. Эта&nbsp;информация описывается в&nbsp;посте.</p>
 <p>–&nbsp;Гиперссылки необходимо указывать в&nbsp;посте. Не&nbsp;стоит писать на&nbsp;макете адреса веб-сайтов, особенно на&nbsp;подобие этого: </p>
 <div style="overflow: hidden; padding: 0.5em 1em; background-color: #ffc;">https://some.funny-website.com/redir?resid=e1cbd4fffa31817a!90013&amp;authkey=!AEHHwJ0NAvoWvAE&amp;ithint=file%2cpdf</div>
@@ -871,7 +759,7 @@ Profile.</p>
 </div>
 
 <h3>03&nbsp;Только в&nbsp;пиццериях</h3>
-<p>Не&nbsp;все&nbsp;продукты продаются на&nbsp;доставку (например, сэндвичи изначально можно было купить только в&nbsp;пицерии) и&nbsp;далеко не&nbsp;все&nbsp;акции действует на&nbsp;доставку (кофе вам никто не&nbsp;привезет при&nbsp;заказе пиццы, а&nbsp;в&nbsp;пиццерии его&nbsp;вам могут дать бесплатно). Если кратко&nbsp;— чтобы привлечь клиентов в&nbsp;пиццерию, им&nbsp;нужны дополнительные плюшки, попробовать которые можно только в&nbsp;пиццерии. Вот, для&nbsp;этого дела и&nbsp;существует шаблон «Только в&nbsp;пиццериях».</p>
+<p>Не&nbsp;все&nbsp;продукты продаются на&nbsp;доставку (например, сэндвичи изначально можно было купить только в&nbsp;пицерии) и&nbsp;далеко не&nbsp;все&nbsp;акции действует на&nbsp;доставку (кофе вам никто не&nbsp;привезет при&nbsp;заказе пиццы, а&nbsp;в&nbsp;пиццерии его&nbsp;вам могут дать бесплатно). Если кратко&nbsp;— чтобы привлечь клиентов в&nbsp;пиццерию, им&nbsp;нужны дополнительные плюшки, попробовать которые можно только там. Вот, для&nbsp;этого дела и&nbsp;существует шаблон «Только в&nbsp;пиццериях».</p>
 <p>Существуют два&nbsp;шаблона:</p>
 <p>–&nbsp;Подробности акции в&nbsp;тексте сообщения&nbsp;— когда рекламируется акция с&nbsp;определенными условиями;<br>
 –&nbsp;Адреса пиццерий в&nbsp;тексте сообщения — когда рекламируется определенный продукт.</p>
@@ -899,34 +787,28 @@ Profile.</p>
 <p>Додо Пицца проводит много всяких интересностей (День Сэндвича № N или День Директора), поэтому иногда приходится нарушать свои собственные правила, чтобы донести идею людям. Акционные макеты могут отличаться от перечисленных выше, но и тут должна выдерживаться приемственность.</p>
 <p><em>Примеры макетов</em></p -->
 
-<h2>Пиццерия</h2>
+<p><a href="#top">Наверх &uarr;</a></p>
+
+<a id="bfhpizzeria"></a><h2>Пиццерия</h2>
 
 <h3>Кратко о&nbsp;главном (технические особенности)</h3>
-<p>–&nbsp;Размер тейблтента: 148&nbsp;&times;&nbsp;210&nbsp;мм<br>
-–&nbsp;Размер постера: 297&nbsp;&times;&nbsp;420&nbsp;мм<br>
+<p>–&nbsp;Размер тейблтента: 148&nbsp;&times;&nbsp;210&nbsp;мм (А5)<br>
+–&nbsp;Размер постера: 297&nbsp;&times;&nbsp;420&nbsp;мм (А3)<br>
 –&nbsp;Цветовой режим: CMYK</p>
 
 <h3>Что важно в макетах</h3>
-<p>–&nbsp;Получая листовку, зрительный контакт с&nbsp;информацией, размещенной на&nbsp;ней, больше, чем с&nbsp;билбордом или&nbsp;картинкой в&nbsp;соцсети. Но&nbsp;постарайтесь вместить сообщение в&nbsp;размер хайку.</p>
-
-<p>–&nbsp;Суть сообщения&nbsp;— на&nbsp;первое место. Позвольте людям увидеть с&nbsp;первого взгляда, что вы&nbsp;хотите им&nbsp;продать.</p>
+<p>–&nbsp;Суть сообщения&nbsp;— на&nbsp;первое место. Позвольте людям увидеть сразу же, что вы&nbsp;хотите им&nbsp;продать.</p>
 
 <p>–&nbsp;Указывайте цены на&nbsp;продукты. Всегда.</p>
-
-<p>–&nbsp;Покажите, где&nbsp;находится пиццерия. Напишите адрес и&nbsp;добавьте схему проезда.</p>
-
-<p>–&nbsp;Воспользуйтесь существующим шаблоном хедера или&nbsp;футера (см.&nbsp;ниже «Дисклеймеры для&nbsp;листовок»). Не&nbsp;придумывайте колесо заново, мы&nbsp;уже сделали&nbsp;это за&nbsp;вас, разместив на&nbsp;них телефон доставки и&nbsp;веб-адрес.</p>
+<p>–&nbsp;Воспользуйтесь существующим шаблоном хедера или&nbsp;футера (см.&nbsp;ниже). Не&nbsp;придумывайте колесо заново, мы&nbsp;уже сделали&nbsp;это за&nbsp;вас.</p>
 
 <p>–&nbsp;Техническое описание акций и&nbsp;продуктов желательно разделить: </p>
 
-<p>&bull; краткие условия должны быть видны и&nbsp;понятны на&nbsp;макете;</p>
+<p>&bull; краткие условия должны быть видны на&nbsp;макете и&nbsp;понятны;</p>
 
-<p>&bull; полные условия со&nbsp;всеми нюансами необходимо размещать в&nbsp;дисклеймере (маленьким размером шрифта, например, 5&nbsp;пунктов с&nbsp;интерлиньяжем 5,5&nbsp;пунктов&nbsp;— идеальный вариант) в&nbsp;нижней части листовки.</p>
-
-<p>На&nbsp;макетах, которые создаются для&nbsp;пиццерии, обычно остаточно разместить логотип. Клиент уже&nbsp;в&nbsp;наших руках и&nbsp;он уже&nbsp;догадывается, где&nbsp;находится (если у&nbsp;него нет расстройства топогнозии).</p>
-
+<p>&bull; полные условия со&nbsp;всеми нюансами необходимо размещать в&nbsp;дисклеймере (маленьким размером шрифта, например, 5&nbsp;пунктов с&nbsp;интерлиньяжем 5,5&nbsp;пунктов&nbsp;— идеальный вариант) в&nbsp;нижней части макета.</p>
 <h3>01&nbsp;Тейблтент</h3>
-<p>Иногда проще всего рассказать о&nbsp;чем-то новом, глядя человеку в&nbsp;глаза. Тейблтенты&nbsp;— это&nbsp;назойливые мухи (формата&nbsp;А5), стоящие на&nbsp;столах и&nbsp;постоянно привлекающие к&nbsp;себе внимание. Их&nbsp;постоянно хочется потеребить, передвинуть, положить, развернуть. В&nbsp;этом их&nbsp;ценность.</p>
+<p>Иногда проще всего рассказать о&nbsp;чем-то новом, глядя человеку в&nbsp;глаза. Тейблтенты&nbsp;— это&nbsp;назойливые мухи (формата&nbsp;А5), стоящие на&nbsp;столах и&nbsp;постоянно привлекающие к&nbsp;себе внимание. Их&nbsp;хочется потеребить, передвинуть, положить, развернуть. В&nbsp;этом их&nbsp;ценность.</p>
 <p><img src="assets/Layouts/Blanks/resto/Resto A5.png" alt="" width="300" style="border: 1px solid #999;"/></p>
 <div class="where">
 <h3>Где&nbsp;найти?</h3>
@@ -943,23 +825,45 @@ Profile.</p>
 <p style="width:70%">–&nbsp;только с&nbsp;логотипом — размещается исключительно в&nbsp;пиццериях;</p>
 <div class="where" style="width: 70%;">
 <h3>Где&nbsp;найти?</h3>
-<p><a href="https://goo.gl/ZYAfDp" target="_blank">https://goo.gl/ZYAfDp</a></p>
+<p class="linkoverflow"><a href="https://goo.gl/ZYAfDp" target="_blank">https://goo.gl/ZYAfDp</a></p>
 </div>
 </div>
 <div class="twocols">
 <p><img src="assets/Layouts/Blanks/resto/Resto A3 Pizzeria Address.png" alt="" width="300" style="border: 1px solid #999;"/></p>
-<p style="width:70%">–&nbsp;с&nbsp;адресом пиццерии и&nbsp;схемой проезда&nbsp;—такие постеры можно развесить по&nbsp;учебным заведениям, например. Если пиццерий несколько, схему проезда можно убрать.</p>
+<p style="width:70%">–&nbsp;с&nbsp;адресом пиццерии и&nbsp;схемой проезда&nbsp;—такие постеры можно развесить в&nbsp;учебных заведениях, например. Если пиццерий несколько, схему проезда можно убрать, чтобы поместились все&nbsp;адреса.</p>
 <div class="where" style="width: 70%;">
 <h3>Где&nbsp;найти?</h3>
-<p><a href="https://goo.gl/3HsBME" target="_blank">https://goo.gl/3HsBME</a></p>
+<p class="linkoverflow"><a href="https://goo.gl/3HsBME" target="_blank">https://goo.gl/3HsBME</a></p>
 </div>
 </div>
 <br class="clear">
 </div>
 
-<h2>Доставка</h2>
+<p><a href="#top">Наверх &uarr;</a></p>
+
+<a id="bfhdelivery"></a><h2>Доставка</h2>
+<h3>Кратко о&nbsp;главном (технические особенности)</h3>
+<p>–&nbsp;Размер листовки: 148&nbsp;&times;&nbsp;210&nbsp;мм (А5)<br>
+–&nbsp;Цветовой режим: CMYK</p>
+
+<h3>Что важно в макетах</h3>
+<p>–&nbsp;Получая листовку, зрительный контакт с&nbsp;информацией, размещенной на&nbsp;ней, больше, чем с&nbsp;билбордом или&nbsp;картинкой в&nbsp;соцсети. Но&nbsp;постарайтесь вместить сообщение в&nbsp;размер хайку.</p>
+
+<p>–&nbsp;Суть сообщения&nbsp;— на&nbsp;первое место. Позвольте людям увидеть сразу&nbsp;же, что вы&nbsp;хотите им&nbsp;продать.</p>
+
+<p>–&nbsp;Указывайте цены на&nbsp;продукты. Всегда.</p>
+
+<p>–&nbsp;Покажите, где&nbsp;находится пиццерия. Напишите адрес и&nbsp;добавьте схему проезда.</p>
+
+<p>–&nbsp;Воспользуйтесь существующим шаблоном хедера или&nbsp;футера (см.&nbsp;ниже). Не&nbsp;придумывайте колесо заново, мы&nbsp;уже сделали&nbsp;это за&nbsp;вас.</p>
+
+<p>–&nbsp;Техническое описание акций и&nbsp;продуктов желательно разделить: </p>
+
+<p>&bull; краткие условия должны быть видны и&nbsp;понятны на&nbsp;макете;</p>
+
+<p>&bull; полные условия со&nbsp;всеми нюансами необходимо размещать в&nbsp;дисклеймере (маленьким размером шрифта, например, 5&nbsp;пунктов с&nbsp;интерлиньяжем 5,5&nbsp;пунктов&nbsp;— идеальный вариант) в&nbsp;нижней части листовки.</p>
 <h3>01&nbsp;Листовка</h3>
-<p>Макеты для&nbsp;доставки обязательно должны иметь футер, как&nbsp;на картинке&nbsp;ниже. Там указаны телефон доставки, адрес сайта и&nbsp;дисклеймер, говорящий о&nbsp;том, что и&nbsp;как мы&nbsp;доставляем.</p>
+<p>Макеты доставки обязательно должны иметь футер, как&nbsp;на картинке&nbsp;ниже. Там указаны телефон доставки, адрес сайта и&nbsp;дисклеймер, говорящий о&nbsp;том, что и&nbsp;как мы&nbsp;доставляем.</p>
 <p><img src="assets/Layouts/Blanks/delivery/Delivery A5.png" alt="" width="300" style="border: 1px solid #999;"/></p>
 <div class="where">
 <h3>Где&nbsp;найти?</h3>
@@ -967,24 +871,24 @@ Profile.</p>
 </div>
 
 <h3>02&nbsp;Федеральные и&nbsp;стартовые листовки</h3>
-<p>Мы используем одни и те же шаблоны для <abbr title="Федеральная листовка">ФЛ</abbr> и <abbr title="Стартовая листовка">СЛ</abbr>. Основное различие между ними чисто идеалогическое. Мы насчитали три с половиной шаблона.</p>
+<p>Мы используем одни и те же шаблоны для <abbr title="Федеральная листовка">ФЛ</abbr> и <abbr title="Стартовая листовка">СЛ</abbr>. Основное различие между ними чисто идеологическое. Мы насчитали три с половиной шаблона.</p>
 
 <div class="columns">
 <div class="twocols">
 <p><img src="assets/Layouts/Blanks/slfl/SL & FL V1.png" alt="" width="300" style="border: 1px solid #999;"/></p>
-<p style="width:70%">–&nbsp;;</p>
+<p style="width:70%">–&nbsp;первый шаблон для&nbsp;лицевой стороны листовки с&nbsp;основными рекламируемыми товарами;</p>
 <div class="where" style="width: 70%;">
 <h3>Где&nbsp;найти?</h3>
-<p><a href="https://goo.gl/u7QF2K" target="_blank">https://goo.gl/u7QF2K</a></p>
+<p class="linkoverflow"><a href="https://goo.gl/u7QF2K" target="_blank">https://goo.gl/u7QF2K</a></p>
 </div>
 </div>
 
 <div class="twocols">
 <p><img src="assets/Layouts/Blanks/slfl/SL & FL V2.png" alt="" width="300" style="border: 1px solid #999;"/></p>
-<p style="width:70%">–&nbsp;;</p>
+<p style="width:70%">–&nbsp;второй шаблон для&nbsp;лицевой стороны листовки с&nbsp;основными рекламируемыми товарами;</p>
 <div class="where" style="width: 70%;">
 <h3>Где&nbsp;найти?</h3>
-<p><a href="https://goo.gl/rFyvzb" target="_blank">https://goo.gl/rFyvzb</a></p>
+<p class="linkoverflow"><a href="https://goo.gl/rFyvzb" target="_blank">https://goo.gl/rFyvzb</a></p>
 </div>
 </div>
 <br class="clear">
@@ -993,32 +897,68 @@ Profile.</p>
 <div class="columns">
 <div class="twocols">
 <p><img src="assets/Layouts/Blanks/slfl/SL & FL V3.png" alt="" width="300" style="border: 1px solid #999;"/></p>
-<p style="width:70%">–&nbsp;;</p>
+<p style="width:70%">–&nbsp;шаблон для&nbsp;оборотной стороны листовки. Используется для&nbsp;продвижения пицц;</p>
 <div class="where" style="width: 70%;">
 <h3>Где&nbsp;найти?</h3>
-<p><a href="https://goo.gl/H1aAFv" target="_blank">https://goo.gl/H1aAFv</a></p>
+<p class="linkoverflow"><a href="https://goo.gl/H1aAFv" target="_blank">https://goo.gl/H1aAFv</a></p>
 </div>
 </div>
 
 <div class="twocols">
 <p><img src="assets/Layouts/Blanks/slfl/SL & FL V4.png" alt="" width="300" style="border: 1px solid #999;"/></p>
-<p style="width:70%">–&nbsp;;</p>
+<p style="width:70%">–&nbsp;шаблон для&nbsp;оборотной стороны листовки. Используется для&nbsp;продвижения закусок.</p>
 <div class="where" style="width: 70%;">
 <h3>Где&nbsp;найти?</h3>
-<p><a href="https://goo.gl/b9Oxs4" target="_blank">https://goo.gl/b9Oxs4</a></p>
+<p class="linkoverflow"><a href="https://goo.gl/b9Oxs4" target="_blank">https://goo.gl/b9Oxs4</a></p>
 </div>
 </div>
 <br class="clear">
 </div>
 
+<p><a href="#top">Наверх &uarr;</a></p>
 
-<h2>ТВ-борды</h2>
-<p>&nbsp;</p>
+<a id="bfhbillboards"></a><h2>Билборды</h2>
+<p>Мы&nbsp;не&nbsp;рекомендуем вам использовать билборды в&nbsp;качестве канала продвижения. Это&nbsp;дорого и&nbsp;не&nbsp;очень выгодно. Тем&nbsp;не&nbsp;менее.</p>
 
-<div class="where">
-		<h3>Где найти?</h3>
-		<p>http://bit.ly/dodostarterkit</p>
+<h3>Кратко о&nbsp;главном (технические особенности)</h3>
+<p>–&nbsp;Размер билборда: 6&nbsp;&times;&nbsp;3&nbsp;м<br>
+–&nbsp;Цветовой режим: CMYK</p>
+
+<h3>Что важно в макетах</h3>
+<p>–&nbsp;Краткость&nbsp;— сестра таланта. Человек видит билборд примерно 3–5&nbsp;секунд. Не&nbsp;забивайте&nbsp;его ненужным мусором, который&nbsp;он все равно не&nbsp;успеет прочитать.</p>
+
+<p>–&nbsp;Напишите, где вы&nbsp;находитесь, чтобы люди&nbsp;смогли найти&nbsp;вас.</p>
+
+<p>–&nbsp;Указывайте цены на&nbsp;продукты. Всегда.</p>
+<p>–&nbsp;Покажите выгоду, если вы&nbsp;рекламируете акцию.</p>
+<h3>Два варианта шаблонов на выбор:</h3>
+
+<div class="columns">
+<div class="twocols">
+<p><img src="assets/Layouts/Blanks/outdoors/Billboard 6 x 3 m V1.png" alt="" width="533" style="border: 1px solid #999;"/></p>
+<p>–&nbsp;с&nbsp;номером телефона и&nbsp;адресом сайта;</p>
+<div class="where" style="width: 70%;">
+<h3>Где найти?</h3>
+<p class="linkoverflow"><a href="https://goo.gl/jbr8NW" target="_blank">https://goo.gl/jbr8NW</a></p>
 </div>
+</div>
+
+<div class="twocols">
+<p><img src="assets/Layouts/Blanks/outdoors/Billboard 6 x 3 m V2.png" alt="" width="533" style="border: 1px solid #999;"/></p>
+<p>–&nbsp;с&nbsp;адресом пиццерии.</p>
+<div class="where" style="width: 70%;">
+<h3>Где найти?</h3>
+<p class="linkoverflow"><a href="https://goo.gl/9tUFXT" target="_blank">https://goo.gl/9tUFXT</a></p>
+</div>
+</div>
+<br class="clear">
+</div>
+
+<p><a href="#top">Наверх &uarr;</a></p>
+
+<a id="bfhtv"></a><h2>ТВ-борды</h2>
+<p>Мы&nbsp;тут&nbsp;все дружно думаем, как все&nbsp;красиво расписать, а это не такое просто задание. Полюбуйтесь пока этой&nbsp;красотой:</p>
+<p><img src="assets/Emotions/tumblr_lue4o5dsDZ1qb0bobo2_r1_250.gif" alt="" width="533"/></p>
 
 <p><a href="#top">Наверх &uarr;</a></p>
 
@@ -1095,11 +1035,11 @@ Profile.</p>
 
 </section -->
 
-<section class="page">
+<!-- section class="page">
 
-<h1>Билборды</h1>
+<h2>Билборды</h2>
 
-<h2>Что важно</h2>
+<h3>Что важно</h3>
 
 <p>–&nbsp;</p>
 
@@ -1111,6 +1051,217 @@ Profile.</p>
 
 <p><a href="#top">Наверх &uarr;</a></p>
 
+</section -->
+
+<section class="page">
+<a id="tipsandtricks"></a><h1>Суперполезные советики</h1>
+<p>Мы&nbsp;щедрые. И&nbsp;добрые. И&nbsp;любящие. Поэтому не&nbsp;можем не&nbsp;поделиться парочкой трюков.</p>
+
+<a id="textingmenu"></a><h2>Верстка текстового меню</h2>
+<p>Есть у&nbsp;нас такой тип меню, который набран одними буквами. Вроде&nbsp;бы фигня какая! Даже мучаться не&nbsp;придется, переверстывая&nbsp;его!</p>
+
+<p>А,&nbsp;вот, фигушки! Намучаетесь с&nbsp;ним больше, чем со&nbsp;всеми другими макетами.</p>
+<p><img src="assets/Emotions/IMG_6190.gif" alt="" width="533"/></p>
+
+<p>Проблема возникает, когда текстовые столбцы разъезжаются и&nbsp;один становится короче или&nbsp;длинней других.</p>
+<p>1. Внесите в&nbsp;макет все необходимые правки.</p>
+
+<div class="tips">
+<h3>Подсказка</h3>
+<p>Используйте табуляцию для&nbsp;разделения названия продукта, его&nbsp;количества и&nbsp;стоимости.</p>
+</div>
+
+<p>2. Убедитесь, что&nbsp;интерлиньяж для&nbsp;всего текста установлен на&nbsp;Auto.</p>
+<p><a href="assets/Tips/textmenu/02.png" target="_blank"><img src="assets/Tips/textmenu/02.png" alt="" width="533"/></a></p>
+<p>3. Откройте настройки Justification в&nbsp;палетке Paragraph.</p>
+<p><a href="assets/Tips/textmenu/03.png" target="_blank"><img src="assets/Tips/textmenu/03.png" alt="" width="533"/></a></p>
+<p>4. Появится такое диалоговое окно. В&nbsp;нем нас&nbsp;интересует только опция Auto&nbsp;Leading.</p>
+<p><a href="assets/Tips/textmenu/04.png" target="_blank"><img src="assets/Tips/textmenu/04.png" alt="" width="533"/></a></p>
+<p>5. Увеличивайте или&nbsp;уменьшайте значение Auto&nbsp;Leading, пока не&nbsp;получится выровнять столбцы по&nbsp;нижней направляющей.</p>
+<p><a href="assets/Tips/textmenu/05.png" target="_blank"><img src="assets/Tips/textmenu/05.png" alt="" width="533"/></a></p>
+<p>6. Вы&nbsp;молодцы!</p>
+
+<a id="therightaddress"></a><h2>Как мы пишем адреса</h2>
+<p>В общем-то во всем цивилизованном мире люди давным-давно пишут адреса так, как описано ниже. Но мы же выше этого.</p>
+<p><img src="assets/Emotions/brutni.gif" alt="" width="533"/></p>
+<h3>Общие правила таковы:</h3>
+<p>– фамилия и&nbsp;имя адресата;<br>
+– название компании (если&nbsp;есть);<br>
+– название улицы, номер дома, корпус, строение, владение, номер квартиры или&nbsp;офиса;<br>
+– название населенного пункта (города, поселка, деревни и&nbsp;т.&nbsp;п.);<br>
+– название района;<br>
+– название республики, края, области, автономного округа или&nbsp;автономной области;<br>
+– почтовый индекс;<br>
+– название страны (для&nbsp;международной корреспонденции, отдельной строкой).</p>
+
+<p class="sansserifs70">Источник: <a href="http://www.artlebedev.ru/kovodstvo/sections/163/" target="_blank">http://www.artlebedev.ru/kovodstvo/sections/163/</a></p>
+<p>Нас&nbsp;же интересует только эта&nbsp;часть:</p>
+<p>– название улицы, номер дома, корпус, строение, владение, номер квартиры или&nbsp;офиса;<br>
+– название населенного пункта (города, поселка, деревни и&nbsp;т.&nbsp;п.).</p>
+
+<div class="tips">
+<h3>Примерчик</h3>
+<p>Октябрьский&nbsp;пр-т, д.&nbsp;100/1, г.&nbsp;Сыктывкар.</p>
+</div>
+
+<p>Запомнили раз и&nbsp;навсегда, кисоньки!</p>
+
+<!-- a id="postergonewild"></a><h2>Как из&nbsp;промопостера сделать листовку</h2>
+<p>Всякое случается в&nbsp;жизни. Иногда приходится и&nbsp;такими делами заниматься.</p>
+<p>На самом деле все не так сложно, как может показаться на первый взгляд. Алгоритм примерно такой:</p>
+<p>1. Выберите подходящий шаблон листовки.</p>
+<p>2. Copy-and-Paste основной арт из промопостера в шаблон листовки, пропорционально уменьшив его.</p -->
+<p><a href="#top">Наверх &uarr;</a></p>
+</section>
+
+
+<section class="page">
+<a id="plyushkas"></a><h1>Бесплатные плюшки</h1>
+<p>Вообще-то мы&nbsp;успели нарисовать кучу иконочек, иллюстрашек и&nbsp;забавных надписей, которые можно добавлять на&nbsp;макеты, чтобы стало веселей.</p>
+<p>Файл постоянно обновляется, котятки. </p>
+<h3>01 Надписи</h3>
+<p><img src="assets/Goodies/Goodies-01.png" alt="" width="533"/></p>
+<h3>02 Цветные картинки</h3>
+<p><img src="assets/Goodies/Goodies-02.png" alt="" width="533"/></p>
+<h3>03 Одноцветные картинки</h3>
+<p><img src="assets/Goodies/Goodies-03.png" alt="" width="533"/></p>
+
+<div class="where">
+<h3>Где найти?</h3>
+<p><a href="https://goo.gl/VrRl6k" target="_blank">https://goo.gl/VrRl6k</a></p>
+</div>
+
+<p>О!&nbsp;Если вы&nbsp;еще не&nbsp;поняли, то&nbsp;напоминаем: использование этой&nbsp;графики допустимо только на&nbsp;макетах Додо&nbsp;Пиццы. Никаких перепродаж и&nbsp;прочего слива в&nbsp;интернеты. A-ha,&nbsp;Honey!</p>
+
+
+<p><a href="#top">Наверх &uarr;</a></p>
+</section>
+
+
+<section class="page">
+<a id="errors"></a><h1>Типичные ошибки</h1>
+<p>Порой мы поражаемся, что творится в ваших головах? Аж страшно становится!</p>
+<p><img src="assets/Emotions/file (5) copy 2.gif" alt="" width="533"/></p>
+<p>Все, что вы&nbsp;увидите ниже в&nbsp;этом&nbsp;разделе, должно караться пожизненным заключением в&nbsp;марсианской тюрьме строжайшего режима.</p>
+
+<div class="warning">
+<h3>Warning!</h3>
+<p>Слабонервных, людей с&nbsp;тонким чувством прекрасного, с&nbsp;сердечно-сосудистыми заболеваниям и&nbsp;несовершеннолетних настоятельно просим пропустить этот&nbsp;раздел. Тут сплошной хоррор! А-а-а-а-а-а!!!111!11</p>
+<p><img src="assets/Emotions/this_is_what_flop_is.gif" alt="" width="533" style="padding: 0.5em 0 0;"/></p>
+</div>
+
+<h3>01 Совместные акции</h3>
+<p><s>Oh, My God! Look at her butt!</s> Возможно, это хороший способ промоушна, но не такими же жертвами!</p>
+<p>– От&nbsp;Додо&nbsp;Пиццы тут ничего не&nbsp;осталось. У&nbsp;нас есть <a href="#basicfootersheaders">достаточно шаблонов</a>, чтобы хотя&nbsp;бы логотип компании разместить правильно;<br>
+– текста чрезмерно много, его&nbsp;практически невозможно прочитать и&nbsp;набран он&nbsp;непонятно каким шрифтом, фи! <a href="#itypeyou">О&nbsp;корпоративых шрифтах</a> читаем снова и&nbsp;больше никогда не&nbsp;используем другие;<br>
+– элементы на&nbsp;макете задыхаются. Вспоминаем, что <a href="#breathe">макеты должны дышать</a>.</p>
+<div class="columns">
+		<div class="twocols">
+		<img src="assets/Bad/1poaieHa0n0.jpg" alt="" width="533" style="border: 1px solid #999;"/>
+		</div>
+		<div class="twocols">
+		<img src="assets/Bad/BQWr40ssfaM.jpg" alt="" width="533" style="border: 1px solid #999;"/>
+		</div>
+		<br class="clear">
+</div>
+
+<h3>02 Много текста из&nbsp;ничего</h3>
+<p>Давайте уясним одно простое правило&nbsp;— лучше ничего не&nbsp;делать, чем делать&nbsp;это так.</p>
+<p>– Сообщение должно быть кратким и&nbsp;понятным. Перечитайте раздел «<a href="#messages">Сообщения</a>»;<br>
+– воздуха недостаточно. Повторяем&nbsp;все, что прочитали в&nbsp;разделе «<a href="#breathe">Дышим</a>»;<br>
+– на&nbsp;первом макете текст невозможно прочитать. Ужас.</p>
+<div class="columns">
+<div class="twocols">
+<img src="assets/Bad/BVQxw5c_0W0.jpg" alt="" width="533" style="border: 1px solid #999;"/>
+</div>
+<div class="twocols">
+<img src="assets/Bad/UCVoayHvPv0.jpg" alt="" width="533" style="border: 1px solid #999;"/>
+</div>
+<br class="clear">
+</div>
+
+<h3>03 О&nbsp;шрифтах. Опять</h3>
+<p>Использование шрифтов, отличных от&nbsp;корпоративных, запрещено. Это как&nbsp;одиннадцатая заповедь. Если вы&nbsp;еще не&nbsp;поняли, перечитайте раздел <a href="#itypeyou">I&nbsp;Type You</a>.</p>
+<p><img src="assets/Bad/eBlQ-k-F5Mc.jpg" alt="" width="533" style="border: 1px solid #999;"/></p>
+
+<h3>04 Белый верх, черный низ</h3>
+<p>Не придумывайте собственные хедеры и футеры. Мы&nbsp;же напридумали&nbsp;их <a href="#basicfootersheaders">целый море-океан</a>. Возьмите&nbsp;их, не&nbsp;заставляйте нас краснеть, хвататься за&nbsp;сердце и&nbsp;выкалывать себе глаза. Спасибо.</p>
+<p>BTW, на&nbsp;макете с&nbsp;Додо-Аукционом логотипа вообще&nbsp;нет. А-та-та!</p>
+<div class="columns">
+<div class="twocols">
+<img src="assets/Bad/FkJzpgdCvh0.jpg" alt="" width="533" style="border: 1px solid #999;"/>
+</div>
+<div class="twocols">
+<img src="assets/Bad/lJI6FjGwEIY.jpg" alt="" width="533" style="border: 1px solid #999;"/>
+</div>
+<br class="clear">
+</div>
+<br>
+<div class="columns">
+<div class="twocols">
+<img src="assets/Bad/hI0jLiur5as.jpg" alt="" width="533" style="border: 1px solid #999;"/>
+</div>
+<div class="twocols">
+<img src="assets/Bad/MWj3moOiDvk.jpg" alt="" width="533" style="border: 1px solid #999;"/>
+</div>
+<br class="clear">
+</div>
+
+<h3>05 Написание названия и&nbsp;логотип на&nbsp;английском языке в&nbsp;странах, использующих кириллицу</h3>
+<p>Люди, которые заказали эти&nbsp;макеты, навряд&nbsp;ли понимают, в&nbsp;какой компании они работают, но&nbsp;явно не&nbsp;в&nbsp;Додо&nbsp;Пицце.</p>
+<p>– Название компании&nbsp;— <strong>Додо&nbsp;Пицца</strong>. Period. Мы&nbsp;имеем в&nbsp;виду, что варианты «До&nbsp;До», «ДОДО&nbsp;пицца», «Додо-Пицца» и&nbsp;прочие производные&nbsp;— недопустимы;<br>
+– Еще один очень важный момент: в&nbsp;странах, где&nbsp;кириллический алфавит является основным, недопустимо использование англоязычного логотипа.</p>
+
+<div class="columns">
+<div class="twocols">
+<img src="assets/Bad/y1LyFVgehXU.jpg" alt="" width="533" style="border: 1px solid #999;"/>
+</div>
+<div class="twocols">
+<img src="assets/Bad/nUZ6Adw6v3Y.jpg" alt="" width="533" style="border: 1px solid #999;"/>
+</div>
+<br class="clear">
+</div>
+
+<h3>06 Логотип, что с&nbsp;тобой?!</h3>
+<p>Для&nbsp;не&nbsp;по&nbsp;годам развитым советуем набить на&nbsp;теле татуировку <a href="#dosanddonts">с&nbsp;правилами использования логотипа</a>.</p>
+<p>Ошибки на&nbsp;этих&nbsp;макетах:</p>
+<p>– отзеркаленный логотип на&nbsp;машине. Кстати, у&nbsp;нас есть готовые макеты для&nbsp;оформления автомобилей: <a href="https://goo.gl/s10LDe" target="_blank">https://goo.gl/s10LDe</a>;<br>
+– сжатый по&nbsp;горизонтали логотип на&nbsp;втором макете.</p>
+<div class="columns">
+		<div class="twocols">
+		<img src="assets/Bad/TwUh-jHuMn8.jpg" alt="" width="533" style="border: 1px solid #999;"/>
+		</div>
+		<div class="twocols">
+		<img src="assets/Bad/h42EDPWK9b0.jpg" alt="" width="533" style="border: 1px solid #999;"/>
+		</div>
+		<br class="clear">
+</div>
+
+<p><a href="#top">Наверх &uarr;</a></p>
+</section>
+
+
+<section class="page">
+<a id="finalwords"></a><h1>Final words</h1>
+
+<p>В&nbsp;общем-то, это&nbsp;все (почти&nbsp;все), что вам&nbsp;нужно знать сейчас.</p>
+<p>Конечно&nbsp;же, если у&nbsp;вас остались вопросы или&nbsp;вы&nbsp;хотите спросить совета, пожаловаться на&nbsp;жизнь, <a href="mailto:l.danschikov@dodopizza.com">обращайтесь</a> (с&nbsp;пометкой «OMG! Я ничего не понимаю!!!111!»).</p>
+<p><img src="assets/Emotions/tumblr_ml7qh9NMOi1r9ahfuo1_500_1.gif" alt="" width="533"/></p>
+<p><a href="#top">Наверх &uarr;</a></p>
+</section>
+
+<section class="page">
+<a id="thanks"></a><h1>Thanks</h1>
+
+<p>We&nbsp;want to&nbsp;thank everyone <span style="display: none">(by&nbsp;this I&nbsp;means no&nbsp;one, not even a&nbsp;fucking single soul) </span>who helped&nbsp;us to&nbsp;write this&nbsp;guide:</p>
+<p>Mariah Carey, Lady Gaga, Britney Spears, Adele, .FUN, Nate Ruess, Ariana Grande, June Thompson, Honey Boo Boo, Erik Hassle, Jahkoy, Brandy, Whitney Houston, Tamar Braxton, Mýa, Jarryd James, Ciara, Missy Elliott, Walk The Moon, Fitz &amp; The Tantrums, Rihanna, Madonna, Cher, Jojo, Years &amp; Years, Miguel and all the rest of our crew. Special thanks to Elena Belykh & Tanyusha Koshkina. We're so blessed to have you with us! 
+<p>Love &amp;&nbsp;peace to ya'll! Spread&nbsp;love, not&nbsp;STDs!</p>
+<p><img src="assets/Emotions/mariah_carey_bye_bye_up_out_my_face.gif" alt="" width="533"/></p>
+<p><a href="#top">Наверх &uarr;</a></p>
+</section>
+
+<section class="page">
+<p>&copy;&nbsp;2015 <a href="http://dodopizza.ru" target="_blank">Додо&nbsp;Пицца</a>.</p>
 </section>
 </div>
 
