@@ -202,7 +202,7 @@ ul.dashed > li:before {
 	height: auto;
 }
 
-img {
+img, img.smaller {
 	width: auto;
 	max-width: 100%;
 	height: auto;
