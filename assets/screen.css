@@ -68,7 +68,7 @@ body {
 	width: 100%;
 }
 
-a {
+/* a {
 	color: #09C;
 	text-decoration: none;
 	padding: 0.5em;
@@ -91,6 +91,7 @@ a:active {
 	text-decoration: none;
 	background-color: #E4F7F8;
 }
+*/
 
 section {
 	margin: 0;

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>§ 2.1. Фирменные шрифты</title>
+<!-- TemplateEndEditable -->
+<link href="../dodopizza/guide/outofstyle.css" rel="stylesheet" type="text/css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<a id="#top"></a>
+
+<div id="pagewrapper">
+
+<section class="page">
+<!-- TemplateBeginEditable name="breadcrumbs" -->
+<p><a href="../dodopizza/guide/index.htm">⟵ к&nbsp;оглавлению</a></p>
+<!-- TemplateEndEditable -->
+</section>
+
+<section class="page">
+<!-- TemplateBeginEditable name="content" -->
+
+<!-- TemplateEndEditable -->
+</section>
+
+<section class="page">
+<p>&copy;&nbsp;2016 <a href="http://dodopizza.info" target="_blank">Додо Пицца</a>.</p>
+</section>
+</div>
+
+</body>
+
+</html>
