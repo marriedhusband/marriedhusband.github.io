@@ -11,6 +11,11 @@ img {
 section {
 	margin-bottom: 5%;
 	padding-bottom: 5%;
+	border-bottom: 1px solid #f3f3f3;
+}
+a {
+	color: #0091FF;
+	text-decoration: none;
 }
 h1 {
 	font-size: 250%;
