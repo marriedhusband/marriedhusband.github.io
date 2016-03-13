@@ -45,6 +45,10 @@ section {
 	page-break-before: always;
 }
 
+.backto {
+	font-size: 80%;
+}
+
 @media screen and (max-width: 768px) {
 
 body {
