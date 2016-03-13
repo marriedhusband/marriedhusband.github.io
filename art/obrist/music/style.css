@@ -17,6 +17,9 @@ a {
 	color: #0091FF;
 	text-decoration: none;
 }
+h1, h2, h3, h4, h5, h6 {
+	line-height: normal;
+}
 h1 {
 	font-size: 250%;
 }
