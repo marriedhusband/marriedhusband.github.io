@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">be4ef2c9-be91-48dc-b7ca-2ab93d270a68</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">be4ef2c9-be91-48dc-b7ca-2ab93d270a68</dc:identifier>
+        <dc:title>Camera lucida. Комментарий к фотографии</dc:title>
+        <dc:creator opf:file-as="Барт, Ролан" opf:role="aut">Ролан Барт</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (2.53.0) [http://calibre-ebook.com]</dc:contributor>
+        <dc:date>2011-03-15T00:00:00+00:00</dc:date>
+        <dc:description>«Camera lucida. Комментарий к фотографии» (1980) Ролана Барта — одно из первых фундаментальных исследований природы фотографии и одновременно оммаж покойной матери автора. Интерес к случайно попавшей в руки фотографии 1870 г. вызвал у Барта желание узнать, благодаря какому существенному признаку фотография выделяется из всей совокупности изображений. Задавшись вопросом классификации, систематизации фотографий, философ выстраивает собственную феноменологию, вводя понятия Studium и Punctum. Studium обозначает культурную, языковую и политическую интерпретацию фотографии, Punctum — сугубо личный эмоциональный смысл, позволяющий установить прямую связь с фотоизображением.
+    http://fb2.traumlibrary.net</dc:description>
+        <dc:publisher>Ad Marginem</dc:publisher>
+        <dc:language>en</dc:language>
+        <dc:subject>sci_philosophy</dc:subject>
+        <meta content="{}" name="calibre:author_link_map"/>
+    </metadata>
+    <guide>
+        <reference href="cover.jpg" title="Cover" type="cover"/>
+    </guide>
+</package>
