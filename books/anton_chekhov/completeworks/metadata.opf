@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">a0ade3a0-38a0-4236-b908-c36f6fe506c1</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">a0ade3a0-38a0-4236-b908-c36f6fe506c1</dc:identifier>
+        <dc:title>Delphi Complete Works of Anton Chekhov (Illustrated)</dc:title>
+        <dc:creator opf:file-as="CHEKHOV, ANTON" opf:role="aut">ANTON CHEKHOV</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (2.53.0) [http://calibre-ebook.com]</dc:contributor>
+        <dc:date>2011-04-12T22:00:00+00:00</dc:date>
+        <dc:publisher>Delphi Classics</dc:publisher>
+        <dc:language>en</dc:language>
+        <meta content="{}" name="calibre:author_link_map"/>
+    </metadata>
+    <guide>
+        <reference href="cover.jpg" title="Cover" type="cover"/>
+    </guide>
+</package>

@@ -1,0 +1,102 @@
+* {border:none;background:transparent}
+/* Éléments à ne pas imprimer */
+#openbarre,.review-back,#lodelGlobalDeskDisplayer, #partenaires, #access, #toolbox, #nav, #news, #footer, #widgets, #shortcuts, #tabMenu, #resumeMenu, #alphabet,#sitesubtitle,.read-next,ul.banner,div.links,#book-more-related,#share,#suggerer,div.maintitle,div.introduction a,
+hr, #cleo, #breadcrumb, #lodel-desk, #siteContext, div.resumeMenu, div.tabMenu, #cite-close, #citation-intro,#citation-chapter-apa,#citation-chapter-mla,#citation-book-apa,#citation-book-mla,#citation-format-book,#citation-format-chapter,
+div.navEntities, a.go-top, a.go-back, a.fullSize, ul.sidenotes, .textIconAccess, #cssversion-switcher, div.header ul,#searchform,#square,#sitelogo,#featured-container,#book-navigation,#bottom-navigation,#presentation-chapter,#book-image-search,#shortcuts,#book-actions,#illustrations,#share-container,#suggerer-container {display:none}
+#siteHeader{border-bottom:1px dotted #000 !important;background-image:none !important}
+#presentation-book *{display:inline}
+#book-image-search div.cover img, #book-image-description div.cover img{max-width:150px}
+#presentation-book{text-align:left;font:16px Arial, sans-serif;margin:0 0 10px 0;color:#FFF;border-bottom:1px dotted #000;padding-bottom:15px}
+#presentation-chapter{min-width:0}
+#presentation {margin-top:15px}
+#sitename a{font-size:4em;color:#000}
+.header a{float:right}
+#book-presentation h1.title{font-size:3.5em}
+h3.altertitle{margin:0}
+div.altertitle{margin-bottom:15px}
+body.textes #book-content div.author,body.textes #book-content div.director{font-size:1.8em;font-weight:bold}
+ul li{list-style-type:none}
+p.code[dir="rtl"],p.puces[dir="rtl"],td p.texte[dir="rtl"],td p.annexe[dir="rtl"],div.textIcon p.texte[dir="rtl"],p.crditillustration[dir="rtl"],p.creditillustration[dir="rtl"],p.crditsillustration[dir="rtl"],p.legendeillustration[dir="rtl"],p.titreillustration[dir="rtl"],div.text ul li[dir="rtl"],div.text ol li[dir="rtl"],div.text h1[dir="rtl"],div.text h2[dir="rtl"],div.text h3[dir="rtl"],div.text h4[dir="rtl"],div.text h5[dir="rtl"],div.text h6[dir="rtl"],ul.sidenotes li[dir="rtl"]{text-align:right}
+*[dir="rtl"],*:lang(ar){text-align:right !important}
+span[dir="rtl"],span:lang(ar),span:lang(he){display:inline-block}
+table[dir="rtl"],table:lang(ar),table:lang(he){display:block}
+#entries a,#citation-chapter > h3,#citation-book > h3{color:#FFF}
+#wrapper {margin:10% 20% 10% 8%}
+h1,h2,h3,h4,h5,h6,h1 > a,h2 > a,h3 > a,h4 > a,h5 > a,h6 > a{color:#000;text-align:left;}
+
+body {margin:0;padding:0;font:16px/1.4 Georgia, serif;background:#FFF;color:#222;text-align:justify}
+a {text-decoration:none;color:#000}
+sub,sup{font-size:.65em;line-height:1em}
+sup{vertical-align:super}
+sub{vertical-align:sub}
+h1 {font:bold 25px Arial, sans-serif;margin:25px 0 10px 0}
+h2 {font:bold 21px Arial, sans-serif;margin:25px 0 10px 0}
+h3 {font:italic normal 19px Arial, sans-serif;margin:25px 0 10px 0}
+h4 {font:bold 17px Arial, sans-serif;margin:0}
+h5 {font:normal 17px Arial, sans-serif;margin:0}
+h6 {font:normal 17px Arial, sans-serif;margin:0}
+
+/*** page chapitre **/
+p.texte, p.annexe, p.reponse, p.bibliographie{position:relative}
+.text{font-size:1.2em}
+#text p,blockquote{margin:0}
+div.text h1,div.text h2,div.text h3,div.text h4,div.text h5,div.text h6,#text h1,#text h2,#text h3,#text h4,#text h5,#text h6,body.publications div.director a,body.publications div.author a,body.publications div.collection a,#book-more-content #book-more-content-sommaire a{color:#333}
+a.footnotecall,a.endnotecall{font:normal 12px/1 Georgia, serif;vertical-align:text-top}
+a.footnotecall,a.endnotecall,a.FootnoteSymbol,a.footnotedefinition,a.endnotedefinition{color:#000}
+a.FootnoteSymbol:after,a.footnotedefinition:after,a.endnotedefinition:after{font:bold 1em/1.167em Verdana,sans-serif;content:"."}
+.title a.footnotecall, .title a.endnotecall {font-size:50%}
+.subtitle a.footnotecall, .subtitle a.endnotecall {font-size:70%}
+#text p.remerciements,#text p.epigraphe,#text p.pigraphe,#text p.citation,#text p.quotations,#text p.quotation,#text p.citationbis,#text p.citationter,#text p.legendeillustration,#text p.crditillustration,#text p.crditsillustration,#text p.creditillustration{margin-top:.5em;margin-bottom:.5em}
+#text p.remerciements{margin-left:2em;text-align:right;font-style:italic}
+#text p.epigraphe,#text p.pigraphe{margin-left:3em;text-align:right}
+p.citation,p.quotations,p.quotation,p.citationbis,p.citationter,p.puces{font-size:.9em}
+#text p.citation,#text p.quotations,#text p.quotation{margin-left:3em}
+#text p.citationbis,#text p.citationter{margin-left:3.5em}
+p.citationter{color:#333}
+span.paranumber{font: 1em/1.5em Georgia,"Times New Roman",Times,serif;margin-left:-3em;width:5em;z-index:-1;position:absolute}
+p[dir="rtl"] span.paranumber{margin-left:0;margin-right:-3em}
+#text p.titreillustration{font-weight:bold;margin-top:.5em}
+#notes p.notesbaspage,#notes p.notefin{margin:0 0 .5em 0}
+
+/* tableaux */
+table {border-collapse:collapse}
+td {font:0.688em Arial, sans-serif;padding:2px;border:.5px solid #CCC}
+td p.texte, div.textIcon p.texte {margin:0}
+
+/** affichage modules livres/chapitre **/
+ul.bookslist div.cover.table-cell,ul.bookslist div.description{display:inline-block;vertical-align:top}
+ul.bookslist{padding-left:0}
+ul.bookslist div.description{max-width:70%;width:70%}
+ul.bookslist div.cover.table-cell{width:25%;max-width:25%}
+ul.bookslist div.description h1.title > a{color:#333}
+ul.bookslist div.description h2.subtitle,#review-header > div{color:#666}
+
+.end{font:bold 2.1em/.5em Georgia,serif;display:block}
+
+/** page livre **/
+body.publications div.director,body.publications div.author{font:16px Arial, sans-serif}
+#book-infos ul{padding-left:0;border-top:1px dotted #666;border-bottom:1px dotted #666;padding:1em 0 1em 0;margin:2em 0 2em 0}
+#book-more-content-sommaire div.chapter, #book-more-content-sommaire div.souspartie,#book-more-content-aboutauthor div.director,#book-more-content-aboutauthor div.author{margin-top:.5em}
+
+/** fenetre citation **/
+#cite{border:none !important;-moz-box-shadow:none;-webkit-box-shadow:none;-khtml-box-shadow:none;box-shadow:none;display:block}
+#citation-chapter > h3,#citation-book > h3{color:#000 !important}
+
+/** accueil **/
+body#index div.description,body.revuedepresse #book-image-description div.description{max-width:70%;width:70%;float:right;display:block;vertical-align:top}
+body#index div.cover,div.cover.home,body.revuedepresse #book-image-description div.cover{width:15%;max-width:15%;display:block;float:left;vertical-align:top}
+body#index div#main > div.home,body#index div#main > div.home > div.container,body#index div#main > div.home > ul.bookslist > li,#review{clear:both}
+div.booksmodule3 li div.description.home, div.booksmodule3 li div.description.home.nocouv:hover{border:none !important}
+body#index div#main > div.home > div.bookslist{padding-bottom:1em}
+.booksmodule1 img{max-width:180px}
+body#index div#main > div > div[class!="links"]{display:block}
+
+/** revue de presse **/
+#review-header > div{font:bold italic 25px Arial,sans-serif}
+#review{margin-top:2em}
+body.revuedepresse #book-image-description{overflow:hidden}
+body.revuedepresse #book-image-description div.description{padding-bottom:1em}
+
+/** liseuse **/
+body.reader #top-bar, body.reader #bottom-bar, body.reader #link-top, body.reader #citation-format-chapter, body.reader #citation-format-book,body.reader div[id^=tools-]{display:none !important}
+body.reader #cite{display:block}

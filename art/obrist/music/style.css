@@ -29,6 +29,10 @@ h2 {
 h3 {
 	font-size: 150%;
 }
+h4 {
+	font-size: 120%;
+	font-weight: normal;
+}
 i, em {
 	font-style: italic;
 }
@@ -53,6 +57,37 @@ section {
 	font-size: 115%;
 }
 
+.paranumber {
+	display: inline-block;
+	font-size: 70%;
+	margin-left: -1em;
+	padding-right: 0.5em;
+	color: b6b6b6;
+}
+
+.txl {
+	margin-left: 20%;
+}
+
+.center {
+	text-align: center;
+}
+.redpage {
+	padding: 5% 10%;
+	background-color: #C63833;
+	color: white;
+}
+.red {
+	color: #C63833;
+}
+figure {
+	max-width: 100%;
+	height: auto;
+}
+figcaption {
+	font-size: 80%;
+}
+
 @media screen and (max-width: 768px) {
 
 body {
@@ -70,6 +105,10 @@ h2 {
 }
 h3 {
 	font-size: 115%;
+}
+h4 {
+	font-size: 110%;
+	font-weight: normal;
 }
 
 	}

@@ -1,0 +1,691 @@
+@import "../../../css/yui-cssreset.css";
+*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-khtml-box-sizing:border-box;box-sizing:border-box}
+#openbarre,#openbarre *,#breadcrumb,#breadcrumb *,#lodel-globalDesk,#lodel-globalDesk *,#fancybox-wrap{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;-khtml-box-sizing:content-box;box-sizing:content-box}
+body{font:normal 75%/1.5 Asap,Verdana,sans-serif;padding:4em 0 90px 0}
+body.embed{margin-bottom:80px}
+abbr{cursor:help}
+strong{font-weight:bold;font-style:inherit}
+em{font-style:italic;font-weight:inherit}
+table{background:#FFF}
+td{font-size:.916em;padding:.458em;border:1px solid #CCC}
+hr,.hidden{visibility:hidden;overflow:hidden;display:none;margin:0;padding:0;width:0;height:0;line-height:0;font-size:0}
+#book-navigation > div,#bottom-navigation > div,#book-image-description,#review,#book-presentation,#book-actions,#presentation-chapter,#presentation-book,ul.bookslist li{vertical-align:top}
+sub,sup{font-size:.65em;line-height:1em}
+sup{vertical-align:super}
+sub{vertical-align:sub}
+a{text-decoration:none}
+input[type="text"]{padding-left:3px}
+span[style="font-variant:small-caps;"]{font-size:1.083em}
+label{display:block}
+input[type="submit"],input[type="button"]{height:23px;padding-left:1em;padding-right:1em;cursor:pointer;border:0;background-color:#888;font:bold .8em/23px Asap,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif}
+input[type="submit"]:hover,input[type="button"]:hover{color:#424242}
+.shadow{-moz-box-shadow:0px 0px 12px #000;-webkit-box-shadow:0px 0px 12px #000;-khtml-box-shadow:0px 0px 12px #000;box-shadow:0px 0px 12px #000}
+.inset-shadow{-moz-box-shadow:inset 0 15px 15px -15px #C0C0C0;-webkit-box-shadow:inset 0 15px 15px -15px #C0C0C0;-khtml-box-shadow:inset 0 15px 15px -15px #C0C0C0;box-shadow:inset 0 15px 15px -15px #C0C0C0}
+.light-inset-shadow{-moz-box-shadow:inset 0 15px 15px -10px #CCC;-webkit-box-shadow:inset 0 15px 15px -10px #CCC;-khtml-box-shadow:inset 0 15px 15px -10px #CCC;box-shadow:inset 0 15px 15px -10px #CCC}
+.grey-inset-shadow{-moz-box-shadow:inset 0 15px 15px -10px #E1E1E1;-webkit-box-shadow:inset 0 15px 15px -10px #E1E1E1;-khtml-box-shadow:inset 0 15px 15px -10px #E1E1E1;box-shadow:inset 0 15px 15px -10px #E1E1E1}
+.white-inset-shadow{-moz-box-shadow:inset 0 22px 15px -10px #FFF;-webkit-box-shadow:inset 0 22px 15px -10px #FFF;-khtml-box-shadow:inset 0 22px 15px -10px #FFF;box-shadow:inset 0 22px 15px -10px #FFF}
+.white-lite-inset-shadow{-moz-box-shadow:inset 0 22px 15px -10px #FAFAFA;-webkit-box-shadow:inset 0 22px 15px -10px #FAFAFA;-khtml-box-shadow:inset 0 22px 15px -10px #FAFAFA;box-shadow:inset 0 22px 15px -10px #FAFAFA}
+.grey-light-inset-shadow{-moz-box-shadow:inset 0 15px 15px -10px #F1F1F1;-webkit-box-shadow:inset 0 15px 15px -10px #F1F1F1;-khtml-box-shadow:inset 0 15px 15px -10px #F1F1F1;box-shadow:inset 0 15px 15px -10px #F1F1F1}
+.full-rounded{-moz-border-radius:6px;-webkit-border-radius:6px;-khtml-border-radius:6px;border-radius:6px}
+.inline-block{display:inline-block}
+.inline{display:inline}
+.table{display:table;table-layout:fixed}
+.table-row{display:table-row}
+.table-cell{display:table-cell}
+.float-left{float:left}
+.float-right{float:right}
+.upper{text-transform:uppercase}
+::selection{background:#e2e2e2;/* Safari */}
+::-moz-selection{background:#e2e2e2;/* Firefox */}
+*[dir="rtl"],*:lang(ar),*:lang(he){text-align:justify !important; font-family:Tahoma,sans-serif !important}
+li[dir="rtl"],li:lang(ar),li:lang(he){text-align:right !important}
+span[dir="rtl"],span:lang(ar),span:lang(he){display:inline-block}
+table[dir="rtl"],table:lang(ar),table:lang(he){display:block;text-align:right !important}
+#book-presentation > * > *[dir="rtl"],#book-presentation > * > *:lang(ar),#book-presentation > * > *:lang(he),#book-more-content #book-more-content-sommaire *[dir="rtl"],#book-more-content #book-more-content-sommaire *:lang(ar),#book-more-content #book-more-content-sommaire *:lang(he),div.text h1[dir="rtl"],div.text h1:lang(ar),div.text h1:lang(he),div.text h2[dir="rtl"],div.text h2:lang(ar),div.text h2:lang(he),div.text h3[dir="rtl"],div.text h3:lang(ar),div.text h3:lang(he),div.text h4[dir="rtl"],div.text h4:lang(ar),div.text h4:lang(he),div.text h5[dir="rtl"],div.text h5:lang(ar),div.text h5:lang(he),div.text h6[dir="rtl"],div.text h6:lang(ar),div.text h6:lang(he){width:100%}
+a:hover,div.toc div.tocSection1 a,#tdm div.souspartie > h2,#link-export-chapter-ris:hover,#link-export-chapter-wikipedia:hover,#link-export-book-ris:hover,#link-export-book-wikipedia:hover,#book-same-editor h2,#book-oebooks h2,.black,#book-presentation h1.title a,#book-image-description h1.title a,#presentation-chapter > h1,div.collection,#presentation-chapter > h2,#presentation-chapter span.separator,div.entries ul li a,div.resumeContent p,div.tabContent p,.header ul a:hover,.description .title a, #book-more-content-sommaire a:hover{color:#000}
+#wrapper{width:970px;margin:auto}
+#main{float:right;width:750px;margin-right:20px;overflow:hidden;margin-top:25px;position:relative}
+#main.full_page{width:970px;padding:0;margin:0;float:none;overflow:visible}
+body.embed #main.full_page{width:745px}
+#nav{float:left;width:200px;margin-top:30px}
+#nav ul{border-top:1px dotted #ccc;width:140px;margin-bottom:40px;padding-top:15px;margin-top:3px}
+#nav li{margin-bottom:7px}
+input,button,select,label,.cover *,.cover,#book-navigation-second a.page.next,#book-navigation-second a.page.prev{vertical-align:middle}
+#nav a,#nav .selected a:hover,p.crditillustration,p.creditillustration,p.crditsillustration,#book-navigation a,#bottom-navigation a,#presentation-book div.author,#presentation-book div.director,span.countspacer,div#pageHeader ul.listEntrytypes a,a.review-back,a.entries-back,#pagination,#textDiffered,#translator{color:#999}
+#nav li.all{font-weight:bold;font-size:.916em}
+#footer{clear:both;border-bottom:56px solid #666;position:relative;top:100px;margin-bottom:90px;width:100%;padding:20px}
+#footer td{font-size:1em}
+#footer > div:first-child{padding-right:20px;width:50%}
+#footer-presentation{width:100%}
+#footer-presentation td{border:none;vertical-align:top;padding:0}
+#footer-presentation #footer-presentation-following{padding-left:20px}
+#footer-presentation-sitemap,#footer-presentation-following{width:50%}
+#footer-portal,#footer-openedition{width:25%;border-left:1px dotted #000;padding:0 2em 0 2em;vertical-align:top}
+#footer img.title{margin-bottom:2.5em}
+#footer h1.sitetitle{font:bold 1.583em/1.278em Asap,Verdana,sans-serif;margin-bottom:2em;width:300px}
+#footer h2.head{font-weight:bold;margin-bottom:1em;display:block}
+#footer li.head, #footer a.lettre{font:bold 1.083em Asap,Verdana,sans-serif;margin-bottom:.8em}
+#footer a.lettre{margin-bottom:0}
+#footer li.head li{list-style-type:disc;font:.7em Asap,Verdana,sans-serif;margin-left:1.3em}
+#footer li.head a{font:0.917em Asap,Verdana,sans-serif}
+#footer li.head li a{font:1.3em Asap,Verdana,sans-serif}
+#footer li.head ul{margin-top:.3em}
+#footer-presentation-following li.float-left{margin-right:3px}
+#openedition-presentation{font:1em/1.333em Asap,Verdana,sans-serif;margin-bottom:1.5em}
+#openedition-freemium{font:1em Asap,Verdana,sans-serif}
+#footer-openedition a{display:block}
+#footer-openedition li a{margin-bottom:.8em}
+#footer-openedition ul{margin-bottom:2em}
+#footer-presentation-following p{font:1.083em/1.333em Asap,Verdana,sans-serif;margin-bottom:1em}
+#footer-presentation-following ul{margin-bottom:1.5em;overflow:hidden}
+#nav li.all,#publiHeader > h1,p.citationbis,p.question,p.legendeillustration,p.titreillustration,div.text ul li ul li,div.text ol li ol li,#book-more-content-sommaire h3.altertitle,#book-more-content-sommaire h2.subtitle,#book-read a,#book-buy a,#book-read div,#book-buy-library,#book-same-editor h3,#book-oebooks h3,#review-header > div,h3.altertitle,#book-tdm a:hover,#book-share a:hover,#book-tdm a,#book-share a,#book-actions #link-liseuse a,#book-infos li,#book-search,#features a,div#pageHeader h1,div.intro div.text,#publiTitle,#featured li a,#suggerer-content input[type="text"],#suggerer-content textarea,#share-url input[type="text"],#share-embed textarea,#share-mail input[type="text"],#share-mail textarea,#footer li.head, #footer a.lettre,#footer li.head a,#footer li.head li a,#footer-openedition a,#footer-presentation-following p,#footer-presentation-following p a{color:#666}
+#searchform{height:44px;padding:11px 0 0 18px;background-color:#B5B5B5;clear:left}
+#searchform select{background-color:#E9E9E9;border:none;font-size:.95em;height:21px;margin-left:9px;padding:3px}
+#searchform input[type="text"]{font-size:.95em;height:21px;width:208px}
+#sitelogo{width:180px}
+#siteHeader{background-repeat:repeat-x;height:125px;width:970px;overflow:hidden;table-layout:auto}
+#siteHeader *{max-height:125px}
+#siteHeader > div.table-cell{vertical-align:middle}
+#sitename{font:2.5em Asap,Verdana,sans-serif}
+#sitesubtitle{font-size:1.083em;}
+#square{background-repeat:no-repeat;width:27px}
+#siteinfos-container{max-width:548px;min-width:450px}
+#siteinfos{padding-right:60px}
+#featured-container{padding-left:30px;max-width:235px;min-width:160px}
+#featured-container:before{background-color:transparent;background-repeat:no-repeat;content:"";position:absolute;background-position:left top;width:14px;height:125px;margin-left:-30px}
+#sitelink-logo{width:230px}
+#sitelink-logo img{margin:0 25px 0 25px}
+#featured{height:125px}
+#featured ul{vertical-align:middle}
+#featured li a,#citation-format-chapter a,#citation-format-book a,#share-format a{font:bold .917em Asap,Verdana,sans-serif}
+#book-more-content-sommaire h3{font:bold 1.25em Asap,Verdana,sans-serif}
+#featured li a,.description .title,body.publications #book-presentation h1.title,#book-image-description h1.title,#tdm div.souspartie > h3.souspartie,#tdm div.souspartie > h4.souspartie,#tdm div.souspartie > h5.souspartie,#tdm div.souspartie > h6.souspartie,#search_portal a,#book-presentation > h3.result,#book-presentation > h1.result,#link-export-chapter-ris,#link-export-chapter-wikipedia,#link-export-book-ris,#link-export-book-wikipedia,#citation-format-chapter,#citation-format-book,#citation-chapter > h3,#citation-book > h3,#citation-intro h1.title,h2.section,#shortcuts,#book-access a,#book-access-status p,#book-buy-library h4,#book-access > a,#book-access > div,#book-actions h2,#book-actions h3,#book-tdm,#book-share,#book-actions #link-liseuse a,#book-search label,#presentation-book > h2,#presentation-book span.separator,div#pageHeader ul.listEntrytypes a,div#pageHeader ul.listEntrytypes span,div.resumeMenu a,div.tabMenu a,#nav li.all,#nav h2,.header ul a,#share-content > h3,#share-format a,input[type="submit"],input[type="button"],h4.section.embed,#footer h2.head{text-transform:uppercase}
+.header a{float:left}
+.header a img{margin-left:28px;position:relative;top:5px;margin-top:24px}
+.header ul{float:right;margin-top:75px}
+.header li{display:inline-block}
+.header ul a{height:29px;padding:0 12px;display:block;font:bold 1.4em/29px Asap,Arial,"Times New Roman",Times,serif;background-color:#B5B5B5}
+.cover{background:url(../../images/publishers/bg-cover.png);min-height:277px;width:212px}
+.cover.home{height:500px;line-height:500px}
+.cover img{border:2px solid transparent}
+.description .title,#book-presentation h1.title,#book-image-description h1.title,#presentation-book > h2,#presentation-book span.separator{font:bold 1em Asap,Arial,"Times New Roman",Times,serif}
+.description .author strong,.description .director strong,.description .editor strong{font-weight:normal}
+.description .author,.description .director,.description .editor,.description .editionyear{font-size:1.083em;line-height:1.5em;margin-top:.5em;font-style:italic}
+.description .author em,.description .director em,.description .editor em,.description .editionyear em{font-style:normal}
+.description h2.subtitle{margin-top:.5em}
+.description .author,.description .director,.description .editor{margin-top:1em}
+.description .editionyear{font-style:normal}
+.end{font:bold 2.1em/.5em Georgia,serif;display:block}
+.end.marged{margin-bottom:.5em}
+ul.bookslist{background:#f8f7f7;padding:.5em 1.5em 2em 1.5em;margin-top:3.5em}
+ul.bookslist li{margin-left:1.5em;margin-top:1.5em}
+#allbooks ul.bookslist li{margin-bottom:2em}
+div.home ul.bookslist li:first-child,div.description.home div.maintitle,#book-more-content ul.banner li:first-child,#book-more-news ul.banner li:first-child,#book-more-related ul.banner li:first-child{margin-left:0}
+div.bookslist div.table-cell,a.review-back,a.entries-back,#book-read > div,#book-buy > div,#book-same-editor,#book-oebooks,div.linker,div.linker_all,p.encadre,#book-search,#oebooks-link-original{padding:1em}
+div.toc{padding:0 1em 1em 1em}
+div.toc div.tocSection1{padding-top:1em}
+div.toc div.tocSection1 + div.tocSection1{padding-top:0}
+div.bookslist div.table-cell:first-child{padding-left:.5em}
+div.bookslist,#cite,#suggerer,#share,div.description.home,ul.bookslist.container,#access{padding:2em}
+#book-read > #book-access{padding:2em .5em 2em .5em}
+ul.bookslist li div.cover{height:277px;line-height:277px}
+ul.bookslist li div.description{max-width:170px;margin-top:2em}
+ul.bookslist.textes li div.description,#book-presentation ul.bookslist.textes li div.description{max-width:330px;width:330px;min-width:330px;margin-top:0}
+#related-authors-textes .description .title a{text-transform:none;font-size:1.1547em}
+#book-presentation #related-authors-textes ul.bookslist.textes{padding:1em 2.5em 2.5em 2.5em}
+#book-presentation #related-authors-textes ul.bookslist.textes li{margin-left:0;margin-top:1em}
+#book-presentation #related-authors-textes ul.bookslist.textes li div.description{width:225px;max-width:225px;min-width:225px}
+#book-presentation #related-authors-textes ul.bookslist.textes li div.description.padded-right{padding-right:15px}
+#book-presentation #related-authors-textes ul.bookslist.textes li div.description.padded-left{padding-left:15px}
+ul.bookslist.textes li div.description h1.title,#book-presentation ul.bookslist.textes li div.description h1.title,#book-presentation ul.bookslist.textes li div.description h1.title a{font:bold 1.333em Asap,Arial,"Times New Roman",Times,serif}
+#book-presentation ul.bookslist.textes li div.description h1.title,#book-presentation ul.bookslist.textes li div.description h1.title a{font-size:1.155em}
+ul.bookslist.textes li div.description h2.in,#book-presentation ul.bookslist.textes li div.description h2.in{margin-top:.3em}
+ul.bookslist.textes li div.description h3.collection,#book-presentation ul.bookslist.textes li div.description h3.collection{margin-top:.5em}
+ul.bookslist.textes li div.description span.end,#book-presentation ul.bookslist.textes li div.description span.end{margin-top:.3em}
+ul.bookslist.textes li:first-child,ul.bookslist.publications li:first-child{margin-left:.5em}
+div.booksmodule3 li div.description.home{position:absolute;margin:-260px 0 0 20px;width:170px;height:240px;background-color:#FFFFFF;padding:10px;overflow:hidden}
+div.booksmodule3 li div.description.home.nocouv{border-color:#000000}
+div.booksmodule3 li div.description.home a.hidden{display:none}
+div.booksmodule3 li div.description.home h1.title{font:bold 1em/1em Asap,Arial,"Times New Roman",Times,serif}
+div.booksmodule3 li div.description.home h2.subtitle{font:1em/1em Asap,Verdana,sans-serif}
+div.booksmodule3 li div.description.home div.author,div.booksmodule3.home li div.description div.director{font:italic 1em/1em Asap,Verdana,sans-serif}
+ul.bookslist.entries{margin-top:0}
+ul.bookslist.container{margin:0}
+ul.bookslist.container.home h1.title{font-size:1em}
+div.bookslist div.table-cell:nth-child(1),div.bookslist div.table-cell:nth-child(2),div.bookslist div.table-cell:nth-child(4),div.bookslist div.table-cell:nth-child(5){border-right:1px solid #DADADA}
+#publiIntroduction,#publiDirector{width:635px;margin-left:35px}
+#publiIntroduction div.resume{margin-top:1em}
+#publiDirector{font:14px Asap,Arial,"Times New Roman",Times,serif}
+#publiDirector strong{font-weight:normal}
+#publiHeader{border-bottom:2px dotted #ccc;margin-bottom:25px;padding-bottom:10px}
+#publiTitle,#publiHeader > h1{font:italic 30px "Droid serif",Georgia,serif}
+#publiTitle am,#publiHeader > h1 em{font-style:normal}
+/* onglets */
+html.js div.resumeContent.hide,html.js div.tabContent.hide,html.js div.entries-oe div.hide{display:none}
+div.resumeContent p,div.tabContent p,#text,#book-more-content-aboutauthor div.author,#book-more-content-aboutauthor div.editor,#book-more-content-aboutauthor div.director,#book-more-content > div,#book-more-news > div,p.citation,p.quotations,p.quotation,p.citationbis,p.citationter{text-align:justify}
+#book-more-content #book-more-content-sommaire{text-align:left}
+div.resumeContent p,div.tabContent p,div.ndlr p.ndlr {margin:0 0 1em;font:1.083em/1.5 Asap,Verdana,sans-serif}
+body.publications div.resume div.resumeContent a.read-next{margin-top:-1em}
+#book-presentation div.end{margin-bottom:1em}
+#book-presentation div.ndlr,div.author div.description,div.resumeContent,#book-presentation div.resume,#book-presentation div.collection,#book-image-description div.author,#book-image-description div.editor,#book-presentation div.editor,#book-image-description div.director,#book-image-description div.collection,#book-presentation div.author,#book-presentation div.director,#book-presentation div.translator{margin-top:1em}
+#book-presentation div.contributor + div.contributor {margin-top:0}
+#book-presentation div.author,#book-presentation div.director,#book-presentation div.editor,#book-image-description div.author,#book-image-description div.director{font-size:1.25em;font-weight:bold}
+#book-presentation div.author div.description,#book-presentation div.director div.description{font-weight:normal}
+#book-presentation ul.bookslist div.author,#book-presentation ul.bookslist div.director,#book-presentation ul.bookslist div.editor{font-weight:normal}
+#book-presentation div.end,#book-image-description div.end{margin-top:.5em}
+div.resumeMenu,div.tabMenu{font-weight:bold;font-size:.917em}
+div.resumeMenu a,div.tabMenu a{padding:.5em;line-height:2.5em}
+div.tabMenu{margin-bottom:1.667em;margin-left:-.5em}
+div.tabMenu a.active,div.tabMenu,#citation-chapter > h3.inline-block,#citation-book > h3.inline-block,#citation-format-chapter > h4,#citation-format-book > h4{color:#A9A9A9}
+div.resumeMenu a.active,.header ul a,#search-navigation-bar span.current,#link-export-chapter-ris,#link-export-chapter-wikipedia,#link-export-book-ris,#link-export-book-wikipedia,#citation-format-chapter a.current,#citation-format-book a.current,#book-more-content ul.banner li,#book-more-news ul.banner li,#book-more-related ul.banner li,div.maintitle,#share-format a.current,input[type="submit"],input[type="button"]{color:#FFF}
+#book-search input[type="submit"]{font-size:0.873em}
+div.resumeMenu a.inactive:hover{background-color:#EEE}
+div.entries-oe{margin-top:1.5em}
+a.review-back,a.entries-back{font-weight:bold;float:right;margin-left:35px;font:bold 1em Asap,Verdana,sans-serif}
+a.entries-back span,a.review-back span{background-position:0px -12px;width:20px;height:20px;position:absolute;margin-left:-25px;margin-top:-3px;background-repeat:no-repeat;background-color:#C7C7C7}
+div.intro{margin:2.9em 5em 0 1.9em;position:relative}
+div.intro div.text p {margin-bottom:.75em}
+div.intro:before{background-position:left top;bottom:0;left:-24px;right:0;top:-38px;background-color:transparent;background-repeat:no-repeat;content:"";position:absolute;z-index:-1}
+div.intro + div.intro:before{background:none}
+div.intro h2{font:italic 1.9em "Droid serif",Georgia,serif;color:#8F8F8F}
+div.intro h2 em{font-style:normal}
+div.intro div.text{margin:1.5em 0 2.45em 0;font:italic 1.1em/1.667em "Droid serif",Georgia,serif}
+div.intro div.text em{font-style:normal}
+div.introduction{font:1em/1.5em Asap,Verdana,sans-serif;margin-top:1.5em}
+div.introduction p{margin-bottom:.3em}
+h2.subtitle{font:1.2em Asap,Verdana,sans-serif;margin-top:1em}
+div.description.home{width:50%;margin:0}
+div.description.home > *{margin-left:.5em}
+div.description.home > div.end{margin-left:0.2em}
+div.description.home h1.title{font-size:1.65em}
+div.maintitle{margin-bottom:22px;padding:0 1em 0 1em;font:italic 1.65em/40px Tinos,Georgia,"Times New Roman",Times,serif;height:40px;background-repeat:repeat-x}
+div.maintitle em{font-style:normal}
+div.links{background-color:#FFF;width:100%;overflow:hidden}
+div.linker_all a span,a.read-next span{margin:.3em 0 0 -1.5em;width:12px;height:10px;background-position:0px 0px;background-repeat:no-repeat}
+div.linker a{margin-left:.5em;width:13px;height:13px;background-position:0px -63px;background-repeat:no-repeat;background-color:#C7C7C7}
+div.linker a.selected{background-position:0px -48px}
+div.linker a:hover{background-position:0px -78px}
+div.linker a:first-child{background-position:0px -34px;width:8px;height:12px}
+div.linker a:last-child{background-position:0px -94px;width:8px;height:12px}
+span.arrow{background-position:0px -108px;position:absolute;height:12px;width:62px;margin-top:40px}
+div.cover.home{width:50%}
+div.linker,p.code,p.puces,td p.texte,td p.annexe,div.textIcon p.texte,p.crditillustration,p.creditillustration,p.crditsillustration,p.legendeillustration,p.titreillustration,div.text ul,div.text ol,div.text h1,div.text h2,div.text h3,div.text h4,div.text h5,div.text h6,ul.sidenotes li,#book-buy-library a{text-align:left}
+div.linker_all,#search_portal,#presentation-chapter,p.code[dir="rtl"],p.puces[dir="rtl"],td p.texte[dir="rtl"],td p.annexe[dir="rtl"],div.textIcon p.texte[dir="rtl"],p.crditillustration[dir="rtl"],p.creditillustration[dir="rtl"],p.crditsillustration[dir="rtl"],p.legendeillustration[dir="rtl"],p.titreillustration[dir="rtl"],div.text ul li[dir="rtl"],div.text ol li[dir="rtl"],div.text h1[dir="rtl"],div.text h2[dir="rtl"],div.text h3[dir="rtl"],div.text h4[dir="rtl"],div.text h5[dir="rtl"],div.text h6[dir="rtl"],ul.sidenotes li[dir="rtl"]{text-align:right}
+div.booksmodule1 div.cover.home,div.booksmodule1 > div.container{height:500px;max-height:500px;min-height:500px}
+div.booksmodule1 div.description.home{height:452px;max-height:452px;min-height:452px}
+div.booksmodule6 > div.bookslist{height:500px;max-height:500px;min-height:500px}
+div.booksmodule1 > div.container.hidden,div.booksmodule1 div.container.hidden div.cover.home,div.booksmodule1 div.container.hidden div.description.home{height:0;max-height:0px;min-height:0px}
+div.booksmodule1,div.booksmodule3,div.booksmodule6{background:#F8F7F7;margin-bottom:3em}
+/* auteurs et entrées */
+#pageHeader{overflow:hidden}
+#pageHeader h1{font:italic 2.45em "Droid serif",Georgia,serif;margin:0 0 .5em 0;float:left}
+#pageHeader h1 em{font-style:normal}
+#pageHeader.hierarchic{border-bottom:2px dotted #CCCCCC}
+#pageHeader ul.listEntrytypes{margin-left:1.5em;line-height:3em}
+#pageHeader ul.listEntrytypes a,#pageHeader ul.listEntrytypes span{font:bold 1.083em Asap,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif;padding:0 .2em 0 .2em}
+#alphabet,div#entry{border-top:2px dotted #CCCCCC;border-bottom:1px dotted #000000}
+ul.alphabet li{min-width:24px}
+#entry{padding:1.3em 2em 1.3em 2em}
+#entry h2{font:italic 1.5em "Droid serif",Georgia,serif}
+#entry h2 em{font-style:normal}
+#alphabet{font:bold 1.45em Asap,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif;padding:.5em 0 .5em 0}
+#alphabet a,div#alphabet span{display:block;color:#A1A1A1;line-height:31px}
+#alphabet a:hover{background-color:#E6E6E6}
+#alphabet span.inactive,div.entries ul li a:hover{color:#D7D7D7}
+div.entries ul{margin:2em 0 0 0}
+div.entries ul li{line-height:4em}
+div.entries ul li a{font:1.333em Asap,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif}
+span.entitiescountspacer,span.count{font:1.35em Asap,Arial,"Times New Roman",Times,serif;color:#C5C5C5}
+span.count{font-weight:bold}
+span.countspacer{font:bold 1.25em Asap,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif}
+
+div.entries ul.hierarchic li a{font:1em Asap,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif}
+div.entries ul.hierarchic {margin:0;font-size:1.666em}
+div.entries ul.hierarchic li{line-height:1.5em}
+div.entries > ul.hierarchic {margin:1.25em 0 0 0}
+div.entries ul.hierarchic ul.hierarchic{margin-left:1.333em;font-size:.8em}
+div.entries ul.hierarchic ul.hierarchic  li{line-height:1.875em}
+div.entries ul.hierarchic ul.hierarchic ul.hierarchic{font-size:.812em}
+div.entries ul.hierarchic ul.hierarchic ul.hierarchic ul.hierarchic{font-size:1em}
+div.entries ul.hierarchic span.entitiescountspacer,div.entries ul.hierarchic  span.count{font-size:1em}
+
+div.entries h2{font:italic 6em/1.3em Asap,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif;text-transform:lowercase;margin:.6em 0 0 0}
+div.entries h2 em{font-style:normal}
+
+/* Livre */
+#presentation-book > h2{color:#4C4C4C}
+#presentation-book div.author,#presentation-book div.director{font:normal 1.167em Asap,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif}
+#presentation-book span.separator,body.textes #book-presentation p.resume,p.epigraphe,p.pigraphe{color:#7C7C7C}
+#presentation-chapter > h2,#presentation-chapter span.separator{font:1.083em Asap,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif}
+#presentation-chapter > h1,div.collection{font:1em Asap,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif}
+#presentation-chapter{min-width:25%}
+#book-content,#book-actions,#review,body.revuedepresse #book-image-description{padding-top:25px}
+#book-content{width:780px}
+#book-actions{width:190px}
+#book-actions > div{margin-left:30px}
+#book-actions > #suggerer-container{margin-left:0}
+#book-image-search{width:225px;max-width:225px;min-width:225px}
+#cite-oe-books h3,#cite-mla h3,#cite-apa h3,#cite-export h3{font:bold 1.25em/1.417em Asap,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif;margin-bottom:.5em}
+#cite-oe-books p,#cite-mla p,#cite-apa p{margin-bottom:2em;line-height:1.417em}
+#cite-zotero {font:bold 0.917em Asap,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif;color:#7A7A7A;margin-top:3em;padding-bottom:25px;text-align:right;text-transform:uppercase;}
+#features{margin-top:.5em}
+#features a{font:italic 1.1em Asap,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif}
+#features a em{font-style:normal}
+#book-presentation{padding-left:35px;width:555px}
+body.textes.embed #book-presentation{padding-left:0;padding-top:1em}
+#book-presentation > div.altertitle{margin-top:1em}
+#book-more{margin-top:30px}
+#book-search{margin-top:12px;background-color:#CBCBCB;font:.917em Asap,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif}
+#book-search input[name=query],#pageBody input[type="text"]{border:1px solid #C0C0C0;width:150px;font-size:1.1em;font-weight:normal;height:20px}
+#book-search label{font-weight:bold}
+#searchform input[type="submit"]{margin-left:.4em}
+#book-image-description h1.title{margin-top:1.5em}
+#book-image-description h1.title a{font-size:1.5em}
+#book-presentation h1.title a,#book-presentation h1.title{font-size:1.5em}
+#book-presentation h1.title a.footnotecall,#book-presentation h1.title a.endnotecall{font-size:medium}
+#book-presentation h2.subtitle,#book-image-description h2.subtitle{font-size:1.1em}
+#book-infos {font:.917em/1.2em Asap,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif;border-top:2px dotted #CCC;margin-top:35px;padding-top:20px}
+#book-license{border-top:2px dotted #CCC;margin-top:35px;padding-top:20px;margin-top:15px}
+#book-infos li{width:49%;vertical-align:top;margin-bottom:1em}
+#book-actions > div,#searchform input[type="text"]{border:1px solid #CCC}
+#book-read > #book-access-status.bordered{border-bottom:1px solid #CCC}
+#book-read > div,#book-buy > div,#book-tdm,#book-share,div#alphabet a,div#alphabet span,.cover,#search-navigation-bar,p.separateur,p.sparateur,span.paranumber,#access-mode{text-align:center}
+#book-actions #link-liseuse{border:none;margin-bottom:1em}
+#book-actions #link-liseuse a{font:bold .917em/.4em Asap,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif}
+#book-actions > #book-read{padding-bottom:1em;border-bottom:0;}
+#book-actions > #book-buy{border-top:1px solid #DCDCDC}
+#libraries-waiting{margin:1em 0 0 -2.5em}
+#libraries-unavailable{display:none;margin:1em 0 0 0}
+#link-liseuse img{margin:-1em 0 1em 0}
+#book-tdm a{width:100%;background-color:#CBCBCB}
+#book-tdm,#book-share{margin:.5em 0 .5em 0}
+#book-share a{width:49%;background-color:#EBEBEB}
+#book-buy-library a.publisher{width:100%;background-color:#EBEBEB;text-transform: uppercase;text-align:center;margin-bottom:1em;border-radius:5px;}
+#book-tdm a,#book-share a,#book-buy-library a.publisher{padding:10px 2px; font:bold .917em Asap,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif}
+#book-tdm a:hover{background-color:#BCBCBC}
+#book-share a:hover,#book-buy-library a.publisher:hover{background-color:#D1D1D1}
+#book-same-editor,#book-oebooks{margin-top:1em}
+#book-more-content ul.banner,#book-more-related ul.banner,#book-more-news ul.banner{width:100%;font:bold italic 1.083em/27px Asap,Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif;margin-bottom:3px}
+#book-more-content-presentationfull,#book-more-related,#book-more-news,#book-more-news-pressreview{padding:2em 0 0 0}
+#book-more-content ul.banner li,#book-more-related ul.banner li,#book-more-news ul.banner li{border-right:2px solid #FFFFFF;margin-left:-4px;padding:0 1em 0 1em;background-repeat:repeat-x;background-color:#ABABAB}
+#book-more-content ul.banner li span.arrow,#book-more-related ul.banner li span.arrow,#book-more-news ul.banner li span.arrow{margin-top:27px}
+#book-more-content ul.banner li:hover,#book-more-related ul.banner li:hover,#book-more-news ul.banner li:hover{cursor:pointer}
+#book-more-content ul.banner,#book-more-related ul.banner,#book-more-news ul.banner{background-color:#D5D5D5}
+#book-more-content ul.banner span.arrow,#book-more-related ul.banner span.arrow,#book-more-news ul.banner span.arrow{margin-left:-10px;width:20px;height:5px;z-index:99/* pour que l effet JQuery FadeIn() ne fade pas sur la fleche */}
+#book-more-related-theme div.tabMenu{margin:0 0 1em 0}
+#book-more-related-theme div.tabMenu a:first-child{padding-left:0}
+#book-more-related #book-more-related-theme ul.bookslist.container{padding:1.5em}
+#book-more-related #book-more-related-theme ul.bookslist.container li:first-child{padding:.5em;margin-left:0}
+#book-more-related #book-more-related-theme ul.bookslist.container li{margin-left:1.5em}
+#book-more-related div.editor, #book-more-related div.author, #book-more-related div.director {font-size:1.083em}
+h3.altertitle{font:italic 1.083em/1.75em Asap,Verdana,sans-serif}
+h3.altertitle em{font-style:normal}
+a.read-next{float:right}
+#book-more-news-pressreview h2,#review-content h2{font:bold 1.167em/1.333em Asap,Arial,"Times New Roman",Times,serif}
+#book-more-news-pressreview div.links{margin:-1em 0 2em 0}
+#review-content h3,#book-more-news-pressreview h3{font-size:1.167em;font-weight:normal}
+#review-content{padding-right:110px}
+#review-content h1.title{font:bold 1.167em Asap,Arial,"Times New Roman",Times,serif}
+div.souspartie{padding:1em 0 1em 0;margin:1.5em 0 1.5em 0;border-top:1px dotted #A9A9A9;border-bottom:1px dotted #A9A9A9}
+div.souspartie + div.souspartie{border-top:none;margin-top:-1.5em}
+div.souspartie + div.chapter{margin-top:-1em}
+div.chapter{padding:1em 0 0 0}
+#book-more-news-pressreview p,#review-content p{font:1.083em/1.75em Asap,Verdana,sans-serif;margin:1em 0 1em 0}
+#book-more-related ul.banner span.arrow{background-position:0px -129px}
+#book-more-content ul.banner span.arrow,#book-more-news ul.banner span.arrow,#book-more-related ul.banner #link-more-related-theme span.arrow,#book-more-related ul.banner #link-more-related-author span.arrow{background-position:0px -122px}
+div.home ul.bookslist li:first-child{margin-top:0}
+#book-more-related ul.bookslist.container{padding:2.5em }
+#book-more-related ul.bookslist.container li{margin-left:2.5em;margin-top:0;padding-top:.5em}
+#book-more-related ul.bookslist.container li:first-child{padding-left:0;margin-left:0}
+#book-more-related ul.bookslist.container li div.cover{width:212px}
+#book-image-search div.cover,#book-image-description div.cover{width:225px;height:300px;line-height:300px}
+#book-image-description{width:225px}
+#review{width:714px;padding-left:30px}
+#review-header > div{font:italic 2.5em "Droid serif",Georgia,serif;float:left}
+#review-header > div em{font-style:normal}
+#review-header{border-bottom:2px dotted #CCC;padding-bottom:.5em;margin-bottom:30px;overflow:hidden;padding-right:110px}
+#book-image-search div.cover img,#book-image-description div.cover img{max-width:175px}
+#book-actions h2,#book-actions h3{font-weight:bold}
+#book-same-editor h3,#book-oebooks h3{margin-top:1em}
+#book-same-editor h3:first-child{margin-top:0}
+#book-same-editor h3,#book-oebooks h3,#book-same-editor a,#book-oebooks a{font-size:.917em}
+#book-oebooks h3{text-transform:none}
+#book-read h3,#book-buy h3{background-color:#DCDCDC;font:bold 1em/30px Asap,Verdana,sans-serif;color:#6F6F6F;padding-left:1em}
+#book-read > #book-access{border-bottom:1px solid #EDEDED}
+#book-access > a,#book-access > div{margin-bottom:1.5em;font-weight:bold;font-size:.917em}
+#book-buy-library{margin-top:1em}
+#book-buy-library h4{font-size:.917em}
+span.img{background-repeat:no-repeat}
+#book-buy-library span.img{display:block;float:left;background-position:0px 0px;width:36px;height:24px;margin-top:-0.4em}
+#book-buy-library h4,#book-buy-online a{font-weight:bold;padding-top: 0.4em;}
+#book-buy-library a{display:block;margin-top:1em}
+#book-access-status p{margin-top:.5em;margin-bottom:1em;color:#8E8E8E;font:bold .833em Asap,Verdana,sans-serif}
+#book-buy-library a:hover,#book-access-status a:hover{color:#343434}
+#book-access span.img,#book-access .waiting img{display:block;margin:0 auto 5px auto}
+#book-access a{width:100%}
+#book-buy-online a:hover,#book-access a:hover{color:#B1B1B1}
+#img-epub,#img-pdf{display:block;margin-top:-0.4em;float:left}
+#img-epub{background-position:0px -286px;width:19px;height:24px}
+#img-pdf{background-position:0px -651px;width:18px;height:24px;margin-left:.5em}
+#img-freemium,#img-freemium-access{background-position:0px -358px;width:51px;height:31px}
+#img-openaccess,#img-openaccess-access{background-position:0px -358px;width:51px;height:21px}
+#acces-lire.img.available{background-position:0px -1002px;width:68px;height:63px}
+a:hover > #acces-lire.img.available,body.textes #acces-lire.img.available{background-position:0px -937px}
+#acces-lire.img.unavailable{background-position:0px -1067px;width:68px;height:63px}
+a:hover > #acces-lire.img.unavailable{background-position:0px -1132px}
+#acces-epub.img.available{background-position:0px -91px;width:68px;height:63px}
+a:hover > #acces-epub.img.available{background-position:0px -26px}
+#acces-epub.img.unavailable{background-position:0px -221px;width:68px;height:63px}
+#acces-epub.img.error{width:68px;height:63px;background-position:0px -1197px}
+#acces-pdf-book.img.available,#acces-pdf-chapter.img.available{background-position:0px -456px;width:68px;height:63px}
+a:hover > #acces-pdf-book.img.available,a:hover > #acces-pdf-chapter.img.available{background-position:0px -391px}
+#acces-pdf-book.img.unavailable,#acces-pdf-chapter.img.unavailable{background-position:0px -586px;width:68px;height:63px}
+#acces-pdf-book.img.error,#acces-pdf-chapter.img.error{width:68px;height:63px;background-position:0px -1262px}
+#img-exclusive-purchased,#img-exclusive-purchased-access{background-position:0px -312px;width:13px;height:21px;display:block;margin-left:auto;margin-right:auto}
+#img-exclusive-npurchased,#img-exclusive-npurchased-access{background-position:0px -335px;width:13px;height:21px;display:block;margin-left:auto;margin-right:auto}
+#acces-liseuse.img.available{background-position:0px -742px;width:68px;height:63px}
+a:hover > #acces-liseuse.img.available{background-position:0px -677px}
+#acces-liseuse.img.unavailable{background-position:0px -872px;width:68px;height:63px}
+#book-buy > #book-buy-online{border-top:1px solid #EDEDED;padding-top:2.5em;padding-bottom:2em}
+#book-more-content-aboutauthor a{font-size:1.25em}
+#book-more-content-aboutauthor div.author,#book-more-content-aboutauthor div.director,#book-more-content-aboutauthor div.editor{margin-bottom:1em;margin-top:1em;font-size:1em;}
+#book-more div.author + div.editor {margin-top:0}
+#book-more-related h2.subtitle{font-size:1.1em;line-height:1.4em}
+#book-more-content-sommaire h2{font:1.5em/1.667em Georgia,"Times New Roman",Times,serif}
+#book-more-content-sommaire h2.subtitle{font:1em Asap,Verdana,sans-serif;margin:0}
+#book-more-content-sommaire h2.suptitle{font:1em/1.5em Asap,Verdana,sans-serif;margin:0}
+#book-more-content-sommaire h2.suptitle+div.author{margin-top:0}
+#book-more-content-sommaire a{font:bold 1.25em Asap,Verdana,sans-serif}
+#book-more-content-sommaire div.author,#book-more-content-sommaire div.editor{font-size:1.083em}
+#book-more-content-sommaire h3,#book-more-content-sommaire div.author,#book-more-content-sommaire div.editor,#cite-oe-books p,#cite-mla p,#cite-apa p,#cite-oe-books h3,#cite-mla h3,#cite-apa h3,#cite-export h3,div.entries ul.hierarchic li a,p.citation,p.quotations,p.quotation,#openedition-freemium,#openedition-presentation,#book-more-content-sommaire h2{color:#333}
+#book-more-content-sommaire h3.altertitle{font:italic 1.083em/1.75em Asap,Verdana,sans-serif}
+#book-navigation-bars{width:500px;min-width:500px;max-width:500px}
+#book-navigation-bars-second{float:none;clear:both}
+#bottom{padding-top:2em;margin-top:2em;border-top:1px dotted #BEBEBE;padding-left:0}
+#bottom-alone{border-top:1px dotted #BEBEBE;padding-top:2em;margin-top:6em}
+#bottom-navigation{width:530px}
+#book-navigation,#bottom-navigation{border:1px solid #ECECEC;height:80px;max-height:80px;min-height:80px;margin-left:auto;margin-right:auto}
+#book-navigation{margin-top:25px;width:968px}
+#book-navigation-bars a{display:inline-block}
+#book-navigation a:hover,#bottom-navigation a:hover{color:#565656}
+#bottom-alone #bottombook-navigation-top{border:1px solid #ECECEC;margin-left:auto;margin-right:auto}
+#bottombook-navigation-top a{width:84px;height:78px;display:inline-block}
+#bottombook-navigation-top{width:84px}
+#book-navigation-bars,#bottombook-navigation-top{border-left:1px solid #D5D5D5;border-right:1px solid #D5D5D5;background-color:#F5F5F5}
+#book-navigation-before > div,#book-navigation-after > div,#bottombook-navigation-before > div,#bottombook-navigation-after > div,#book-navigation-before,#book-navigation-after,#bottombook-navigation-before,#bottombook-navigation-after{width:223px;max-width:223px;min-width:223px;height:78px;max-height:78px}
+#book-navigation-before,#book-navigation-after,#bottombook-navigation-before,#bottombook-navigation-after{background-color:#F0F0F0}
+#book-navigation-before a,#bottombook-navigation-before a{padding:0 2.5em 0 1em;height:78px;max-height:78px;width:223px;vertical-align:middle;position:relative}
+#book-navigation-before:after,#bottombook-navigation-before:after{background-position:0px -226px;width:24px;height:19px;content:"";position:absolute;margin:-48px 0 0 199px;-moz-opacity:.1;-webkit-opacity:.1;-khtml-opacity:.1;opacity:.1}
+#book-navigation-before:hover:after,#bottombook-navigation-before:hover:after{-moz-opacity:1;-webkit-opacity:1;-khtml-opacity:1;opacity:1}
+#book-navigation-after a,#bottombook-navigation-after a{padding:0 1em 0 2.5em;height:78px;max-height:78px;width:223px;vertical-align:middle;position:relative}
+#book-navigation-first{padding-top:1em}
+#book-navigation-first > div{position:absolute;width:480px}
+#book-navigation-first > a{display:block;float:left;margin-right:2px}
+#book-navigation-bars{padding:.5em 0 0 2em;height:78px;min-height:78px;max-height:78px;min-width:524px;max-width:524px;width:524px}
+#book-navigation-first{height:50px}
+#book-navigation-bars a{-moz-opacity:.45;-webkit-opacity:.45;-khtml-opacity:.45;opacity:.45}
+#book-navigation-bars a:hover{-moz-opacity:1;-webkit-opacity:1;-khtml-opacity:1;opacity:1}
+#bottombook-navigation-top span.arrow{background-position:0px -268px;width:14px;height:20px;margin-top:30px;margin-left:34px;-moz-opacity:.1;-webkit-opacity:.1;-khtml-opacity:.1;opacity:.1;background-color:transparent}
+#bottombook-navigation-top a:hover span.arrow{-moz-opacity:1;-webkit-opacity:1;-khtml-opacity:1;opacity:1}
+#book-navigation-after:before,#bottombook-navigation-after:before{background-position:0px -247px;width:24px;height:19px;content:"";position:absolute;margin:30px 0 0 0px;-moz-opacity:.1;-webkit-opacity:.1;-khtml-opacity:.1;opacity:.1}
+#book-navigation-after:hover:before,#bottombook-navigation-after:hover:before{opacity:1}
+#book-navigation-first a.notice,#book-navigation-first a.souspartie,#book-navigation-first a.chapter{width:22px;height:29px}
+#book-navigation-first a.notice{background-position:0px -26px}
+#book-navigation-first a.notice.current{background-position:0px -57px}
+#book-navigation-first a.souspartie{background-position:0px -88px}
+#book-navigation-first a.souspartie.current{background-position:0px -119px}
+#book-navigation-first a.chapter{background-position:0px -150px}
+#book-navigation-first a.chapter.current{background-position:0px -181px}
+#book-navigation-second{margin-top:-4px}
+#book-navigation-second a{background-position:0px -212px;width:42px;height:5px;margin-right:3px}
+#book-navigation-second a > span{display:none}
+#book-navigation-second a.selected{background-position:0px -219px}
+#book-navigation-before > div,#book-navigation-after > div,#bottombook-navigation-before > div,#bottombook-navigation-after > div{height:78px;max-height:78px;overflow:hidden}
+#book-navigation span[dir="rtl"],#book-navigation span:lang(ar),#book-navigation span:lang(he),#bottom-navigation span[dir="rtl"],#bottom-navigation span:lang(ar),#bottom-navigation span:lang(he){display:inline-block}
+#navpage-prev{background-position:0px 0px;width:6px;height:11px;margin-right:8px;margin-left:-10px}
+#navpage-next{background-position:0px -13px;width:6px;height:11px;margin-left:8px;margin-right:14px}
+#presentation{border-bottom:1px dotted #BEBEBE;margin-top:25px;padding:0 .5em 1em .5em;width:100%}
+p.firstlines{margin:.5em 0 .5em 0;font-size:1.25em}
+#textDiffered{font:italic 1.1em Georgia,serif;margin:0 0 2em 0;text-align:left;border:1px solid #CCCCCC;padding:0.5em}
+#textDiffered em{font-style:normal}
+body.publications #textDiffered{margin-top:2em;font-size:1.25em}
+#pagination{margin:1.8em 0 0 0}
+#translator{margin-top:.5em;font-size:1.25em}
+
+/* texte */
+body.textes #text.information div.text{margin-top:-2em}
+body.textes #text.information div.text.large,body.textes #text.information div.text.largest{margin-top:-1.7em}
+body.textes #text.information #widgets{margin-top:-5em;right:233px}
+body.textes h1.title.information{font:italic 2.5em "Droid serif",Georgia,serif;color:#7A7A7A;margin-bottom:2em}
+body.textes h1.title.information em{font-style:normal}
+body.textes #book-presentation #resume{margin-bottom:-1em}
+body.textes #book-presentation p.resume{font:1.167em/1.2em Georgia,"Times New Roman",Times,serif}
+body.textes #book-presentation h1.title{font:2.5em Georgia,"Times New Roman",Times,serif}
+.description .title sup,body.publications #book-presentation h1.title sup,#book-image-description h1.title sup,.description .title sub,body.publications #book-presentation h1.title sub,#book-image-description h1.title sub{text-transform:none}
+.description .title span[style="font-variant:small-caps;"],body.publications #book-presentation h1.title span[style="font-variant:small-caps;"],.description .title span[style="font-variant:small-caps;"],body.publications #book-presentation h1.title span[style="font-variant:small-caps;"],#book-image-description h1.title span[style="font-variant:small-caps;"]{font-variant:small-caps}
+body.textes #book-presentation h2.subtitle{font:1.5em Georgia,"Times New Roman",Times,serif}
+body.textes #book-presentation h2.suptitle{font:1.5em Georgia,"Times New Roman",Times,serif;margin-bottom:1em}
+#text,#notes,#illustrations,#quotation,#authors,#ndla,#ndlr,#resume,#annexe,#annexdocs,#note,#bibliography,#entries,#dedication{padding-top:1.5em;max-width:517px}
+#annexdocs .annexdoc{clear:both}
+#annexdocs .annexdoc + .annexdoc{padding-top:1.5em}
+#annexdocs .annexdoc img{float:left;padding-right:1em}
+#entries h3{font-weight:bold;display:inline-block}
+#entries > div{margin-top:1em}
+#quotation h3{font:bold 1em/1.5em "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", sans-serif}
+#authors h3.authors{font:bold italic 1.25em/1.5em Asap,Verdana,sans-serif}
+#shortcuts{margin-top:5em;border-top:2px dotted #CCCCCC;border-bottom:2px dotted #CCCCCC;font:bold .917em/32px Asap,Verdana,sans-serif}
+body.embed #shortcuts{margin-top:2em}
+#authors p.description{font-size:1.083em}
+#shortcuts a{margin-right:25px}
+#license{border-top:1px dotted #BEBEBE;margin-top: 2em;padding-top:2em}
+.section{font:1.167em Asap,Verdana,sans-serif;color:#7A7A79;margin-bottom:.5em}
+/* numérotation paragraphes */
+span.paranumber{position:absolute;color:#BBB;font:1em/1.5em Georgia,"Times New Roman",Times,serif;margin-left:-3.8em;width:5em;z-index:-1}
+p[dir="rtl"] span.paranumber,p:lang(ar) span.paranumber,p:lang(he) span.paranumber{margin-left:0;margin-right:-3.8em}
+div.text.large span.paranumber{line-height:1.2em}
+/* notes marginales */
+div.textandnotes{position:relative}
+div.textandnotes ul.sidenotes{position:absolute;top:0;margin:0;overflow:hidden;font:.917em/1.167em Verdana,sans-serif}
+ul.sidenotes li{margin:.2em 0 1.44em 0;font:.833em/1.44em Verdana,sans-serif;color:#777}
+ul.sidenotes .num{font-weight:bold}
+ul.sidenotes .num:after{content:"."}
+#text{font:1.167em/1.5em "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", sans-serif}
+p.texte,p.encadre,p.paragraphesansretrait,p.puces,p.dedicace{color:#353535}
+div.text h1,div.text h2,div.text h3,div.text h4,div.text h5,div.text h6{margin-top:1em}
+a.footnotecall,a.endnotecall{vertical-align:top;font:bold .714em Verdana,sans-serif;padding-left:.3em}
+div.text h1{font:2em/1.3em Georgia,"Times New Roman",Times,serif}
+div.text h2{font:1.667em/1.3em Georgia,"Times New Roman",Times,serif}
+div.text h3{font:1.5em/1.3em Georgia,"Times New Roman",Times,serif}
+div.text h4{font:1.25em/1.3em Georgia,"Times New Roman",Times,serif}
+p.notesbaspage,p.notebaspage,p.notefin{font:1em/1.5em "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", sans-serif;margin-bottom:1em}
+a.FootnoteSymbol:after,a.footnotedefinition:after,a.endnotedefinition:after,a.EndnoteSymbol:after{font:bold 1em/1.167em Verdana,sans-serif;content:"."}
+#text div.text{margin-top:4em}
+#text div.text.differed{margin-top:2em}
+/* widgets ***************************************************************** */
+#widgets{margin-top:-2.3em}
+#widgets a{display:block;float:right;width:23px;height:0;padding-top:24px;background:url(../../images/publishers/widgets.png) no-repeat 0 0;overflow:hidden}
+#widgets a.current{padding-top:23px;border-bottom:3px solid #000}
+/* boutons Taille du texte */
+a#wTextSize-medium{background-position:-69px 0}
+a#wTextSize-large{background-position:-92px 0}
+a#wTextSize-largest{background-position:-115px 0}
+a#wTextSize-medium:hover{background-position:-69px -24px}
+a#wTextSize-large:hover{background-position:-92px -24px}
+a#wTextSize-largest:hover{background-position:-115px -24px}
+/* bouton Imprimer */
+a#wPrint{width:34px;margin-left:2px}
+a#wSend {width:33px;background-position:-34px 0}
+a#wPrint:hover{background-position:0 -24px}
+a#wSend:hover {background-position:-34px -24px}
+/* redimensionnement du texte */
+.wResizable.medium{font-size:1em}
+.wResizable.large{font-size:1.25em;line-height:1.25em}
+.wResizable.largest{font-size:1.5em;line-height:1.5em;text-align:left}
+.wResizable.largest p[dir="rtl"],.wResizable.largest p:lang(ar),.wResizable.largest p:lang(he){text-align:right}
+.wResizable.large span.paranumber{margin-left:-3.5em}
+.wResizable.large p[dir="rtl"] span.paranumbe,.wResizable.large p:lang(ar) span.paranumber,.wResizable.large p:lang(he) span.paranumber{margin-left:0;margin-right:-3.5em}
+.wResizable.largest span.paranumber{margin-left:-3.25em}
+.wResizable.largest p[dir="rtl"] span.paranumber,.wResizable.largest p:lang(ar) span.paranumber,.wResizable.largest p:lang(he) span.paranumber{margin-left:0;margin-right:-3.25em}
+.wResizable.medium ul.sidenotes{right:-15.5em;width:14em}
+.wResizable.large ul.sidenotes{right:-13em;width:12em}
+.wResizable.largest ul.sidenotes{right:-10em;width:9em}
+#docImage{position:relative;z-index:50;font:.833em Verdana,sans-serif;margin:0 1.8em 1.8em 0}
+#docImage img{display:block}
+#text #docImage{float:left}
+#shadow{background-color:#000;-moz-opacity:.6;-webkit-opacity:.6;-khtml-opacity:.6;opacity:.6;z-index:99998;position:fixed;top:0;left:0;width:100%;height:100%}
+#cite,#book-actions > #suggerer,#share,#access{background-color:#F2F2F2;width:535px;z-index:99999;position:absolute;top:0;left:50%;margin-left:-268px}
+#share-close,#cite-close,#suggerer-close,#access-close{width:24px;height:24px;float:right;display:block}
+#suggerer div.cover,#share div.cover,#access div.cover{width:100px;height:135px;min-height:135px}
+#suggerer-infos,#share-infos,#access-infos,#access-mode-text{padding-left:2em}
+#suggerer-content,#share-content,#access-content{margin-top:2em;border-top:1px dotted #000;padding-top:1em}
+#access-content{padding-top:2em;color:#333;line-height:1.25em}
+#access-content > div{vertical-align:top}
+#access-mode-text > p{padding-bottom:1em}
+#access-mode-text > p:first-child{font-size:1.272em;font-style:italic}
+#access-mode-text > p.inline-block{width:47%;text-align:center;margin:0.5em 0;font-size:.916em}
+#access-mode-text > p.inline-block.right{margin-left:1em}
+#access-mode > p{padding-top:1em;font-size:.916em}
+#access-mode > p.upper{padding-top:.5em;font-weight:bold;color:#8E8E8E}
+#suggerer-content > p,#suggerer-content label,#share-mail label{color:#3E3E3E;font:.917em Verdana,sans-serif}
+#suggerer-content label,#share-mail label{font-weight:bold;display:block;margin:1em 0 .3em 0}
+#suggerer-content input[type="text"],#suggerer-content textarea,#share-url input[type="text"],#share-embed textarea,#share-mail input[type="text"],#share-mail textarea{border:1px solid #999;font-family:Verdana,sans-serif}
+#suggerer-content input[type="text"],#share-url input[type="text"],#share-mail input[type="text"]{width:285px}
+#suggerer-inputs,#share-inputs{border-bottom:1px solid #D7D7D7;margin-bottom:2em;padding-bottom:2em}
+#suggerer-submits,#share-submits{text-align:right}
+div.share-buttons{margin-top:2em}
+#wrapper .button-wrap{display:inline-block;cursor:pointer;height:16px;width:16px;text-indent:-9999px;margin:0 6px 0 0}
+#wrapper .button-wrap:hover{border:none;margin-left:0;margin-top:0;}
+.error{color:red;font-weight:bold;font-family:Verdana,sans-serif}
+#cite span.cross, #suggerer span.cross,#share span.cross,#access span.cross{background-position:0px -290px;width:24px;height:24px;display:inline-block}
+#citation-intro{margin-right:2em;}
+#citation-intro h1.title,#suggerer-intro h1.title,#share-intro h1.title,#access-intro h1.title{font:bold 1.25em Asap,Arial,"Times New Roman",Times,serif}
+#citation-intro h2.subtitle,#suggerer-intro h2.subtitle,#share-intro h2.subtitle,#access-intro h2.subtitle{font:1.083em Asap,Verdana,sans-serif}
+#citation-intro div.author,#suggerer-intro div.author,#suggerer-intro div.director,#share-intro div.author,#share-intro div.director,#access-intro div.author,#access-intro div.director{font:italic 1.083em Asap,Verdana,sans-serif;margin-top:1em}
+#citation-chapter,#citation-book{margin-top:4em}
+#citation-chapter > h3,#citation-book > h3,#share-content > h3{font:1.25em Asap,Verdana,sans-serif}
+#share-format{padding:1em 0 1em 0}
+#share-url,#share-mail,#share-embed{margin:1em 0 1em 0}
+#citation-format-chapter,#citation-format-book,#share-format{border-bottom:1px solid #D7D7D7;margin-top:.5em}
+#citation-chapter > h3.inline-block,#citation-book > h3.inline-block,#citation-format-chapter > h4,#citation-format-book > h4{font:.917em/46px Asap,Verdana,sans-serif;margin-right:2em;font-weight:bold}
+#citation-chapter > h3.inline-block:after,#citation-book > h3.inline-block:after,#citation-format-chapter > h4:after,#citation-format-book > h4:after{content:":"}
+#citation-format-chapter a,#citation-format-book a,#share-format a,#access-mode-text a.button{padding:.5em;color:#7A7A7A}
+#citation-format-chapter a.current,#citation-format-book a.current,#share-format a.current,#access-mode-text a.button{background-color:#7A7A7A}
+#access-mode-text a.button{color:#FFF;display:inline-block;text-transform:uppercase}
+#citation-chapter-oe,#citation-chapter-apa,#citation-chapter-mla,#citation-book-oe,#citation-book-apa,#citation-book-mla{margin-top:1em;margin-bottom:1em;font:.916em/1.417em Verdana,sans-serif;color:#3E3E3E}
+#link-export-chapter-ris,#link-export-chapter-wikipedia,#link-export-book-ris,#link-export-book-wikipedia{padding:.5em;border:1px solid #A2A2A2;background-color:#A2A2A2;font:bold .833em Asap,Verdana,sans-serif;margin-right:.5em}
+#link-export-chapter-ris:hover,#link-export-chapter-wikipedia:hover,#link-export-book-ris:hover,#link-export-book-wikipedia:hover{border-color:#000}
+/* addendum */
+#docAddendum p{font-size:.916em;margin:1.091em 0}
+/* licence */
+/*#license h3,#license p{font-size:.916em}
+#license #licenseIcon{margin:1.091em 0}*/
+/* listes */
+div.text ul,div.text ol{margin:.2em 0 0 1.5em;color:#353535}
+div.text ul[dir="rtl"],div.text ol[dir="rtl"],div.text ul:lang(ar),div.text ol:lang(ar),div.text ul:lang(he),div.text ol:lang(he){margin-left:0}
+div.text ul li[dir="rtl"],div.text ul li:lang(ar),div.text ul li:lang(he),div.text ol li[dir="rtl"],div.text ol li:lang(ar),div.text ol li:lang(he){margin-right:4em;display:block}
+div.text ul li[dir="rtl"] div.textandnotes ul.sidenotes,div.text ul li:lang(ar) div.textandnotes ul.sidenotes,div.text ul li:lang(he) div.textandnotes ul.sidenotes,div.text ol li[dir="rtl"] div.textandnotes ul.sidenotes,div.text ol li:lang(ar) div.textandnotes ul.sidenotes,div.text ol li:lang(he) div.textandnotes ul.sidenotes{margin-right:-2.3em}
+div.text li{font-size:.929em}
+div.text li p{margin:0}
+div.text ul li{list-style-type:disc}
+div.text ul li ul,div.text ol li ol{margin-left:1em}
+div.text ul li ul li p,div.text ol li ol li p{color:#353535}
+div.text ul li ul li ul li,div.text ol li ol li ol li{color:#CCC}
+div.text ul li ul li ul li p,div.text ol li ol li ol li p{color:#353535}
+div.text ul.sidenotes li{background:none;padding-left:0;list-style-type:none}
+div.text ul.sidenotes li[dir="rtl"],div.text ul.sidenotes li:lang(ar),div.text ul.sidenotes li:lang(he){text-align:right;padding-left:2em}
+div.text ol {list-style-type:decimal}
+h3.sspartie a{font:1.667em Georgia,"Times New Roman",Times,serif}
+h3.sspartie a:hover{color:#959595}
+/* styles internes ********************************************************* */
+p.encadre{background:#F7F7F7;font:.857em/1.5em "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", sans-serif}
+p.separateur,p.sparateur{margin:.5em 0}
+p.dedicace{margin:1em 3em;font-size:1.2em}
+p.remerciements{margin:.5em 0;padding:0 0 0 4em;font-style:italic;font-family:Georgia,"Times New Roman",Times,serif}
+p.remerciements em{font-style:normal}
+p.epigraphe,p.pigraphe{font-family:Georgia,"Times New Roman",Times,serif;margin:.5em 0 .5em 12.5em;text-align:right}
+p.titreillustration{font:bold .916em/1.309 "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", sans-serif;margin:3.272em 0 .545em 0}
+p.legendeillustration{font:.916em/1.309 "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", sans-serif;padding-right:12px}
+p.crditillustration,p.creditillustration,p.crditsillustration{font:.916em/1.309 "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", sans-serif;padding-right:12px}
+p.texte,p.annexe,p.reponse,p.bibliographie{margin:.5em 0;position:relative}
+p.question{font:italic 1.07em/1.5em Georgia,"Times New Roman",Times,serif}
+p.question em{font-style:normal}
+p.reponse{margin-top:0}
+td p.texte,td p.annexe,div.textIcon p.texte{margin:0;line-height:1.309}
+div.textIconAccess a:hover{background-color:#000}
+p.paragraphesansretrait{margin:.5em 0;text-indent:0}
+blockquote p.citation{padding-left:3.5em;font-size:.857em/1.5em}
+blockquote[dir="rtl"] p.citation,blockquote[dir="rtl"] p.quotations,blockquote[dir="rtl"] p.quotation,blockquote:lang(ar) p.citation,blockquote:lang(ar) p.quotations,blockquote:lang(ar) p.quotation,
+blockquote[dir="rtl"] p.quotation,blockquote:lang(he) p.citation,blockquote:lang(he) p.quotations,blockquote:lang(he) p.quotation{padding-left:0;padding-right:3.5em}
+p.citation,p.quotations,p.quotation{font:.929em/1.5em "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", sans-serif;padding:0 0 0 4.363em}
+#bibliography,#annexe,#annexdocs,#notes,#note{font:1.083em/1.5em "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", sans-serif}
+p.citationbis,p.citationter{font:1em/1.286em Georgia,"Times New Roman",Times,serif}
+p.citationbis{padding:0 0 0 4.363em}
+blockquote[dir="rtl"] p.citationbis,blockquote:lang(ar) p.citationbis,blockquote:lang(he) p.citationbis{padding-left:0;padding-right:4.363em}
+p.citationter{color:#888;margin:1.091em 0;padding:0 0 0 5em}
+blockquote[dir="rtl"] p.citationter,blockquote:lang(ar) p.citationter,blockquote:lang(he) p.citationter{padding-left:0;padding-right:5em}
+p.puces{margin:0}
+p.code{margin:.75em 0;padding:.75em;font:1.143em/1.125 monospace;background:#F4F4F4}
+#text table{font-size:.857em}
+/** recherche **/
+#book-presentation > h1.result{font:bold 1.5em Asap,Verdana,sans-serif}
+#book-presentation > h3.result{font:bold .833em Asap,Verdana,sans-serif;margin-top:2em;color:#7A7A79}
+#book-presentation > h3.result:after{content:" :"}
+#book-presentation > h2.result{font:italic 1.5em Asap,Verdana,sans-serif;margin-top:.2em}
+#book-presentation > h2.result em{font-style:normal}
+#search_portal{border-top:2px dotted #CFCFCF;border-bottom:2px dotted #CFCFCF}
+#search_portal a{font:bold .833em/42px Asap,Verdana,sans-serif;color:#7A7A79;margin-right:40px}
+#search_portal a:hover{color:#BFBFBF}
+#search_portal a:hover span.arrow{background-color:#BFBFBF}
+#search_portal span.arrow{background-position:0px -316px;width:24px;height:24px;background-color:#7A7A79;margin-top:9px;margin-left:15px}
+#search-navigation{margin-top:4.5em}
+#search-navigation-bar{background-color:#F9F9F9}
+#search-navigation-bar > *{font:bold 1.333em/42px Asap,Verdana,sans-serif;color:#7A7A7A;padding:.2em}
+#search-navigation-bar > a:hover{background-color:#D9D9D9}
+#search-navigation-bar span.current{background-color:#7A7A7A}
+#search-navigation-bar span.arrow{margin:.7em 0 0 0}
+#search-navigation-bar a.next,#search-navigation-bar a.prev{padding:0}
+#search-navigation-bar a.prev span.arrow{background-position:0px -342px;width:20px;height:20px;margin-left:-2em}
+#search-navigation-bar a.prev span.arrow,#search-navigation-bar a.next span.arrow{background-color:#7A7A79}
+#search-navigation-bar a.prev:hover span.arrow,#search-navigation-bar a.next:hover span.arrow{background-color:#BFBFBF}
+#search-navigation-bar a.next span.arrow{background-position:0px -364px;width:20px;height:20px;margin-left:1em}
+#results div.results{margin-top:3em}
+#results div.results > h2{font:italic 1.167em Asap,Verdana,sans-serif;color:#424141}
+#results div.results > h2 em{font-style:normal}
+#results div.results > h3{font:1.167em/1.667em Georgia,"Times New Roman",Times,serif}
+#results div.results > h1 a{font:italic 1.417em/1.667em Georgia,"Times New Roman",Times,serif}
+#results div.results > h1 a em{font-style:normal}
+#results div.results > h1 a:hover{color:#626262}
+#results div.results > p{font:1.167em/1.667em "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", sans-serif;margin-top:1em;color:#353534}
+#results div.results > p em{background-color:#DBECA2;font-style:normal}
+/* TOC */
+#tdm{margin-top:2em;border-top:2px dotted #CFCFCF;padding-top:.5em}
+#tdm div.chapter > h1{font:bold 1.416em/1.667em Asap,Verdana,sans-serif}
+#tdm div.souspartie{border:0}
+#tdm div.souspartie > h2{font:1.5em/1.667em Georgia,"Times New Roman",Times,serif;border-bottom:6px solid #848484}
+#tdm div.souspartie > h3{font:bold 1.583em/1.667em Asap,Verdana,sans-serif;color:#606060}
+#tdm div.souspartie > h4,#tdm div.souspartie > h5,#tdm div.souspartie > h6{font:1.167em/1.667em Asap,Verdana,sans-serif;color:#606060}
+div.toc{background-color:#FAFAFA}
+div.toc a,div.toc{font:1.083em/1.667em "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", sans-serif}
+div.toc div.tocSection1 a:hover,div.toc div.tocSection2 a:hover{color:#959595}
+div.toc div.tocSection2 a,div.toc div.tocSection2{color:#6A6A6A}
+#tdm div.chapter div.author{font:italic 1.167em/1.667em Asap,Verdana,sans-serif;color:#535353}
+#tdm div.chapter h2.subtitle{font:1.083em/1.667em "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", sans-serif;color:#575757}
+#tdm div.chapter h3.altertitle{font:italic 1.167em/1.667em Asap,Verdana,sans-serif}
+#tdm div.chapter h3.altertitle em{font-style:normal}
+h4.section.embed{font-weight:bold;margin:2em 0 1em 0;color:#7A7A79;font-size:1.333em}
+#share-embed-size{margin-bottom:1em}
+#share-embed-size a{margin-left:.5em;font-size:1.083em}
+#share-embed-size a.selected{font-weight:bold}
+/** affichage switch version mobile <-> desktop **/
+#cssversion-switcher{display:none;text-align:center;width:100%}
+#version-desktop,#version-mobile{font-weight:bold}
+#oebooks-link-original{position:fixed;bottom:0;left:0;background-color:#FFF;width:100%;font:.917em Asap,Verdana,sans-serif;border-top:2px dotted #CCCCCC}
+/** lettre **/
+#pageBody h2.section{margin:2em 0 .5em 0}
+#pageBody label{display:block}
+#pageBody input[type="submit"]{margin-left:1em}
+#access-mode{width:100px}
+
+/* Styles Example */
+table.example {text-align:left;font-size:1em;margin:0 !important;}
+table.example td{vertical-align:top;padding-top:0;border:none;}
