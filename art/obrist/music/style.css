@@ -33,6 +33,11 @@ h4 {
 	font-size: 120%;
 	font-weight: normal;
 }
+h5 {
+	font-weight: bold;
+	font-size: 105%;
+	font-style: italic;
+}
 i, em {
 	font-style: italic;
 }
