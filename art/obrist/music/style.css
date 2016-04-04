@@ -54,6 +54,19 @@ section {
 	page-break-before: always;
 }
 
+table {
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+	font-size: 80%;
+}
+td, th {
+	text-align: left;
+	padding: 5px;
+	vertical-align: baseline;
+	border: 1px solid #ccc;
+}
+
+
 .backto {
 	font-size: 80%;
 }
