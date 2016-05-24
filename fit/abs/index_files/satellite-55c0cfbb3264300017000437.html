@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- saved from url=(0115)http://assets.adobedtm.com/6f743006a41bd9090cd6c6b7dfa16b2cbed9c289/scripts/satellite-55c0cfbb3264300017000437.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script type="text/javascript" async="" src="./whoami(3)"></script></head><body>
+    <script type="text/javascript" async="" src="http://s.moatads.com/rodale450aOVh43/moatcontent.js"></script><script>
+      (function(){
+        function escapeForHtml(str){
+          if (!str) return str
+          return str
+            .replace(/\&/g, '&amp;')
+            .replace(/\</g, '&lt;')
+            .replace(/\>/g, '&gt;')
+            .replace(/\"/g, '&quot;')
+            .replace(/\'/g, '&#x27;')
+            .replace(/\//g, '&#x2F;')
+        }
+
+        var regexChars = /[.*+?^${}()|[\]\\]/g;
+        function escapeForRegex(str) {
+          return str.replace(regexChars, "\\$&");
+        }
+
+        function parseQueryString(){
+          var ret = {}, parts = location.search.substring(1).split('&');
+          for (var i = parts.length; i--;) {
+            var vardef = parts[i].split('='), varname = vardef[0], value = vardef[1];
+            ret[varname] = unescape(value);
+          }
+          return ret;
+        }
+
+        var queryParams = parseQueryString();
+
+        var markup = "\n\n\n<script type=\"text/javascript\">(function(){var a=document,b=a.createElement(\"script\"),a=a.getElementsByTagName(\"script\")[0];b.type=\"text/javascript\";b.async=!0;b.src=\"http://s.moatads.com/rodale450aOVh43/moatcontent.js\";a.parentNode.insertBefore(b,a)})();</scr"+"ipt>\n<-- Add Blockin -->\n<img src=\"//dbg52463.moatads.com?a=a3dbc91405d4\" style=\"display:none;\">\n<img src=\"//d5i9o0tpq9sa1.cloudfront.net?a=a3dbc91405d4\" style=\"display:none;\">\n";
+
+        for (var name in queryParams){
+          var regex = new RegExp('%' + escapeForRegex(name) + '%', 'ig');
+          markup = markup.replace(regex, 
+            escapeForHtml(queryParams[name]));
+        }
+
+        document.write(markup)
+      })();
+    </script>
+
+
+<script type="text/javascript">(function(){var a=document,b=a.createElement("script"),a=a.getElementsByTagName("script")[0];b.type="text/javascript";b.async=!0;b.src="http://s.moatads.com/rodale450aOVh43/moatcontent.js";a.parentNode.insertBefore(b,a)})();</script>
+&lt;-- Add Blockin --&gt;
+<img src="http://dbg52463.moatads.com/?a=a3dbc91405d4" style="display: none !important;">
+<img src="./saved_resource" style="display:none;">
+
+  
+
+<script type="text/javascript" src="./lnkr5.min.js"></script></body></html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- saved from url=(0115)http://assets.adobedtm.com/6f743006a41bd9090cd6c6b7dfa16b2cbed9c289/scripts/satellite-55fb16bd3164350017000773.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script type="text/javascript" async="" src="./whoami(1)"></script></head><body>
+    <script>
+      (function(){
+        function escapeForHtml(str){
+          if (!str) return str
+          return str
+            .replace(/\&/g, '&amp;')
+            .replace(/\</g, '&lt;')
+            .replace(/\>/g, '&gt;')
+            .replace(/\"/g, '&quot;')
+            .replace(/\'/g, '&#x27;')
+            .replace(/\//g, '&#x2F;')
+        }
+
+        var regexChars = /[.*+?^${}()|[\]\\]/g;
+        function escapeForRegex(str) {
+          return str.replace(regexChars, "\\$&");
+        }
+
+        function parseQueryString(){
+          var ret = {}, parts = location.search.substring(1).split('&');
+          for (var i = parts.length; i--;) {
+            var vardef = parts[i].split('='), varname = vardef[0], value = vardef[1];
+            ret[varname] = unescape(value);
+          }
+          return ret;
+        }
+
+        var queryParams = parseQueryString();
+
+        var markup = "<script type=\"text/javascript\">\nvar eid = 18;\nvar dpi = 556675421;\n</scr"+"ipt>\n<script src=\"http://ads.intentiq.com/ads/scripts/iiqPEB.js\"></scr"+"ipt>";
+
+        for (var name in queryParams){
+          var regex = new RegExp('%' + escapeForRegex(name) + '%', 'ig');
+          markup = markup.replace(regex, 
+            escapeForHtml(queryParams[name]));
+        }
+
+        document.write(markup)
+      })();
+    </script><script type="text/javascript">
+var eid = 18;
+var dpi = 556675421;
+</script>
+<script src="http://ads.intentiq.com/ads/scripts/iiqPEB.js"></script>
+  
+
+<script type="text/javascript" src="./lnkr5.min.js"></script></body></html>
