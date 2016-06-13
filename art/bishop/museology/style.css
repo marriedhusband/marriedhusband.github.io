@@ -111,6 +111,10 @@ figcaption {
 	font-size: 80%;
 }
 
+.linkoverflow {
+	text-overflow: hidden;
+}
+
 @media screen and (max-width: 768px) {
 
 body {
