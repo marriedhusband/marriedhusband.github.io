@@ -1,0 +1,132 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 140%;
+	margin: 5% 15% 10%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+section {
+	margin-bottom: 5%;
+	padding-bottom: 5%;
+	border-bottom: 1px solid #f3f3f3;
+}
+a {
+	color: #0091FF;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	line-height: normal;
+}
+h1 {
+	font-size: 250%;
+}
+h2 {
+	font-size: 180%;
+}
+h3 {
+	font-size: 150%;
+}
+h4 {
+	font-size: 120%;
+	font-weight: normal;
+}
+h5 {
+	font-weight: bold;
+	font-size: 105%;
+	font-style: italic;
+}
+i, em {
+	font-style: italic;
+}
+b, strong {
+	font-weight: bold
+}
+sup {
+	font-size: 70%;
+	line-height: normal;
+	vertical-align: super;
+}
+section {
+	display: block;
+	page-break-before: always;
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+	font-size: 80%;
+}
+td, th {
+	text-align: left;
+	padding: 5px;
+	vertical-align: baseline;
+	border: 1px solid #ccc;
+}
+
+
+.backto {
+	font-size: 80%;
+}
+
+.master {
+	font-size: 115%;
+}
+
+.paranumber {
+	display: inline-block;
+	font-size: 70%;
+	margin-left: -1em;
+	padding-right: 0.5em;
+	color: b6b6b6;
+}
+
+.txl {
+	margin-left: 20%;
+}
+
+.center {
+	text-align: center;
+}
+.redpage {
+	padding: 5% 10%;
+	background-color: #C63833;
+	color: white;
+}
+.red {
+	color: #C63833;
+}
+figure {
+	max-width: 100%;
+	height: auto;
+}
+figcaption {
+	font-size: 80%;
+}
+
+@media screen and (max-width: 768px) {
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 140%;
+	margin: 5% 7% 10%;
+}
+
+h1 {
+	font-size: 160%;
+}
+h2 {
+	font-size: 130%;
+}
+h3 {
+	font-size: 115%;
+}
+h4 {
+	font-size: 110%;
+	font-weight: normal;
+}
+
+	}
