@@ -38,6 +38,9 @@ h5 {
 	font-size: 105%;
 	font-style: italic;
 }
+p {
+	line-height: 180%;
+}
 i, em {
 	font-style: italic;
 }
