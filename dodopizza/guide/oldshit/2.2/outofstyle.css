@@ -4,7 +4,7 @@ body {
 	padding: 0;
 	text-align: center;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	line-height: 145%;
+	line-height: 130%;
 	font-size: 1em;
 }
 
@@ -68,26 +68,6 @@ abbr {
 	cursor: help;
 }
 
-.img50p {
-	max-width: 49%;
-	height: auto;
-}
-
-.img30p {
-	max-width: 30%;
-	height: auto;
-}
-
-.blockquote {
-	margin-left: 1em;
-	padding-left: 1.5em;
-	border-left: 1px solid #ccc;
-}
-
-.centered {
-	text-align: center;
-}
-
 .oled {
 	margin-left: 2.5em;
 }
@@ -133,15 +113,9 @@ ul.dashed > li:before {
   text-indent: -5px;
 }
 
-.borderccc {
-	border: 1px solid #ccc;
-}
-
 .page {
 	page-break-after: always;
-	margin: 0 auto;
-	border-bottom: 1px solid #ccc;
-	padding: 3em 0 5em;
+	margin: 3em auto 0;
 }
 
 #pagetopper {
