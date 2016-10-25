@@ -1,0 +1,31 @@
+/*
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+/* Increase the default font size on small devices */
+/* line 17, ../sass/responsive.smartphone.portrait.scss */
+video {
+  max-width: none; }
+
+/* line 22, ../sass/responsive.smartphone.portrait.scss */
+body[data-menu-position="closed"] #logo a {
+  margin-right: 0px;
+  opacity: 1;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  -webkit-transition-delay: .9s;
+  -o-transition-delay: .9s;
+  -moz-transition-delay: .9s;
+  transition-delay: .9s; }
+
+/* line 32, ../sass/responsive.smartphone.portrait.scss */
+body[data-menu-position="open"] #logo a {
+  margin-right: -100px;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s; }

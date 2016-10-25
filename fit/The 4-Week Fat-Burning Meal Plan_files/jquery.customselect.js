@@ -1,0 +1,5 @@
+/*
+ * This is based on ideas from a technique described by Alen Grakalic in
+ * http://cssglobe.com/post/8802/custom-styling-of-the-select-elements
+ */
+(function($){$.fn.customSelect=function(settings){var config={replacedClass:'replaced',customSelectClass:'custom-select',activeClass:'active',wrapperElement:'<div class="custom-select-container" />'};if(settings){$.extend(config,settings)}this.each(function(){var select=$(this);select.addClass(config.replacedClass);select.wrap(config.wrapperElement);var update=function(){val=$('option:selected',this).text();span.find('span span').text(val)};select.change(update);select.keyup(update);var span=$('<span class="'+config.customSelectClass+'" aria-hidden="true"><span><span>'+$('option:selected',this).text()+'</span></span></span>');select.after(span);select.bind({mouseenter:function(){span.addClass(config.activeClass)},mouseleave:function(){span.removeClass(config.activeClass)},focus:function(){span.addClass(config.activeClass)},blur:function(){span.removeClass(config.activeClass)}})})}})(jQuery);
