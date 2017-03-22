@@ -36,6 +36,90 @@
 	<link rel="stylesheet prefetch" href="https://partners.dodopizza.cn/vendor/PhotoSwipe/default-skin.css">
     <link href="./index2_files/franchise-cn.min.css" rel="stylesheet">
     <style>
+    	body * {
+    		line-height: 150%;
+    		letter-spacing: 0em;
+    		font-size: 1em;
+    	}
+		@media (max-width: 768px) {
+	    	p, h1, h2, h3, h4, h5, h6, hr, .title-landing, .slider__desc, .reviews-link, .condition-link, .conditions-partners__link, .main-screen, .slider, .hr-block, .main-screen__block-in, .reviews, .dodo-is, .conditions, .feedback, .about-company, .location, .efficiency, img, .dodo-is__hg, .conditions-partners, .marketing, .screen__img, .screens, .sticker-img, .joining-to-ask, .map, .map-item, .map .col-sm-6, .map .col-md-5 {
+    			margin: 0;
+    			padding: 0;
+    		}
+    	
+	    	.main-screen__block-in {
+    			margin: 0 0 1em;
+    		}
+    		.main-screen__block-in h1 {
+	    		font-size: 2em;
+				font-weight: normal;
+	    	}
+	    	.main-screen__block-in h2 {
+    			font-size: 1.5em;
+    			font-weight: normal;
+    			color: #808080;
+	    	}
+
+	    	p, .slider__desc, .data-pizzeria__text, .data-pizzeria, .conditions-partners__link, .row p {
+    			font-size: 1em;
+    			line-height: 120%;
+    			padding: 0.5em 0;
+	    	}
+
+			h3, h3 span {
+    			font-size: 1.3em;
+    			padding: 1em 0 0.5em;
+    			line-height: 120%;
+	    	}
+    		.title-landing, .title-landing span, .col-sm-12 .title-landing {
+    			line-height: 120%;
+    			margin: 0;
+    			padding: 0;
+	    	}
+
+	    	.hr-block {
+ 				border-top: 1px solid #d8d8d8;
+				width: 270px;
+				margin: 1em auto 1em;
+			}
+
+			.big-revenue, .big-revenue__number, .big-revenue__desc {
+				margin: 0;
+				padding; 0;
+			}
+			.big-revenue {
+				margin: 1.5em 0;
+			}
+			.big-revenue__number span {
+				line-height: 100%;
+			}
+			
+			.dodo-is__hg {
+				margin: 1em 0 0;
+			}
+			.bottommargin1em {
+				margin: 0 0 1em;
+			}
+			.map-item {
+				padding: 0 0 0.5em;
+			}
+
+			.row * .button_primary span {
+				line-height: 110%;
+				font-family: "Helvetica Neue", Arial, "Microsoft YaHei", 微软雅黑, STXihei, 华文细黑, serif;
+				padding: 0;
+				margin: 0;
+			}
+			.row * .button_primary {
+				padding: 0.5em;
+				line-height: 110%;
+			}
+			.table, .table2 {
+				font-size: 0.7em;
+			}
+			
+		}
+
     	.nobr {
     		white-space:nowrap;
     	}
@@ -55,19 +139,26 @@
     		padding: 0;
     	}
     	.table2 {
-    		border: 0;
+    		border: 0px solid #e6e6e6;
     		width: 96%;
     		margin: 0 2%;
     		padding: 0;
     	}
     	.table2 td {
     		border-bottom: 1px solid #e6e6e6;
-    		padding: 0.7em 0;
+    		padding: 0.7em 0.5em;
     	}
 		.feedback {
 			width: 80%;
 			margin: 0 10%;
 			padding: 0;
+		}
+		.mdash {
+			letter-spacing: -0.3em;
+			white-space:nowrap;
+			margin-left: -0.1em;
+			margin-right: 0.2em;
+			display: inline;
 		}
 		@media (max-width: 768px) {
 			.feedback {
@@ -84,7 +175,7 @@
 			/* background: #e67fd7; */
 		}
 		@media (max-width: 768px) {
-			.col-sm-12, .col-xs-12 {
+			.col-sm-12, .col-xs-12, .reviews-link {
 				width: 100%;
 				margin: 0;
 				padding: 0;
@@ -121,6 +212,32 @@
 				padding: 0;
 			}
 		}
+		@media (max-width: 768px) {
+			.container {
+				margin: 0 auto;
+				padding: 0 3%;
+			}
+			.row {
+				margin-left: 0%;
+				margin-right: 0%;
+			}
+			.container-fluid {
+				margin: 0%;
+			}
+			.location, .slider {
+			padding: 0 15px;
+			}
+			.location, .efficiency {
+				padding: 1.5em 15px;
+			}
+			.reviews, .dodo-is, #joinus {
+				padding: 1.5em 0;
+			}
+			.index-img {
+				padding: 0 3%;
+			}
+		}
+
     </style>
 
     <!--Scripts-->
@@ -198,7 +315,7 @@
 							<h1><span class="nobr">世界增长最快的</span><span class="space"> </span><span class="nobr">披萨外卖品牌</span><span class="space"> </span><span class="nobr">进入中国</span></h1>
 						</div>
 						<div class="main-screen__block-in">
-							<h2><span class="nobr">加入我们，</span><span class="space"> </span><span class="nobr">拥有自己的连锁店&nbsp;&mdash;</span> Dodo&nbsp;Pizza</h2>
+							<h2><span class="nobr">加入我们，</span><span class="space"> </span><span class="nobr">拥有自己的连锁店</span><span class="mdash">&mdash;&mdash;</span><span class="space"> </span><span class="nobr">Dodo&nbsp;Pizza</span></h2>
 						</div>
 					</div>
 				</div>
@@ -206,7 +323,7 @@
 		</div>
 		<div class="container">
 
-			<!--Началою Цифры-->
+			<!--Начало Цифры-->
 			<div class="slider">
 				<div class="row">
 					<div class="col-xs-12">
@@ -223,10 +340,8 @@ height:75px}
 height:71px;
 border-width:2px;
 margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama fotorama1489496789858" data-nav="thumbs" data-thumbheight="75" data-caption="overlay"><div class="fotorama__wrap fotorama__wrap--css3 fotorama__wrap--slide fotorama__wrap--toggle-arrows fotorama__wrap--no-controls" style="width: 1280px; min-width: 0px; max-width: 100%;"><div class="fotorama__stage fotorama__pointer" style="width: 945px; height: 630px;"><div class="fotorama__stage__shaft" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px); width: 945px; margin-left: 0px;"><div class="fotorama__stage__frame fotorama__active fotorama__loaded fotorama__loaded--img" style="left: 0px;"><img src="./index2_files/1.jpg" class="fotorama__img" style="width: 945px; height: 629.754px; left: 0px; top: 0.123047px;"><div class="fotorama__caption"><div class="fotorama__caption__wrap">首家中国店面烟台店，目前已盈利</div></div></div><div class="fotorama__stage__frame fotorama__loaded fotorama__loaded--img" style="left: 947px;"><img src="./index2_files/2.jpg" class="fotorama__img" style="width: 945px; height: 629.754px; left: 0px; top: 0.123047px;"><div class="fotorama__caption"><div class="fotorama__caption__wrap">烟台店的装修风格非常的舒适和安逸</div></div></div></div><div class="fotorama__arr fotorama__arr--prev fotorama__arr--disabled" tabindex="-1" role="button" disabled="disabled"></div><div class="fotorama__arr fotorama__arr--next" tabindex="0" role="button"></div><div class="fotorama__video-close"></div></div><div class="fotorama__nav-wrap"><div class="fotorama__nav fotorama__nav--thumbs fotorama__shadows--right" style="width: 945px;"><div class="fotorama__nav__shaft fotorama__grab" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);"><div class="fotorama__thumb-border" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px); width: 109px;"></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb fotorama__active" tabindex="0" role="button" style="width: 113px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="./index2_files/1.jpg" class="fotorama__img" style="width: 113px; height: 75.3039px; left: 0px; top: -0.151953px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" tabindex="0" role="button" style="width: 113px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="./index2_files/2.jpg" class="fotorama__img" style="width: 113px; height: 75.3039px; left: 0px; top: -0.151953px;" data-pin-nopin="true"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" tabindex="0" role="button" style="width: 113px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="./index2_files/3.jpg" class="fotorama__img" style="width: 113px; height: 75.3922px; left: 0px; top: -0.196094px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" tabindex="0" role="button" style="width: 113px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="./index2_files/4.jpg" class="fotorama__img" style="width: 113px; height: 75.3039px; left: 0px; top: -0.151953px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" tabindex="0" role="button" style="width: 113px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="./index2_files/5.jpg" class="fotorama__img" style="width: 113px; height: 75.3039px; left: 0px; top: -0.151953px;" data-pin-nopin="true"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" tabindex="0" role="button" style="width: 113px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="./index2_files/6.jpg" class="fotorama__img" style="width: 113px; height: 75.3039px; left: 0px; top: -0.151953px;" data-pin-nopin="true"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" tabindex="0" role="button" style="width: 113px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="./index2_files/7.JPG" class="fotorama__img" style="width: 113px; height: 75.3039px; left: 0px; top: -0.151953px;" data-pin-nopin="true"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" tabindex="0" role="button" style="width: 113px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="./index2_files/8.jpg" class="fotorama__img" style="width: 113px; height: 75.3039px; left: 0px; top: -0.151953px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" tabindex="0" role="button" style="width: 113px;"><div class="fotorama__thumb fotorama__loaded fotorama__loaded--img"><img src="./index2_files/9.jpg" class="fotorama__img" style="width: 113px; height: 75.3039px; left: 0px; top: -0.151953px;"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" tabindex="0" role="button" style="width: 113px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" tabindex="0" role="button" style="width: 113px;"><div class="fotorama__thumb"></div></div><div class="fotorama__nav__frame fotorama__nav__frame--thumb" tabindex="0" role="button" style="width: 113px;"><div class="fotorama__thumb"></div></div></div></div></div></div></div>
-						<p class="slider__desc"><span class="nobr">首家在中国开设的披萨店</span><span class="space"> </span><span class="nobr">已经显现出色的效果。</span></p>
-						<div class="data-pizzeria__text">
-							<span class="nobr">本月</span><span class="space"> </span><span class="nobr">位于山东省烟台市的</span><span class="space"> </span><span class="nobr">Dodo&nbsp;Pizza 店铺的</span><span class="space"> </span><span class="nobr">精准营业数据为</span>
-						</div>
+						<p><span class="nobr">首家在中国开设的披萨店</span><span class="space"> </span><span class="nobr">已经显现出色的效果。</span></p>
+						<p><span class="nobr">本月</span><span class="space"> </span><span class="nobr">位于山东省烟台市的</span><span class="space"> </span><span class="nobr">Dodo&nbsp;Pizza 店铺的</span><span class="space"> </span><span class="nobr">精准营业数据为</span></p>
 					</div>
 					<div class="col-md-1"></div>
 				</div>
@@ -250,7 +365,7 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 				<div class="row">
 					<div class="col-sm-12">
 						<p><span class="nobr">（系统可自我统计</span><span class="space"> </span><span class="nobr">销售总量和总营业额）</span></p>
-						<p class="slider__desc"><span class="nobr">我们怎么知道</span><span class="space"> </span><span class="nobr">如此精准的数据呢？</span></p>
+						<h3><span class="nobr">我们怎么知道</span><span class="space"> </span><span class="nobr">如此精准的数据呢？</span></h3>
 						<div class="data-pizzeria__annotation">
 							<span class="nobr">因为我们使用</span><span class="space"> </span><span class="nobr">自有的</span><span class="space"> </span><span class="nobr">披萨信息管理系统，</span><span class="space"> </span><span class="nobr">系统会</span><span class="space"> </span><span class="nobr">自我统计</span><span class="space"> </span><span class="nobr">销售总量和总营业额，</span><span class="space"> </span><span class="nobr">可以通过网络</span><span class="space"> </span><span class="nobr">准确显示数据。</span><span class="space"> </span><span class="nobr">您也可以</span><span class="space"> </span><span class="nobr">享受我们</span><span class="space"> </span><span class="nobr">系统的</span><span class="space"> </span><span class="nobr">便利、实用和高效！</span>
 						</div>
@@ -258,9 +373,9 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 				</div>
 			</div>
 			<div class="hr-block"></div>
-			<div class="row size20">
+			<div class="row">
 				<div class="col-sm-12">
-					<p><span class="nobr">我们的披萨店</span><span class="space"> </span><span class="nobr">营业模式为&nbsp;&mdash; </span><span class="space"> </span><span class="nobr">拥有一个</span><span class="space"> </span><span class="nobr">小巧精致</span><span class="space"> </span><span class="nobr">又舒适温馨的披萨餐厅，</span><span class="space"> </span><span class="nobr">同时，</span><span class="space"> </span><span class="nobr">主营披萨外卖市场</span></p>
+					<p><span class="nobr">我们的披萨店</span><span class="space"> </span><span class="nobr">营业模式为</span><span class="mdash">&mdash;&mdash;</span><span class="space"> </span><span class="nobr">拥有一个</span><span class="space"> </span><span class="nobr">小巧精致</span><span class="space"> </span><span class="nobr">又舒适温馨的披萨餐厅，</span><span class="space"> </span><span class="nobr">同时，</span><span class="space"> </span><span class="nobr">主营披萨外卖市场</span></p>
 					<p><span class="nobr">我们关键的优势为</span><span class="space"> </span><span class="nobr">自有互联网信息管理系统，</span><span class="space"> </span><span class="nobr">这将让你</span><span class="space"> </span><span class="nobr">最有效地监控</span><span class="space"> </span><span class="nobr">和最高效的管理业务的细节，</span><span class="space"> </span><span class="nobr">降低成本，</span><span class="space"> </span><span class="nobr">摆脱亏损。
 </span></p>
 				</div>
@@ -330,7 +445,8 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 					<div class="row">
 						<div class="col-xs-12">
 							<p><span class="nobr">与美团外卖合作的首月，</span><span class="space"> </span><span class="nobr">烟台市莱山区的 </span><span class="space"> </span><span class="nobr">Dodo&nbsp;Pizza </span><span class="space"> </span><span class="nobr">成为</span><span class="space"> </span><span class="nobr">销售额最高的外卖店铺，</span><span class="space"> </span><span class="nobr">赶超麦当劳，肯德基，必胜客。</span></p>
-						<hr style="border-top: #ccc 1px solid; width: 300px" />							<p><span class="nobr">在我们披萨店内</span><span class="space"> </span><span class="nobr">总有一种愉快的气氛，</span><span class="space"> </span><span class="nobr">因为</span><span class="space"> </span><span class="nobr">每个店的设计和装修</span><span class="space"> </span><span class="nobr">都是由我们的专业团队</span><span class="space"> </span><span class="nobr">设计制作。</span><span class="space"> </span><span class="nobr">我们具有丰富的经验</span><span class="space"> </span><span class="nobr">可帮你建立一家</span><span class="space"> </span><span class="nobr">客源不断的披萨餐厅。</span></p>
+						<div class="hr-block"></div>
+							<p><span class="nobr">在我们披萨店内</span><span class="space"> </span><span class="nobr">总有一种愉快的气氛，</span><span class="space"> </span><span class="nobr">因为</span><span class="space"> </span><span class="nobr">每个店的设计和装修</span><span class="space"> </span><span class="nobr">都是由我们的专业团队</span><span class="space"> </span><span class="nobr">设计制作。</span><span class="space"> </span><span class="nobr">我们具有丰富的经验</span><span class="space"> </span><span class="nobr">可帮你建立一家</span><span class="space"> </span><span class="nobr">客源不断的披萨餐厅。</span></p>
 
 						</div>
 					</div>
@@ -352,7 +468,7 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 				</div>
 			</div>
 		</div>
-		<div class="container">
+		<div class="container" id="joinus">
 
 			<!--Начало-->
 			<div class="row">
@@ -365,7 +481,7 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 			<div class="row joining-to-ask">
 				<div class="col-sm-4">
 					<h3>有发展潜力的市场</h3>
-					<p><span class="nobr">在当今中国，</span><span class="space"> </span><span class="nobr">餐饮市场不断发展，</span><span class="space"> </span><span class="nobr">披萨外送市场却仍不发达，</span><span class="space"> </span><span class="nobr">预计亦将显著扩展。</span><span class="space"> </span><span class="nobr">而西餐近年受极大追捧，</span><span class="space"> </span><span class="nobr">加上外卖 app 的诞生，</span><span class="space"> </span><span class="nobr">让我们的经营模式更具优势。</span></p>
+					<p><span class="nobr">在当今中国，</span><span class="space"> </span><span class="nobr">餐饮市场不断发展，</span><span class="space"> </span><span class="nobr">披萨外送市场却仍不发达，</span><span class="space"> </span><span class="nobr">预计亦将显著扩展。</span><span class="space"> </span><span class="nobr">而西餐近年受极大追捧，</span><span class="space"> </span><span class="nobr">加上外卖 App 的诞生，</span><span class="space"> </span><span class="nobr">让我们的经营模式更具优势。</span></p>
 				</div>
 				<div class="col-sm-4">
 					<h3><span class="nobr">我们是</span><span class="space"> </span><span class="nobr">透明的</span><span class="space"> </span><span class="nobr">披萨连锁店</span></h3>
@@ -395,7 +511,7 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="conditions-partners">
-						<h3><b><span class="nobr">我们现在已为</span><span class="space"> </span><span class="nobr">首批中国合作伙伴</span><span class="space"> </span><span class="nobr">准备了特殊优惠条件，</span><span class="space"> </span><span class="nobr">随后加盟的伙伴们</span><span class="space"> </span><span class="nobr">将无法享受同等优惠条件。</span></b></h3>
+						<h3><span class="nobr">我们现在已为</span><span class="space"> </span><span class="nobr">首批中国合作伙伴</span><span class="space"> </span><span class="nobr">准备了特殊优惠条件，</span><span class="space"> </span><span class="nobr">随后加盟的伙伴们</span><span class="space"> </span><span class="nobr">将无法享受同等优惠条件。</span></h3>
 						<p>
 							<a href="https://partners.dodopizza.cn/#condition-content" class="condition-link conditions-partners__link"><span class="nobr">为首批合作伙伴的提供的</span><span class="space"> </span><span class="nobr">特殊优惠政策</span></a>
 						</p>
@@ -519,13 +635,13 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 					</div>
 					<div class="row">
 						<div class="col-sm-12">
-							<h3><span class="nobr">只要在有网络的地方，</span><span class="space"> </span><span class="nobr">无论是手机还是电脑，</span><span class="space"> </span><span class="nobr">你随时随地都都可以监管你的店铺，</span><span class="space"> </span><span class="nobr">得知各类有关数据。</span></h3>
+							<p><span class="nobr">只要在有网络的地方，</span><span class="space"> </span><span class="nobr">无论是手机还是电脑，</span><span class="space"> </span><span class="nobr">你随时随地都都可以</span><span class="space"> </span><span class="nobr">监管你的店铺，</span><span class="space"> </span><span class="nobr">得知各类有关数据。</span></p>
 						</div>
 					</div>
 					<div class="hr-block"></div>
 					<div class="row">
 						<div class="col-xs-12">
-							<h3>市场营销</h3>
+							<h3><span class="nobr">市场营销</span></h3>
 							<p><span class="nobr">我们给予加盟商，</span><span class="space"> </span><span class="nobr">所有载体和格式的基础营销材料</span><span class="space"> </span><span class="nobr">（如传单、店内海报等设计），</span><span class="space"> </span><span class="nobr">帮助加盟商推广，</span><span class="space"> </span><span class="nobr">提供所有</span><span class="space"> </span><span class="nobr">餐饮行业的特点，</span><span class="space"> </span><span class="nobr">让客人高兴享用披萨：</span></p>
 						</div>
 					</div>
@@ -535,7 +651,7 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 							<div class="col-md-1"></div>
 							<div class="col-xs-12 col-sm-12 col-md-10">
 								<div class="sticker-img">
-									<div class="marketing__title">准备模型</div>
+									<div class="screens__title">准备模型</div>
 									<p><span class="nobr">你需要一个好的开始。</span><span class="space"> </span><span class="nobr">我们为你准备所有资料，</span><span class="space"> </span><span class="nobr">如传单的样式，</span><span class="space"> </span><span class="nobr">餐厅装饰，</span><span class="space"> </span><span class="nobr">广告画 等等。</span></p>
 									<div class="my-gallery index-img" itemscope="" data-pswp-uid="8">
 										<figure itemprop="associatedMedia" itemscope="">
@@ -552,7 +668,7 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 							<div class="col-md-1"></div>
 							<div class="col-xs-6 col-sm-6 col-md-5">
 								<div class="sticker-img">
-									<div class="marketing__title">做“美味”的照片</div>
+									<div class="screens__title">做“美味”的照片</div>
 									<p><span class="nobr">我们拥有专业的设计工作室，</span><span class="space"> </span><span class="nobr">强大的编辑和设计团队，</span><span class="space"> </span><span class="nobr">为商品拍照及设计海报，</span><span class="space"> </span><span class="nobr">使我们所有的广告</span><span class="space"> </span><span class="nobr">都令人食欲大增，</span><span class="space"> </span><span class="nobr">刺激顾客购买度！</span></p>
 									<div class="my-gallery index-img" itemscope="" data-pswp-uid="9">
 										<figure itemprop="associatedMedia" itemscope="">
@@ -563,7 +679,7 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 									</div>
 								</div>
 								<div class="sticker-img">
-									<div class="marketing__title">包装物料提供</div>
+									<div class="screens__title">包装物料提供</div>
 									<p><span class="nobr">包装，</span><span class="space"> </span><span class="nobr">留给顾客第一印象，</span><span class="space"> </span><span class="nobr">我们的包装设计</span><span class="space"> </span><span class="nobr">是明亮活泼，且难忘的。</span><span class="space"> </span><span class="nobr">我们的包装</span><span class="space"> </span><span class="nobr">会直观让客户</span><span class="space"> </span><span class="nobr">了解到</span><span class="space"> </span><span class="nobr">他们买到了</span><span class="space"> </span><span class="nobr">上乘产品</span></p>
 									<div class="my-gallery index-img" itemscope="" data-pswp-uid="10">
 										<figure itemprop="associatedMedia" itemscope="">
@@ -576,8 +692,8 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 							</div>
 							<div class="col-xs-6 col-sm-6 col-md-5">
 								<div class="sticker-img">
-									<div class="marketing__title"><span class="nobr">可自行编辑外卖 app 页面，</span><span class="space"> </span><span class="nobr">达到最大宣传效果</span></div>
-									<p><span class="nobr">在外卖 app 上，</span><span class="space"> </span><span class="nobr">由我们自己排版设计页面。</span><span class="space"> </span><span class="nobr">通过调查数据，</span><span class="space"> </span><span class="nobr">选择合适图片增加销售率，</span><span class="space"> </span><span class="nobr">并用精辟的语句描写产品特点。</span></p>
+									<div class="screens__title"><span class="nobr">可自行编辑外卖 App 页面，</span><span class="space"> </span><span class="nobr">达到最大宣传效果</span></div>
+									<p><span class="nobr">在外卖 App 上，</span><span class="space"> </span><span class="nobr">由我们自己排版设计页面。</span><span class="space"> </span><span class="nobr">通过调查数据，</span><span class="space"> </span><span class="nobr">选择合适图片增加销售率，</span><span class="space"> </span><span class="nobr">并用精辟的语句描写产品特点。</span></p>
 									<div class="my-gallery index-img" itemscope="" data-pswp-uid="11">
 										<figure itemprop="associatedMedia" itemscope="">
 											<a href="./index2_files/3(3).jpg" itemprop="contentUrl" data-size="640x729">
@@ -587,12 +703,12 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 									</div>
 								</div>
 								<div class="sticker-img">
-									<div class="marketing__title">餐厅外观设计提供</div>
+									<div class="screens__title">餐厅外观设计提供</div>
 									<p><span class="nobr">我们的披萨店</span><span class="space"> </span><span class="nobr">装修风格活泼生动，</span><span class="space"> </span><span class="nobr">我们不使用戏剧化的照片，</span><span class="space"> </span><span class="nobr">我们使用的是</span><span class="space"> </span><span class="nobr">朴实的海报</span><span class="space"> </span><span class="nobr">或是室内装饰</span><span class="space"> </span><span class="nobr">或是和优质客户合影，</span><span class="space"> </span><span class="nobr">海报上的所有照片</span><span class="space"> </span><span class="nobr">都是在</span><span class="space"> </span><span class="nobr">真实客户就餐的情况下拍摄的。</span></p>
 									<div class="my-gallery index-img" itemscope="" data-pswp-uid="12">
 										<figure itemprop="associatedMedia" itemscope="">
 											<a href="./index2_files/5(1).jpg" itemprop="contentUrl" data-size="640x480">
-												<img src="./index2_files/5(1).jpg" itemprop="thumbnail">
+												<img src="./index2_files/5(1).jpg" itemprop="thumbnail" class="bottommargin1em">
 											</a>
 										</figure>
 									</div>
@@ -621,7 +737,7 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 					<div class="hr-block"></div>
 					<div class="row">
 						<div class="col-sm-12">
-							<h3>全业务标准化</h3>
+							<h3><span class="nobr">全业务标准化</span></h3>
 							<p><span class="nobr">我们给出了</span><span class="space"> </span><span class="nobr">一个</span><span class="space"> </span><span class="nobr">简单而明确的标准，</span><span class="space"> </span><span class="nobr">让您</span><span class="space"> </span><span class="nobr">和您的员工</span><span class="space"> </span><span class="nobr">快速学习</span><span class="space"> </span><span class="nobr">厨房工作的</span><span class="space"> </span><span class="nobr">所有细节，</span><span class="space"> </span><span class="nobr">并做出优质的产品。</span></p>
 							<p><span class="nobr">只需半小时，</span><span class="space"> </span><span class="nobr">通过标准</span><span class="space"> </span><span class="nobr">就可以学习</span><span class="space"> </span><span class="nobr">如何做出完美的披萨。</span></p>
 						</div>
@@ -631,6 +747,7 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 			</div>
 		</div>
 		<div class="container">
+			<div class="efficiency">
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="title-landing">
@@ -638,8 +755,6 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 					</div>
 				</div>
 			</div>
-
-			<div class="efficiency">
 				<div class="row">
 					<div class="col-sm-12">
 						<p><span class="nobr">我们于2011年</span><span class="space"> </span><span class="nobr">在俄罗斯</span><span class="space"> </span><span class="nobr">开设了第一家披萨店，</span><span class="space"> </span><span class="nobr">自那时开始，</span><span class="space"> </span><span class="nobr">公司的发展逐年增加一倍。</span></p>
@@ -684,42 +799,42 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 						<table class="table">
 							<tbody><tr>
 								<td class="table__none"></td>
-								<td class="table__center table__title table__th_active"><b>Dodo&nbsp;Pizza 首批入驻加盟商独家优惠政策 (5位)</b></td>
+								<td class="table__center table__title table__th_active"><strong><span class="nobr">Dodo Pizza</span><span class="space"> </span><span class="nobr">首批入驻</span><span class="space"> </span><span class="nobr">加盟商独家</span><span class="space"> </span><span class="nobr">优惠政策</span><span class="space"> </span><span class="nobr">（5位）</span></strong></td>
 								<td class="table__center table__title table__top"><b>Pizza Hut*</b></td>
 								<td class="table__center table__title table__top"><b>Papa John’s*</b></td><!--table__th_active-->
 							</tr>
 							<tr>
 								<td class="table__left table__none">次性加盟款</td>
-								<td class="table__center table__td_active">¥ 35,000</td>
-								<td class="table__center">¥ 300,000</td>
-								<td class="table__center">$ 20,000<br>(~¥&nbsp;130,000)</td><!--table__td_active-->
+								<td class="table__center table__td_active">¥&thinsp;35,000</td>
+								<td class="table__center">¥&thinsp;300,000</td>
+								<td class="table__center">$&thinsp;20,000<br>(~¥&thinsp;130,000)</td><!--table__td_active-->
 							</tr>
 							<tr>
 								<td class="table__left table__none">品牌使用费</td>
-								<td class="table__center table__td_active">每月税前销售额的3,5%</td>
-								<td class="table__center">每月税前销售额的6%</td><!--table__td_active-->
-								<td class="table__center">每月税前销售额的5,5%</td>
+								<td class="table__center table__td_active"><span class="nobr">每月税前</span><span class="space"> </span><span class="nobr">销售额的</span><span class="space"> </span><span class="nobr">3,5&thinsp;%</span></td>
+								<td class="table__center"><span class="nobr">每月税前</span><span class="space"> </span><span class="nobr">销售额的</span><span class="space"> </span><span class="nobr">6&thinsp;%</span></td><!--table__td_active-->
+								<td class="table__center"><span class="nobr">每月税前</span><span class="space"> </span><span class="nobr">销售额的</span><span class="space"> </span><span class="nobr">5,5&thinsp;%</span></td>
 							</tr>
 							<tr>
-								<td class="table__left table__none table__none_bottom">披萨店开幕费用，总投资（包括合作伙伴的全部费用）</td>
-								<td class="table__center table__td_active table__td-active_bottom"> ¥&nbsp;1,000,000</td>
-								<td class="table__center table__td_bottom"> ¥&nbsp;3,300,000</td><!--table__td_active-->
-								<td class="table__center table__td_bottom">此信息不存在于公开数据当中</td>
+								<td class="table__left table__none table__none_bottom"><span class="nobr">披萨店</span><span class="space"> </span><span class="nobr">开幕费用，</span><span class="space"> </span><span class="nobr">总投资</span><span class="space"> </span><span class="nobr">（包括</span><span class="space"> </span><span class="nobr">合作伙伴的全部</span><span class="space"> </span><span class="nobr">费用）</span></td>
+								<td class="table__center table__td_active table__td-active_bottom"> ¥&thinsp;1,000,000</td>
+								<td class="table__center table__td_bottom"> ¥&thinsp;3,300,000</td><!--table__td_active-->
+								<td class="table__center table__td_bottom"><span class="nobr">此信息</span><span class="space"> </span><span class="nobr">不存在</span><span class="space"> </span><span class="nobr">于公开数据</span><span class="space"> </span><span class="nobr">当中</span></td>
 							</tr>
 						</tbody></table>
-						<p>此数据来源于必胜客官方网站 <a href="http://www.pizzahut.com.cn" target="_blank">www.pizzahut.com.cn</a> 和棒约翰比萨官方网站 <a href="http://www.papajohnschina.com" target="_blank">www.papajohnschina.com</a>，调查日期为2017年2月4日。我们做对比时，不仅仅对比以上显示的内容和数字，而是综合所有我们的优势。</p>
+						<p><span class="nobr">此数据来源于</span><span class="space"> </span><span class="nobr">必胜客</span><span class="space"> </span><span class="nobr">官方网站</span><span class="space"> </span><span class="nobr"> <a href="http://www.pizzahut.com.cn" target="_blank">www.pizzahut.com.cn</a> </span><span class="space"> </span><span class="nobr">和棒</span><span class="space"> </span><span class="nobr">约翰比萨</span><span class="space"> </span><span class="nobr">官方网站 </span><span class="space"> </span><span class="nobr"> <a href="http://www.papajohnschina.com" target="_blank">www.papajohnschina.com</a> </span><span class="space"> </span><span class="nobr">调查日期</span><span class="space"> </span><span class="nobr">为2017年2月4日。</span><span class="space"> </span><span class="nobr">我们做对比时，</span><span class="space"> </span><span class="nobr">不仅仅对比以上</span><span class="space"> </span><span class="nobr">显示的</span><span class="space"> </span><span class="nobr">内容和数字，</span><span class="space"> </span><span class="nobr">而是综合</span><span class="space"> </span><span class="nobr">所有我们的优势。</span></p>
 						<h3>投资费用明细</h3>
 						<table class="table2 leftalign">
 							<tbody>
 								<tr>
-									<td>1.</td>
+									<td style="width: 18%">1.</td>
 									<td>加盟费：</td>
-									<td class="rightalign">¥ 35,000</td>
+									<td class="rightalign" style="width: 35%">¥&thinsp;35,000</td>
 								</tr>
 								<tr>
 									<td>2.</td>
 									<td>店铺装专修费：</td>
-									<td class="rightalign">¥ 320,000</td>
+									<td class="rightalign">¥&thinsp;320,000</td>
 								</tr>
 								<tr>
 									<td>3.</td>
@@ -729,31 +844,36 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 								<tr>
 									<td>–</td>
 									<td>XLT烤箱：</td>
-									<td class="rightalign">¥ 150,000</td>
+									<td class="rightalign">¥&thinsp;150,000</td>
 								</tr>
 								<tr>
 									<td>–</td>
-									<td>其他设备（如冷藏柜等）：</td>
-									<td class="rightalign">¥ 230,000</td>
+									<td><span class="nobr">其他设备</span><span class="space"> </span><span class="nobr">（如冷藏柜等）：</span></td>
+									<td class="rightalign">¥&nbsp;230,000</td>
 								</tr>
 								<tr>
 									<td>4.</td>
 									<td>房租：</td>
-									<td class="rightalign">¥ 145,000</td>
+									<td class="rightalign">¥&thinsp;145,000</td>
 								</tr>
 								<tr>
 									<td>5.</td>
 									<td>库存及其他：</td>
-									<td class="rightalign">¥ 40,000</td>
+									<td class="rightalign">¥&thinsp;40,000</td>
 								</tr>
 								<tr>
 									<td>6.</td>
 									<td>预估两月食材及包装费：</td>
-									<td class="rightalign">¥ 80,000</td>
+									<td class="rightalign">¥&thinsp;80,000</td>
+								</tr>
+								<tr>
+									<td><strong>总计</strong></td>
+									<td>&nbsp;</td>
+									<td class="rightalign">¥&thinsp;1,000,000</td>
 								</tr>
 							</tbody>
 						</table>
-						<p><span class="nobr"><strong>总计：</strong></span><span class="space"> </span><span class="nobr">预估费用为100,000元，</span><span class="space"> </span><span class="nobr">具体金额需参照店铺实际情况。</span></p>
+						<p><span class="nobr">预估费用为1,000,000元，</span><span class="space"> </span><span class="nobr">具体金额需参照店铺实际情况。</span></p>
 					<div class="col-sm-1 col-md-1"></div>
 				</div>
 				<div class="row">
@@ -894,7 +1014,7 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 					<div class="row">
 						<div class="col-sm-12">
 							<p><span class="nobr">我们将有工作人员</span><span class="space"> </span><span class="nobr">带领你参观、讲解</span><span class="space"> </span><span class="nobr">披萨店怎么工作，</span><span class="space"> </span><span class="nobr">进行厨房实况，</span><span class="space"> </span><span class="nobr">都可以</span><span class="space"> </span><span class="nobr">用自己的双眼看到，</span><span class="space"> </span><span class="nobr">我们的原则是</span><span class="space"> </span><span class="nobr">千闻不如一见，</span><span class="space"> </span><span class="nobr">上述的所有流程与细节，</span><span class="space"> </span><span class="nobr">您都可以体验到 、看到。</span></p>
-							<p><span class="nobr">最后，</span><span class="space"> </span><span class="nobr">一个小小的惊喜&nbsp;&mdash; </span><span class="space"> </span><span class="nobr">如果你没有办法</span><span class="space"> </span><span class="nobr">马上去烟台或者杭州，</span><span class="space"> </span><span class="nobr">也不用担心！</span></p>
+							<p><span class="nobr">最后，</span><span class="space"> </span><span class="nobr">一个小小的惊喜</span><span class="mdash">&mdash;&mdash;</span><span class="space"> </span><span class="nobr">如果你没有办法</span><span class="space"> </span><span class="nobr">马上去烟台或者杭州，</span><span class="space"> </span><span class="nobr">也不用担心！</span></p>
 							<p><span class="nobr">只要有网络，</span><span class="space"> </span><span class="nobr">我们就可看到</span><span class="space"> </span><span class="nobr">烟台的 Dodo Pizza </span><span class="space"> </span><span class="nobr">是如何工作的，</span><span class="space"> </span><span class="nobr">我们的官方网站</span><span class="space"> </span><span class="nobr">同步直播</span><span class="space"> </span><span class="nobr">并全网公开披萨店内的</span><span class="space"> </span><span class="nobr">任何情况，</span><span class="space"> </span><span class="nobr">让你了解到 </span><span class="space"> </span><span class="nobr">pizza 的制作过程等。</span></p>
 							<p><span class="nobr">我们做生意讲求真诚靠谱，</span><span class="space"> </span><span class="nobr">这是开设 Dodo&nbsp;Pizza 的基础。</span></p>
 						</div>
