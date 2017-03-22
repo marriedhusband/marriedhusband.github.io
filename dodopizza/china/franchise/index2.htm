@@ -114,14 +114,19 @@
 				padding: 0.5em;
 				line-height: 110%;
 			}
-			.table, .table2 {
+			.table, .table2, .smalltext span {
 				font-size: 0.7em;
+			}
+			.table2 tr:nth-child(even) {
+				background: #f8f8f8;
+			}
+			.table2 tr:nth-child(odd) {
+				background: #fff;
 			}
 			
 			.marketing * img {
 				margin: 0 0 0.3em;
 			}
-			
 		}
 
     	.nobr {
@@ -148,9 +153,20 @@
     		margin: 0 2%;
     		padding: 0;
     	}
-    	.table2 td {
-    		border-bottom: 1px solid #e6e6e6;
+    	.table2 * strong {
+    		font-size: 1em;
+    	}
+    	.table2 td, .table2 th {
     		padding: 0.7em 0.5em;
+    	}
+    	.table2 tr {
+			border-bottom: 1px solid #e6e6e6;
+		}
+    	.table2 tr:last-child {
+    		border-bottom: 0;
+    		padding: 0.7em 0.5em;
+    		font-weight: bold;
+    		background: #f8f8f8;
     	}
 		.feedback {
 			width: 80%;
@@ -233,6 +249,9 @@
 			}
 			.location, .efficiency {
 				padding: 1.5em 15px;
+			}
+			.location {
+				margin: 0 -3%;
 			}
 			.reviews, .dodo-is, #joinus {
 				padding: 1.5em 0;
@@ -826,12 +845,14 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 								<td class="table__center table__td_bottom"><span class="nobr">此信息</span><span class="space"> </span><span class="nobr">不存在</span><span class="space"> </span><span class="nobr">于公开数据</span><span class="space"> </span><span class="nobr">当中</span></td>
 							</tr>
 						</tbody></table>
-						<p><span class="nobr">此数据来源于</span><span class="space"> </span><span class="nobr">必胜客</span><span class="space"> </span><span class="nobr">官方网站</span><span class="space"> </span><span class="nobr"> <a href="http://www.pizzahut.com.cn" target="_blank">www.pizzahut.com.cn</a> </span><span class="space"> </span><span class="nobr">和棒</span><span class="space"> </span><span class="nobr">约翰比萨</span><span class="space"> </span><span class="nobr">官方网站 </span><span class="space"> </span><span class="nobr"> <a href="http://www.papajohnschina.com" target="_blank">www.papajohnschina.com</a> </span><span class="space"> </span><span class="nobr">调查日期</span><span class="space"> </span><span class="nobr">为2017年2月4日。</span><span class="space"> </span><span class="nobr">我们做对比时，</span><span class="space"> </span><span class="nobr">不仅仅对比以上</span><span class="space"> </span><span class="nobr">显示的</span><span class="space"> </span><span class="nobr">内容和数字，</span><span class="space"> </span><span class="nobr">而是综合</span><span class="space"> </span><span class="nobr">所有我们的优势。</span></p>
-						<h3>投资费用明细</h3>
+						<p class="smalltext"><span class="nobr">此数据来源于</span><span class="space"> </span><span class="nobr">必胜客</span><span class="space"> </span><span class="nobr">官方网站</span><span class="space"> </span><span class="nobr"> <a href="http://www.pizzahut.com.cn" target="_blank">www.pizzahut.com.cn</a> </span><span class="space"> </span><span class="nobr">和棒</span><span class="space"> </span><span class="nobr">约翰比萨</span><span class="space"> </span><span class="nobr">官方网站 </span><span class="space"> </span><span class="nobr"> <a href="http://www.papajohnschina.com" target="_blank">www.papajohnschina.com</a> </span><span class="space"> </span><span class="nobr">调查日期</span><span class="space"> </span><span class="nobr">为2017年2月4日。</span><span class="space"> </span><span class="nobr">我们做对比时，</span><span class="space"> </span><span class="nobr">不仅仅对比以上</span><span class="space"> </span><span class="nobr">显示的</span><span class="space"> </span><span class="nobr">内容和数字，</span><span class="space"> </span><span class="nobr">而是综合</span><span class="space"> </span><span class="nobr">所有我们的优势。</span></p>
 						<table class="table2 leftalign">
 							<tbody>
 								<tr>
-									<td style="width: 18%">1.</td>
+									<th colspan="3"><strong>投资费用明细</strong></th>
+								</tr>
+								<tr>
+									<td style="width: 15%">1.</td>
 									<td>加盟费：</td>
 									<td class="rightalign" style="width: 35%">¥&thinsp;35,000</td>
 								</tr>
@@ -877,7 +898,7 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 								</tr>
 							</tbody>
 						</table>
-						<p><span class="nobr">预估费用为1,000,000元，</span><span class="space"> </span><span class="nobr">具体金额需参照店铺实际情况。</span></p>
+						<p class="smalltext"><span class="nobr">预估费用为1,000,000元，</span><span class="space"> </span><span class="nobr">具体金额需参照店铺实际情况。</span></p>
 					<div class="col-sm-1 col-md-1"></div>
 				</div>
 				<div class="row">
@@ -1019,7 +1040,7 @@ margin-top:2px}</style><div class="fotorama--hidden"></div><div class="fotorama 
 						<div class="col-sm-12">
 							<p><span class="nobr">我们将有工作人员</span><span class="space"> </span><span class="nobr">带领你参观、讲解</span><span class="space"> </span><span class="nobr">披萨店怎么工作，</span><span class="space"> </span><span class="nobr">进行厨房实况，</span><span class="space"> </span><span class="nobr">都可以</span><span class="space"> </span><span class="nobr">用自己的双眼看到，</span><span class="space"> </span><span class="nobr">我们的原则是</span><span class="space"> </span><span class="nobr">千闻不如一见，</span><span class="space"> </span><span class="nobr">上述的所有流程与细节，</span><span class="space"> </span><span class="nobr">您都可以体验到 、看到。</span></p>
 							<p><span class="nobr">最后，</span><span class="space"> </span><span class="nobr">一个小小的惊喜</span><span class="mdash">&mdash;&mdash;</span><span class="space"> </span><span class="nobr">如果你没有办法</span><span class="space"> </span><span class="nobr">马上去烟台或者杭州，</span><span class="space"> </span><span class="nobr">也不用担心！</span></p>
-							<p><span class="nobr">只要有网络，</span><span class="space"> </span><span class="nobr">我们就可看到</span><span class="space"> </span><span class="nobr">烟台的 Dodo Pizza </span><span class="space"> </span><span class="nobr">是如何工作的，</span><span class="space"> </span><span class="nobr">我们的官方网站</span><span class="space"> </span><span class="nobr">同步直播</span><span class="space"> </span><span class="nobr">并全网公开披萨店内的</span><span class="space"> </span><span class="nobr">任何情况，</span><span class="space"> </span><span class="nobr">让你了解到 </span><span class="space"> </span><span class="nobr">pizza 的制作过程等。</span></p>
+							<p><span class="nobr">只要有网络，</span><span class="space"> </span><span class="nobr">我们就可看到</span><span class="space"> </span><span class="nobr">烟台的 Dodo Pizza </span><span class="space"> </span><span class="nobr">是如何工作的，</span><span class="space"> </span><span class="nobr">我们的官方网站</span><span class="space"> </span><span class="nobr">同步直播</span><span class="space"> </span><span class="nobr">并全网公开披萨店内的</span><span class="space"> </span><span class="nobr">任何情况，</span><span class="space"> </span><span class="nobr">让你了解到 </span><span class="space"> </span><span class="nobr">Pizza 的制作过程等。</span></p>
 							<p><span class="nobr">我们做生意讲求真诚靠谱，</span><span class="space"> </span><span class="nobr">这是开设 Dodo&nbsp;Pizza 的基础。</span></p>
 						</div>
 					</div>
