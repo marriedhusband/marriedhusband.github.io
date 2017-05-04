@@ -45,11 +45,14 @@
 	}
 
 	.header {
-		height: 450px;
-		background: url(assets/web-page-cover.jpg) no-repeat center center;
-		background-size: cover;
-		color: white;
-		position: relative;
+	height: 450px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(assets/web-page-cover.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+	position: relative;
 	}
 	.header h1 {
 		background: url(assets/logo.png) no-repeat center center;
@@ -118,11 +121,20 @@
 		font-size: 90%;
 	}
 	 .header {
-		 height: 250px;
+		 height: 270px;
 	 }
 	 .header h1 {
-		 height: 150px;
+		background: url(assets/text-logo.png) no-repeat center center;
+		background-size: contain;
+		height: 140px;
+		margin: 33px auto 0;
 	 }
+	#headerdate {
+		border-bottom: 1px solid white;
+		padding: 0 0 10px;
+		width: 170px;
+		margin: 0 auto;
+	}
 }
 </style>
 </head>
