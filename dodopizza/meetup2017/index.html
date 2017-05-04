@@ -13,18 +13,33 @@
 		font-size: 1em;
 		line-height: 150%;
 	}
+	p, h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+		padding: 0;
+	}
+	h2 {
+		padding: 0 0 10px;
+	}
 	#wrap   {
 		min-width: 320px;
 		margin: 0 auto;
 		width: 100%;
 	}
 	.box {
-		padding: 40px 0;
+		padding: 60px 0;
 		margin: 0;
 	}
 	.inbox {
 		max-width: 1000px;
-		width: 80%;
+		width: 60%;
+		margin: 0 auto;
+	}
+	.divide {
+		height: 0px;
+		border-bottom: 1px solid #888;
+		font-size: 0px;
+		line-height: 0px;
+		width: 40%;
 		margin: 0 auto;
 	}
 	.article {
@@ -35,7 +50,17 @@
 	.column {
 		width: 30%;
 		float: left;
-		margin: 0 3% 30px 0;
+		margin: 0 3% 0 0;
+	}
+	.two {
+		width: 45%;
+		float: left;
+		margin: 0 5% 0 0;
+	}
+	.twowide {
+		width: 60%;
+		float: left;
+		margin: 0 7% 0 0;
 	}
 	.clear {
 		clear: both;
@@ -45,14 +70,14 @@
 	}
 
 	.header {
-	height: 450px;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-image: url(assets/web-page-cover.jpg);
-	background-attachment: fixed;
-	background-size: cover;
-	color: white;
-	position: relative;
+		height: 450px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-image: url(assets/web-page-cover.jpg);
+		background-attachment: fixed;
+		background-size: cover;
+		color: white;
+		position: relative;
 	}
 	.header h1 {
 		background: url(assets/logo.png) no-repeat center center;
@@ -96,13 +121,25 @@
 	}
 	
 	.openning {
-		height: 
+		height: ;
 	}
 
-	.column p {
+	.description {
 		font-size: 90%;
 		color: #888;
 		line-height: 120%;
+	}
+	.narrowcol {
+		width: 50%;
+		margin: 0 auto;
+	}
+	.bigger {
+		font-size: 130%;
+		line-height: 160%;
+	}
+	.smaller {
+		font-size: 90%;
+		line-height: 130%;
 	}
 	.speakerhead {
 		width: 140px;
@@ -111,14 +148,16 @@
 		margin: 0 0 10px;
 	}
 
-	p, h1, h2, h3, h4, h5, h6 {
-		margin: 0;
-		padding: 0;
-	}
+
 /* Mobile Views */
  @media screen and (max-width: 768px) {
 	body {
 		font-size: 90%;
+	}
+	.inbox {
+		min-width: 320px;
+		width: 86%;
+		margin: 0 auto;
 	}
 	 .header {
 		 height: 270px;
@@ -154,13 +193,24 @@
 <!-- Openning -->
 	<div class="box openning">
 		<div class="inbox">
-			<h2>Торжественное открытие</h2>
-			<p>Открытие съезда состоится 5 июля в 10:00 в клубе «Звезда».</p>
-			<p><a href="https://goo.gl/maps/NX6vLFfQpzA2" target="_blank" title="Адрес клуба «Звезда»">Ново-Садовая улица, 106</a></p>
-			<p>&nbsp;</p>
+			<div class="article">
+				<div class="column twowide alignleft">
+					<h2>Что это?</h2>
+					<p>Съезд партнеров «Додо&nbsp;Пиццы»&nbsp;— это круп&shy;нейшая встреча предста&shy;вителей и&nbsp;парт&shy;неров компа&shy;нии, кон&shy;центри&shy;рующая огром&shy;ный объем знаний о&nbsp;пицца-бизнесе в&nbsp;одном месте.</p>
+				</div>
+
+				<div class="column alignleft">
+					<h2>Когда начинаем?</h2>
+					<p class="smaller">Откры&shy;тие съез&shy;да&nbsp;— 5&nbsp;июля в&nbsp;10:00</p>
+					<p class="smaller"><a href="https://goo.gl/maps/NX6vLFfQpzA2" target="_blank" title="Адрес клуба «Звезда»">Ново-Садо&shy;вая ули&shy;ца, 106, Сама&shy;ра</a></p>
+				</div>
+				<br class="clear">
+			</div>
 		</div>
 	</div>
 <!-- Openning End -->
+
+<div class="divide"></div>
 
 <!-- Speakers -->
 	<div class="box speakers">
@@ -170,45 +220,45 @@
 				<div class="column">
 					<p><img src="assets/speaker-fedor.jpg" alt="Федор Овчинников" class="speakerhead" /></p>
 					<h3>Федор Овчинников</h3>
-					<p>Основа&shy;тель и&nbsp;руково&shy;дитель сети «Додо&nbsp;Пицца»</p>
+					<p class="description">Основа&shy;тель и&nbsp;руково&shy;дитель сети «Додо&nbsp;Пицца»</p>
 				</div>
 				<div class="column">
 					<p><img src="assets/speaker-misha.jpg" alt="Миша Чернышев" class="speakerhead" /></p>
 					<h3>Миша Чернышев</h3>
-					<p>Директор по&nbsp;клиент&shy;скому счастью</p>
+					<p class="description">Директор по&nbsp;клиент&shy;скому счастью</p>
 				</div>
 				<div class="column">
 					<p><img src="assets/speaker-max.jpg" alt="Сергей Реук" class="speakerhead" /></p>
 					<h3>Максим Котин</h3>
-					<p>Директор по&nbsp;комму&shy;ника&shy;циям</p>
+					<p class="description">Директор по&nbsp;комму&shy;ника&shy;циям</p>
 				</div>
 				<br class="clear">
 
 				<div class="column">
 					<h3>Денис Чернобаев</h3>
-					<p>Руко&shy;води&shy;тель раз&shy;вития «Додо&nbsp;Пиццы» в&nbsp;Китае</p>
+					<p class="description">Руко&shy;води&shy;тель раз&shy;вития «Додо&nbsp;Пиццы» в&nbsp;Китае</p>
 				</div>
 				<div class="column">
 					<h3>Андрей Арефьев</h3>
-					<p>Руко&shy;води&shy;тель «Додо&nbsp;ИС»</p>
+					<p class="description">Руко&shy;води&shy;тель «Додо&nbsp;ИС»</p>
 				</div>
 				<div class="column">
 					<h3>Джесси Перкинс</h3>
-					<p>Главная управ&shy;ляющая «Додо&nbsp;Пиццы США»</p>
+					<p class="description">Главная управ&shy;ляющая «Додо&nbsp;Пиццы США»</p>
 				</div>
 				<br class="clear">
 
 				<div class="column">
 					<h3>Владислав Данильченко</h3>
-					<p>Управ&shy;ляющий из&nbsp;Тольятти</p>
+					<p class="description">Управ&shy;ляющий из&nbsp;Тольятти</p>
 				</div>
 				<div class="column">
 					<h3>Сергей Болокан</h3>
-					<p>Румынский партнер</p>
+					<p class="description">Румынский партнер</p>
 				</div>
 				<div class="column">
 					<h3>Сергей Реук</h3>
-					<p>Партнер из&nbsp;Красно&shy;дара и&nbsp;Ново&shy;рос&shy;сийска</p>
+					<p class="description">Партнер из&nbsp;Красно&shy;дара и&nbsp;Ново&shy;рос&shy;сийска</p>
 				</div>
 				<br class="clear">
 				<p>Руководитель «Додо Пицца Франчайзинга», Андрей Петелин, приготовил сюрприз для партнеров</p>
