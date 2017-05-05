@@ -1,0 +1,131 @@
+<manifest alg="2" build="2017.0.2.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="1.2" resolutions="1x,2x" timestamp="1493988604776">
+  <folder name="css">
+    <file name="site_global.css" crc="443350757"/>
+    <file name="index.css" crc="4236944108" ref="index"/>
+    <file name="nomq_index.css" crc="4236402190" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="4232573551" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="4152223963" ref="index"/>
+    <file name="jquery.watch.js" crc="3844535323" ref="index"/>
+    <file name="jquery.museresponsive.js" crc="433634197" ref="index"/>
+    <file name="require.js" crc="4234670167" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="speaker-fedor137x137.jpg" crc="3822889867" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-fedor137x137_2x.jpg" crc="41793881" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-misha137x138.jpg" crc="4193601627" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-misha137x138_2x.jpg" crc="3905797984" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-max137x137.jpg" crc="450566604" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-max137x137_2x.jpg" crc="454482666" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-fedor.jpg" crc="297947840" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-fedor_2x.jpg" crc="534916444" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-misha.jpg" crc="456193329" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-misha_2x.jpg" crc="309174381" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-max.jpg" crc="105905367" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-max_2x.jpg" crc="4160264843" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-fedor110x110.jpg" crc="3887611968" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-fedor110x110_2x.jpg" crc="4001267422" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-misha110x110.jpg" crc="331527666" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-misha110x110_2x.jpg" crc="4190166921" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-max110x110.jpg" crc="4096865215" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-max110x110_2x.jpg" crc="442776720" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-misha110x111.jpg" crc="331527666" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-misha110x111_2x.jpg" crc="3826413756" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-max110x111.jpg" crc="4096865215" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="speaker-max110x111_2x.jpg" crc="501554958" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="v-й-съезд-партнеров-«додо-пиццы»-favicon.ico" crc="30663860" ref="index"/>
+  </folder>
+  <file name="index.html" crc="4001375090" seo="true" mt="1493988590210" redirect="true"/>
+</manifest>
