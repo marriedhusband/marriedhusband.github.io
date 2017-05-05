@@ -62,6 +62,10 @@
 		float: left;
 		margin: 0 7% 0 0;
 	}
+	.cell {
+		height: 250px;
+		padding: 40px 0 0;
+	}
 	.fullwidth {
 		width: 100%;
 		margin: 0 auto;
@@ -172,7 +176,7 @@
 	.speakerhead {
 		width: 140px;
 		height: 140px;
-		border-radius: 70px;
+		border-radius: 3px;
 		margin: 0 0 10px;
 	}
 	.lineheight {
@@ -180,8 +184,8 @@
 	}
 	.whiteback {
 		background: white;
-		padding: 30px 20px;
 		width: 50%;
+		padding: 30px;
 	}
 
 	.soccer {
@@ -195,12 +199,13 @@
 /* Mobile Views */
  @media screen and (max-width: 768px) {
 	body {
-		font-size: 90%;
+		font-size: 80%;
 	}
 	.inbox {
-		min-width: 320px;
-		width: 86%;
+		width: 80%;
+		padding: 0 10%;
 		margin: 0 auto;
+		clear: both;
 	}
 	 .header {
 		 height: 270px;
@@ -227,6 +232,21 @@
 		font-size: 120%;
 		line-height: 180%;
 	 }
+	.speakerhead {
+		width: 50px;
+		height: 50px;
+		border-radius: 25px;
+		margin: 0 0 10px;
+	}
+	.cell {
+		height: 150px;
+		padding: 40px 0 0;
+	}
+	.whiteback {
+		background: white;
+		width: 50%;
+		padding: 30px;
+	}
 }
 </style>
 </head>
@@ -244,6 +264,8 @@
 		<div id="nightskyback">
 			<video id="nightsky" class="video" autoplay loop muted width="300" height="150">
 				<source src="assets/581512571-2.mp4" type="video/mp4" />
+				<source src="assets/581512571-2.ogv" type="video/ogg" />
+				<source src="assets/581512571-2.webm" type="video/webm" />
 			</video>
 		</div>
 	</div>
@@ -275,48 +297,48 @@
 		<div class="inbox">
 			<h2>Десять крутейших спикеров</h2>
 			<div class="article">
-				<div class="column">
+				<div class="column cell">
 					<p><img src="assets/speaker-fedor.jpg" alt="Федор Овчинников" class="speakerhead" /></p>
 					<h3>Федор Овчинников</h3>
 					<p class="description">Основа&shy;тель и&nbsp;руково&shy;дитель сети «Додо&nbsp;Пицца»</p>
 				</div>
-				<div class="column">
+				<div class="column cell">
 					<p><img src="assets/speaker-misha.jpg" alt="Миша Чернышев" class="speakerhead" /></p>
 					<h3>Миша Чернышев</h3>
 					<p class="description">Директор по&nbsp;клиент&shy;скому счастью</p>
 				</div>
-				<div class="column">
+				<div class="column cell">
 					<p><img src="assets/speaker-max.jpg" alt="Сергей Реук" class="speakerhead" /></p>
 					<h3>Максим Котин</h3>
 					<p class="description">Директор по&nbsp;комму&shy;ника&shy;циям</p>
 				</div>
-				<br class="clear">
-
-				<div class="column">
+				<div class="column cell">
 					<h3>Денис Чернобаев</h3>
 					<p class="description">Руко&shy;води&shy;тель раз&shy;вития «Додо&nbsp;Пиццы» в&nbsp;Китае</p>
 				</div>
-				<div class="column">
+				<div class="column cell">
 					<h3>Андрей Арефьев</h3>
 					<p class="description">Руко&shy;води&shy;тель «Додо&nbsp;ИС»</p>
 				</div>
-				<div class="column">
+				<div class="column cell">
 					<h3>Джесси Перкинс</h3>
 					<p class="description">Главная управ&shy;ляющая «Додо&nbsp;Пиццы США»</p>
 				</div>
-				<br class="clear">
-
-				<div class="column">
+				<div class="column cell">
 					<h3>Владислав Данильченко</h3>
 					<p class="description">Управ&shy;ляющий из&nbsp;Тольятти</p>
 				</div>
-				<div class="column">
+				<div class="column cell">
 					<h3>Сергей Болокан</h3>
 					<p class="description">Румынский партнер</p>
 				</div>
-				<div class="column">
+				<div class="column cell">
 					<h3>Сергей Реук</h3>
 					<p class="description">Партнер из&nbsp;Красно&shy;дара и&nbsp;Ново&shy;рос&shy;сийска</p>
+				</div>
+				<div class="column cell">
+					<h3>Павел Шабалдин</h3>
+					<p class="description">Реги&shy;ональ&shy;ный управ&shy;ляющий из&nbsp;Самары</p>
 				</div>
 				<br class="clear">
 				<p>Руководитель «Додо Пицца Франчайзинга», Андрей Петелин, приготовил сюрприз для партнеров</p>
@@ -328,7 +350,7 @@
 
 <!-- Soccer -->
 	<div class="box soccer">
-		<div class="inbox narrowcol whiteback">
+		<div class="inbox whiteback">
 			<h2>Футбол</h2>
 			<p>На&nbsp;поле сойдутся шесть команд, чтобы доказать себе и&nbsp;другим, что они&nbsp;могут забить гол любому.</p>
 			<p>Хочешь поучаствовать в&nbsp;турнире? <a href="https://docs.google.com/a/dodopizza.com/forms/d/e/1FAIpQLSfK8c8Q6sjtXurtLqa6vmySqVUUwRF9zs0Q7DUf6pN0sLxykQ/viewform" target="_blank">Пройди регистрацию&nbsp;›</a></p>
